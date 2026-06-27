@@ -30,6 +30,7 @@ const els = {
   unitBadge: document.querySelector("#unitBadge"),
   questionText: document.querySelector("#questionText"),
   questionHint: document.querySelector("#questionHint"),
+  hintToggleBtn: document.querySelector("#hintToggleBtn"),
   answerArea: document.querySelector("#answerArea"),
   checkBtn: document.querySelector("#checkBtn"),
   nextBtn: document.querySelector("#nextBtn"),
@@ -95,6 +96,12 @@ function makeBlank(example, answer) {
   const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`\\b${escaped}\\b`, "ig");
   return example.replace(pattern, "_____");
+}
+
+function maskAnswer(text, answer) {
+  if (!text) return "";
+  const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return text.replace(new RegExp(`\\b${escaped}\\b`, "ig"), "(답)");
 }
 
 function speakWithBrowser(text) {
@@ -169,8 +176,8 @@ function buildQuestion(word, mode) {
   return {
     word,
     kind: "definition",
-    prompt: word.definition || `교재 ${word.bookPage}페이지의 단어입니다.`,
-    hint: "정의에 맞는 영어 단어를 입력하세요.",
+    prompt: "듣고 단어를 입력하세요.",
+    hint: maskAnswer(word.definition || `교재 ${word.bookPage}페이지의 단어입니다.`, word.word),
     answer: word.word,
   };
 }
@@ -241,7 +248,10 @@ function renderQuestion() {
   els.unitBadge.textContent = `p.${question.word.bookPage}`;
   els.questionText.textContent = question.prompt;
   els.questionHint.textContent = question.hint;
-  els.speakBtn.textContent = `듣기: ${question.word.word}`;
+  els.questionHint.hidden = true;
+  els.hintToggleBtn.hidden = question.kind === "choice";
+  els.hintToggleBtn.textContent = "힌트: 영어 설명 보기";
+  els.speakBtn.textContent = "듣기";
   els.answerArea.innerHTML = "";
 
   if (question.kind === "choice") {
@@ -481,6 +491,11 @@ els.retryBtn.addEventListener("click", startQuiz);
 els.speakBtn.addEventListener("click", () => {
   const question = state.questions[state.current];
   if (question) speak(question.word.word);
+});
+els.hintToggleBtn.addEventListener("click", () => {
+  const isHidden = els.questionHint.hidden;
+  els.questionHint.hidden = !isHidden;
+  els.hintToggleBtn.textContent = isHidden ? "힌트 숨기기" : "힌트: 영어 설명 보기";
 });
 els.pageRange.addEventListener("input", updateSelectedCount);
 els.clearHistoryBtn.addEventListener("click", () => {

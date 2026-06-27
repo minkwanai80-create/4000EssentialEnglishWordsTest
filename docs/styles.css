@@ -392,7 +392,8 @@ button:focus {
 }
 
 .word-toolbar {
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 18px;
 }
 
@@ -404,15 +405,32 @@ button:focus {
 }
 
 .listen-btn,
-.mini-listen {
+.mini-listen,
+.hint-toggle {
   flex: none;
   border-color: rgba(37, 99, 235, 0.35);
   background: #eff6ff;
   color: var(--blue);
 }
 
+.listen-btn {
+  min-width: 96px;
+}
+
+.hint-toggle {
+  width: 100%;
+  margin-top: 12px;
+  border-color: var(--line);
+  background: #f1f5f9;
+  color: var(--muted);
+}
+
 .hint {
   margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 12px;
   color: var(--muted);
   line-height: 1.6;
 }
