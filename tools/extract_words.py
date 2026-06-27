@@ -11,6 +11,13 @@ PDF_PATH = ROOT / "문서" / "4000 Essential English Words 2 PDF.pdf"
 JSON_PATH = ROOT / "docs" / "data" / "words.json"
 TOC_PATH = ROOT / "docs" / "data" / "toc.json"
 CSV_PATH = ROOT / "data" / "words-review.csv"
+SUPPLEMENTAL_FIELDS = [
+    "phonetic",
+    "koreanMeanings",
+    "acceptedKoreanAnswers",
+    "dictionaryNotes",
+    "exampleKo",
+]
 
 UNITS = [
     (1, 8, "The Most Visited Country", "because east expensive flower garden holiday many million mountain place popular ski such total tower town train walk watch world"),
@@ -238,10 +245,27 @@ def build_toc(reader: PdfReader) -> list[dict]:
     return toc
 
 
+def load_supplemental_fields() -> dict[str, dict]:
+    if not JSON_PATH.exists():
+        return {}
+    try:
+        entries = json.loads(JSON_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    supplemental = {}
+    for entry in entries:
+        word = entry.get("word")
+        if not word:
+            continue
+        supplemental[word] = {field: entry.get(field, "" if field in {"phonetic", "dictionaryNotes", "exampleKo"} else []) for field in SUPPLEMENTAL_FIELDS}
+    return supplemental
+
+
 def main() -> None:
     reader = PdfReader(str(PDF_PATH))
     entries = []
     review_rows = []
+    supplemental_by_word = load_supplemental_fields()
     toc = build_toc(reader)
     toc_by_unit = {item["unit"]: item for item in toc}
 
@@ -271,6 +295,16 @@ def main() -> None:
                 "definition": definition,
                 "example": example,
                 "needsReview": needs_review,
+                **supplemental_by_word.get(
+                    word,
+                    {
+                        "phonetic": "",
+                        "koreanMeanings": [],
+                        "acceptedKoreanAnswers": [],
+                        "dictionaryNotes": "",
+                        "exampleKo": "",
+                    },
+                ),
             }
             entries.append(entry)
             review_rows.append(entry)
@@ -295,6 +329,7 @@ def main() -> None:
                 "definition",
                 "example",
                 "needsReview",
+                *SUPPLEMENTAL_FIELDS,
             ],
         )
         writer.writeheader()

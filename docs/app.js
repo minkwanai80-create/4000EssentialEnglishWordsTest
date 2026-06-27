@@ -58,8 +58,28 @@ const els = {
 
 const pronunciationAudio = new Audio();
 
-function normalizeAnswer(value) {
-  return String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
+function normalizeEnglish(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function normalizeKorean(value) {
+  return String(value || "").trim();
+}
+
+function getKoreanMeanings(word) {
+  return Array.isArray(word.koreanMeanings) && word.koreanMeanings.length ? word.koreanMeanings : [];
+}
+
+function getAcceptedKoreanAnswers(word) {
+  const answers = Array.isArray(word.acceptedKoreanAnswers) && word.acceptedKoreanAnswers.length
+    ? word.acceptedKoreanAnswers
+    : getKoreanMeanings(word);
+  return answers.map(normalizeKorean).filter(Boolean);
+}
+
+function koreanMeaningText(word) {
+  const meanings = getKoreanMeanings(word);
+  return meanings.length ? meanings.join(", ") : "-";
 }
 
 function parseRange(value) {
@@ -136,7 +156,7 @@ function speak(text) {
   pronunciationAudio.onerror = () => speakWithBrowser(word);
   pronunciationAudio.play().catch(() => {
     if (!speakWithBrowser(word)) {
-      alert("이 브라우저에서 발음 듣기를 재생하지 못했습니다.");
+      alert("이 브라우저에서 듣기를 재생하지 못했습니다.");
     }
   });
 }
@@ -172,7 +192,7 @@ function buildQuestion(word, mode) {
     return {
       word,
       kind,
-      prompt: `"${word.word}"의 뜻으로 가장 가까운 것은?`,
+      prompt: `"${word.word}"와 가장 가까운 정의를 고르세요.`,
       hint: `교재 ${word.bookPage}페이지`,
       choices: shuffle([definitionHint(word), ...wrong]),
       answer: definitionHint(word),
@@ -184,7 +204,7 @@ function buildQuestion(word, mode) {
       word,
       kind,
       prompt: makeBlank(word.example, word.word),
-      hint: `빈칸에 들어갈 영어 단어를 입력하세요. 교재 ${word.bookPage}페이지`,
+      hint: `빈칸에 들어갈 영어 단어와 한글 뜻을 입력하세요. 교재 ${word.bookPage}페이지`,
       answer: word.word,
     };
   }
@@ -192,7 +212,7 @@ function buildQuestion(word, mode) {
   return {
     word,
     kind: "definition",
-    prompt: "듣고 단어를 입력하세요.",
+    prompt: "정의를 보고 영어 단어와 한글 뜻을 입력하세요.",
     hint: definitionHint(word),
     answer: word.word,
   };
@@ -220,7 +240,7 @@ function filterWords() {
 
 function syncQuestionCount(availableCount) {
   els.questionCount.max = String(Math.max(availableCount, 1));
-  els.questionCount.placeholder = availableCount ? `최대 ${availableCount}개` : "출제 가능 단어 없음";
+  els.questionCount.placeholder = availableCount ? `최대 ${availableCount}개` : "출제 가능한 단어 없음";
   els.questionCount.value = availableCount ? String(availableCount) : "";
   els.plannedQuestions.textContent = availableCount ? String(availableCount) : "0";
 }
@@ -249,6 +269,33 @@ function renderWordListPages() {
     });
     els.wordListPages.appendChild(button);
   });
+}
+
+function renderSubjectiveInputs() {
+  const wrapper = document.createElement("div");
+  wrapper.className = "answer-grid";
+
+  const englishInput = document.createElement("input");
+  englishInput.type = "text";
+  englishInput.autocomplete = "off";
+  englishInput.placeholder = "영어 단어";
+  englishInput.dataset.answerRole = "english";
+
+  const koreanInput = document.createElement("input");
+  koreanInput.type = "text";
+  koreanInput.autocomplete = "off";
+  koreanInput.placeholder = "한글 뜻";
+  koreanInput.dataset.answerRole = "korean";
+
+  [englishInput, koreanInput].forEach((input) => {
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") checkAnswer();
+    });
+  });
+
+  wrapper.append(englishInput, koreanInput);
+  els.answerArea.appendChild(wrapper);
+  englishInput.focus();
 }
 
 function renderQuestion() {
@@ -285,15 +332,7 @@ function renderQuestion() {
       els.answerArea.appendChild(button);
     });
   } else {
-    const input = document.createElement("input");
-    input.type = "text";
-    input.autocomplete = "off";
-    input.placeholder = "정답 입력";
-    input.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") checkAnswer();
-    });
-    els.answerArea.appendChild(input);
-    input.focus();
+    renderSubjectiveInputs();
   }
 }
 
@@ -325,26 +364,130 @@ function startQuiz() {
   renderQuestion();
 }
 
+function getSubjectiveAnswers() {
+  return {
+    english: els.answerArea.querySelector('[data-answer-role="english"]')?.value || "",
+    korean: els.answerArea.querySelector('[data-answer-role="korean"]')?.value || "",
+  };
+}
+
+function gradeQuestion(question) {
+  if (question.kind === "choice") {
+    const choiceCorrect = state.selectedChoice && normalizeEnglish(state.selectedChoice) === normalizeEnglish(question.answer);
+    return {
+      userEnglishAnswer: state.selectedChoice || "",
+      userKoreanAnswer: "",
+      correctWord: question.word.word,
+      koreanMeanings: getKoreanMeanings(question.word),
+      englishCorrect: Boolean(choiceCorrect),
+      koreanCorrect: true,
+      isCorrect: Boolean(choiceCorrect),
+    };
+  }
+
+  const answers = getSubjectiveAnswers();
+  const englishCorrect = normalizeEnglish(answers.english) === normalizeEnglish(question.word.word);
+  const koreanAnswer = normalizeKorean(answers.korean);
+  const accepted = getAcceptedKoreanAnswers(question.word);
+  const koreanCorrect = accepted.includes(koreanAnswer);
+
+  return {
+    userEnglishAnswer: answers.english,
+    userKoreanAnswer: answers.korean,
+    correctWord: question.word.word,
+    koreanMeanings: getKoreanMeanings(question.word),
+    englishCorrect,
+    koreanCorrect,
+    isCorrect: englishCorrect && koreanCorrect,
+  };
+}
+
+function createDetailRow(label, value) {
+  const row = document.createElement("p");
+  const strong = document.createElement("strong");
+  strong.textContent = `${label}: `;
+  row.append(strong, document.createTextNode(value || "-"));
+  return row;
+}
+
+function renderDictionaryPanel(question, result) {
+  const oldPanel = els.answerArea.querySelector(".answer-detail");
+  if (oldPanel) oldPanel.remove();
+
+  const word = question.word;
+  const panel = document.createElement("section");
+  panel.className = "answer-detail";
+
+  const title = document.createElement("div");
+  title.className = "answer-detail-title";
+  const heading = document.createElement("strong");
+  heading.textContent = `${word.word}${word.phonetic ? ` ${word.phonetic}` : ""}${word.partOfSpeech ? ` ${word.partOfSpeech}` : ""}`;
+  const listen = document.createElement("button");
+  listen.type = "button";
+  listen.className = "mini-listen";
+  listen.textContent = "듣기";
+  listen.addEventListener("click", () => speak(word.word));
+  title.append(heading, listen);
+
+  const summary = document.createElement("div");
+  summary.className = "answer-check-summary";
+  summary.append(
+    createDetailRow("정답", `${result.correctWord} / ${koreanMeaningText(word)}`),
+    createDetailRow("사용자 영어 답", result.userEnglishAnswer),
+    createDetailRow("사용자 한글 답", result.userKoreanAnswer),
+    createDetailRow("영어 단어", result.englishCorrect ? "맞음" : "오답"),
+    createDetailRow("한글 뜻", result.koreanCorrect ? "맞음" : "오답"),
+  );
+
+  const dictionary = document.createElement("div");
+  dictionary.className = "dictionary-lines";
+  dictionary.append(
+    createDetailRow("뜻", koreanMeaningText(word)),
+    createDetailRow("정의", word.definition),
+    createDetailRow("예문", word.example),
+    createDetailRow("해석", word.exampleKo),
+    createDetailRow("설명", word.dictionaryNotes),
+  );
+
+  panel.append(title, summary, dictionary);
+  els.answerArea.appendChild(panel);
+}
+
+function lockCurrentQuestion() {
+  els.answerArea.querySelectorAll("input, .choice").forEach((item) => {
+    item.disabled = true;
+  });
+}
+
 function checkAnswer() {
   const question = state.questions[state.current];
-  const answer = question.kind === "choice" ? state.selectedChoice : els.answerArea.querySelector("input")?.value || "";
-  if (!answer) {
-    els.feedback.textContent = "정답을 입력하거나 선택하세요.";
+  if (question.kind === "choice" && !state.selectedChoice) {
+    els.feedback.textContent = "정답을 선택하세요.";
     els.feedback.className = "feedback bad";
     return;
   }
+  if (question.kind !== "choice") {
+    const answers = getSubjectiveAnswers();
+    if (!normalizeEnglish(answers.english) || !normalizeKorean(answers.korean)) {
+      els.feedback.textContent = "영어 단어와 한글 뜻을 모두 입력하세요.";
+      els.feedback.className = "feedback bad";
+      return;
+    }
+  }
 
-  const isCorrect = normalizeAnswer(answer) === normalizeAnswer(question.answer);
-  if (isCorrect) {
+  const result = gradeQuestion(question);
+  if (result.isCorrect) {
     state.correct += 1;
     els.feedback.textContent = "정답입니다.";
     els.feedback.className = "feedback ok";
   } else {
-    state.missed.push({ question, answer });
-    els.feedback.textContent = `오답입니다. 정답: ${question.answer}`;
+    state.missed.push({ question, result });
+    els.feedback.textContent = `오답입니다. 정답: ${question.word.word} / ${koreanMeaningText(question.word)}`;
     els.feedback.className = "feedback bad";
   }
 
+  renderDictionaryPanel(question, result);
+  lockCurrentQuestion();
   speak(question.word.word);
   els.checkBtn.hidden = true;
   els.nextBtn.hidden = false;
@@ -373,10 +516,16 @@ function makeHistoryRecord(score) {
     total: state.questions.length,
     correct: state.correct,
     score,
-    missed: state.missed.map(({ question, answer }) => ({
+    missed: state.missed.map(({ question, result }) => ({
       word: question.word.word,
       page: question.word.bookPage,
-      answer: answer || "",
+      userEnglishAnswer: result.userEnglishAnswer || "",
+      userKoreanAnswer: result.userKoreanAnswer || "",
+      correctWord: result.correctWord,
+      koreanMeanings: result.koreanMeanings,
+      englishCorrect: result.englishCorrect,
+      koreanCorrect: result.koreanCorrect,
+      answer: result.userEnglishAnswer || "",
       correctAnswer: question.answer,
     })),
   };
@@ -399,10 +548,10 @@ function renderHistory() {
   const best = attempts ? Math.max(...history.map((item) => item.score)) : null;
 
   els.historyAttempts.textContent = String(attempts);
-  els.historyAverage.textContent = average === null ? "-" : `${average}점`;
-  els.historyBest.textContent = best === null ? "-" : `${best}점`;
+  els.historyAverage.textContent = average === null ? "-" : `${average}%`;
+  els.historyBest.textContent = best === null ? "-" : `${best}%`;
   els.historyQuestions.textContent = String(totalQuestions);
-  els.lastScore.textContent = attempts ? `${history[0].score}점` : "-";
+  els.lastScore.textContent = attempts ? `${history[0].score}%` : "-";
   els.historyList.innerHTML = "";
   els.historyWeakWords.innerHTML = "";
 
@@ -412,9 +561,13 @@ function renderHistory() {
   }
 
   const missedCounts = new Map();
+  const missedLabels = new Map();
   history.forEach((item) => {
     item.missed.forEach((miss) => {
-      missedCounts.set(miss.word, (missedCounts.get(miss.word) || 0) + 1);
+      const key = miss.correctWord || miss.word;
+      const meanings = Array.isArray(miss.koreanMeanings) ? miss.koreanMeanings : [];
+      missedCounts.set(key, (missedCounts.get(key) || 0) + 1);
+      missedLabels.set(key, meanings[0] ? `${key} (${meanings[0]})` : key);
     });
   });
   const weakWords = [...missedCounts.entries()]
@@ -423,17 +576,23 @@ function renderHistory() {
   if (weakWords.length) {
     els.historyWeakWords.innerHTML = `
       <strong>자주 틀린 단어</strong>
-      <div>${weakWords.map(([word, count]) => `<span>${word} ${count}회</span>`).join("")}</div>
+      <div>${weakWords.map(([word, count]) => `<span>${missedLabels.get(word) || word} ${count}회</span>`).join("")}</div>
     `;
   }
 
   history.slice(0, 20).forEach((item) => {
     const row = document.createElement("div");
     row.className = "history-item";
-    const missedWords = item.missed.map((miss) => miss.word).slice(0, 8).join(", ");
+    const missedWords = item.missed
+      .map((miss) => {
+        const meanings = Array.isArray(miss.koreanMeanings) ? miss.koreanMeanings : [];
+        return meanings[0] ? `${miss.correctWord || miss.word} (${meanings[0]})` : miss.correctWord || miss.word;
+      })
+      .slice(0, 8)
+      .join(", ");
     row.innerHTML = `
       <div>
-        <strong>${item.score}점 · ${item.correct}/${item.total}</strong>
+        <strong>${item.score}% · ${item.correct}/${item.total}</strong>
         <span>${formatDate(item.date)} · ${item.scope} · ${item.mode}</span>
         <small>${missedWords ? `틀린 단어: ${missedWords}` : "틀린 단어 없음"}</small>
       </div>
@@ -446,8 +605,8 @@ function showResults() {
   updateQuizVisibility(true);
   els.progressText.textContent = `${state.questions.length} / ${state.questions.length}`;
   const score = Math.round((state.correct / state.questions.length) * 100);
-  els.resultScore.textContent = `${state.correct} / ${state.questions.length} (${score}점)`;
-  els.lastScore.textContent = `${score}점`;
+  els.resultScore.textContent = `${state.correct} / ${state.questions.length} (${score}%)`;
+  els.lastScore.textContent = `${score}%`;
   els.missedList.innerHTML = "";
   saveHistory(makeHistoryRecord(score));
 
@@ -456,7 +615,7 @@ function showResults() {
     return;
   }
 
-  state.missed.forEach(({ question, answer }) => {
+  state.missed.forEach(({ question, result }) => {
     const item = document.createElement("div");
     item.className = "missed-item";
     const button = document.createElement("button");
@@ -465,7 +624,10 @@ function showResults() {
     button.textContent = "듣기";
     button.addEventListener("click", () => speak(question.word.word));
     const text = document.createElement("div");
-    text.innerHTML = `<strong>${question.word.word}</strong><span>내 답: ${answer || "-"} · p.${question.word.bookPage}</span>`;
+    text.innerHTML = `
+      <strong>${question.word.word} / ${koreanMeaningText(question.word)}</strong>
+      <span>영어 답: ${result.userEnglishAnswer || "-"} · 한글 답: ${result.userKoreanAnswer || "-"} · p.${question.word.bookPage}</span>
+    `;
     item.append(text, button);
     els.missedList.appendChild(item);
   });
