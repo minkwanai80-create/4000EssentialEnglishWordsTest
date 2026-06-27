@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+
+# Local source documents and generated review exports
+문서/
+data/*.csv
+data/*.json
+

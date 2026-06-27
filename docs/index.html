@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>4000 Essential English Words 2 Test</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Book 2 Vocabulary Dashboard</p>
+          <h1>영단어 시험</h1>
+          <p class="summary" id="dataSummary">단어 데이터를 불러오는 중입니다.</p>
+        </div>
+        <div class="score-card" aria-live="polite">
+          <span>최근 점수</span>
+          <strong id="lastScore">-</strong>
+        </div>
+      </section>
+
+      <section class="panel controls" aria-label="시험 설정">
+        <label>
+          <span>단원 범위</span>
+          <input id="unitRange" type="text" inputmode="numeric" placeholder="예: 1 또는 1-3" />
+        </label>
+        <label>
+          <span>페이지 범위</span>
+          <input id="pageRange" type="text" inputmode="numeric" placeholder="예: 20 또는 20-35" />
+        </label>
+        <label>
+          <span>문제 수</span>
+          <input id="questionCount" type="number" min="5" max="50" step="5" value="10" />
+        </label>
+        <label>
+          <span>문제 유형</span>
+          <select id="quizMode">
+            <option value="mixed">섞어서</option>
+            <option value="definition">정의 보고 단어 입력</option>
+            <option value="blank">예문 빈칸 입력</option>
+            <option value="choice">객관식 정의 고르기</option>
+          </select>
+        </label>
+        <button id="startBtn" class="primary" type="button">시험 시작</button>
+      </section>
+
+      <section class="stats-grid" aria-label="학습 현황">
+        <div class="stat">
+          <span>전체 단어</span>
+          <strong id="totalWords">0</strong>
+        </div>
+        <div class="stat">
+          <span>선택 범위</span>
+          <strong id="selectedWords">0</strong>
+        </div>
+        <div class="stat">
+          <span>현재 문제</span>
+          <strong id="progressText">0 / 0</strong>
+        </div>
+      </section>
+
+      <section class="panel quiz-panel" id="quizPanel" hidden>
+        <div class="question-meta">
+          <span id="questionType">문제</span>
+          <span id="unitBadge">Unit</span>
+        </div>
+        <h2 id="questionText"></h2>
+        <p id="questionHint" class="hint"></p>
+        <div id="answerArea" class="answer-area"></div>
+        <div class="actions">
+          <button id="checkBtn" class="primary" type="button">채점</button>
+          <button id="nextBtn" type="button" hidden>다음</button>
+        </div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="panel results" id="resultsPanel" hidden>
+        <h2>결과</h2>
+        <div class="result-score" id="resultScore"></div>
+        <div id="missedList" class="missed-list"></div>
+        <button id="retryBtn" class="primary" type="button">같은 설정으로 다시 풀기</button>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
