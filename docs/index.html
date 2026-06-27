@@ -10,8 +10,8 @@
     <main class="app-shell">
       <section class="hero">
         <div>
-          <p class="eyebrow">Book 2 Vocabulary Dashboard</p>
-          <h1>영단어 시험</h1>
+          <p class="eyebrow">4000 Essential English Words 2</p>
+          <h1>페이지 기준 영단어 시험</h1>
           <p class="summary" id="dataSummary">단어 데이터를 불러오는 중입니다.</p>
         </div>
         <div class="score-card" aria-live="polite">
@@ -20,53 +20,73 @@
         </div>
       </section>
 
-      <section class="panel controls" aria-label="시험 설정">
-        <label>
-          <span>페이지 범위</span>
-          <input id="pageRange" type="text" inputmode="numeric" placeholder="예: 8 또는 8-15" />
-        </label>
-        <label>
-          <span>단원 범위 선택</span>
-          <input id="unitRange" type="text" inputmode="numeric" placeholder="예: 1 또는 1-3" />
-        </label>
-        <label>
-          <span>문제 수</span>
-          <input id="questionCount" type="number" min="5" max="50" step="5" value="10" />
-        </label>
-        <label>
-          <span>문제 유형</span>
-          <select id="quizMode">
-            <option value="mixed">섞어서</option>
-            <option value="definition">정의 보고 단어 입력</option>
-            <option value="blank">예문 빈칸 입력</option>
-            <option value="choice">객관식 정의 고르기</option>
-          </select>
-        </label>
-        <button id="startBtn" class="primary" type="button">시험 시작</button>
-      </section>
+      <section class="dashboard">
+        <div class="tabs" role="tablist" aria-label="대시보드 보기">
+          <button class="tab active" id="pageTab" type="button" data-tab="page">페이지</button>
+          <button class="tab" id="unitTab" type="button" data-tab="unit">단원</button>
+          <button class="tab" id="reviewTab" type="button" data-tab="review">복습</button>
+        </div>
 
-      <section class="stats-grid" aria-label="학습 현황">
-        <div class="stat">
-          <span>출제 가능</span>
-          <strong id="totalWords">0</strong>
-        </div>
-        <div class="stat">
-          <span>선택 범위</span>
-          <strong id="selectedWords">0</strong>
-        </div>
-        <div class="stat">
-          <span>현재 문제</span>
-          <strong id="progressText">0 / 0</strong>
-        </div>
-      </section>
-      <p class="scope-summary" id="scopeSummary">전체 단어 목록 페이지 기준</p>
+        <section class="panel tab-panel active" id="pagePanel" aria-labelledby="pageTab">
+          <div class="section-heading">
+            <h2>페이지로 출제</h2>
+            <span>입력한 교재 페이지 안의 단어만 출제됩니다.</span>
+          </div>
+          <div class="controls">
+            <label>
+              <span>페이지 범위</span>
+              <input id="pageRange" type="text" inputmode="numeric" placeholder="예: 8 또는 8-15" />
+            </label>
+            <label>
+              <span>문제 수</span>
+              <input id="questionCount" type="number" min="5" max="50" step="5" value="10" />
+            </label>
+            <label>
+              <span>문제 유형</span>
+              <select id="quizMode">
+                <option value="mixed">섞어서</option>
+                <option value="definition">정의 보고 단어 입력</option>
+                <option value="blank">예문 빈칸 입력</option>
+                <option value="choice">객관식 정의 고르기</option>
+              </select>
+            </label>
+            <button id="startBtn" class="primary" type="button">시험 시작</button>
+          </div>
+        </section>
 
-      <section class="panel toc-panel" aria-label="목차">
-        <div class="section-heading">
-          <h2>목차</h2>
-          <span>단원을 누르면 해당 단어 목록 페이지가 선택됩니다.</span>
-        </div>
-        <div class="toc-list" id="tocList"></div>
+        <section class="panel tab-panel" id="unitPanel" aria-labelledby="unitTab">
+          <div class="section-heading">
+            <h2>단원 목차</h2>
+            <span>단원을 누르면 단어 목록 페이지가 선택됩니다.</span>
+          </div>
+          <label class="unit-input">
+            <span>단원 범위 선택</span>
+            <input id="unitRange" type="text" inputmode="numeric" placeholder="예: 1 또는 1-3" />
+          </label>
+          <div class="toc-list" id="tocList"></div>
+        </section>
+
+        <section class="panel tab-panel" id="reviewPanel" aria-labelledby="reviewTab">
+          <div class="section-heading">
+            <h2>복습 설정</h2>
+            <span>발음 듣기는 브라우저 음성 합성을 사용합니다.</span>
+          </div>
+          <div class="review-grid">
+            <div>
+              <span>출제 가능 단어</span>
+              <strong id="totalWords">0</strong>
+            </div>
+            <div>
+              <span>선택 범위</span>
+              <strong id="selectedWords">0</strong>
+            </div>
+            <div>
+              <span>현재 문제</span>
+              <strong id="progressText">0 / 0</strong>
+            </div>
+          </div>
+          <p class="scope-summary" id="scopeSummary">전체 단어 목록 페이지 기준</p>
+        </section>
       </section>
 
       <section class="panel quiz-panel" id="quizPanel" hidden>
@@ -74,7 +94,10 @@
           <span id="questionType">문제</span>
           <span id="unitBadge">Unit</span>
         </div>
-        <h2 id="questionText"></h2>
+        <div class="word-toolbar">
+          <h2 id="questionText"></h2>
+          <button id="speakBtn" class="listen-btn" type="button">듣기</button>
+        </div>
         <p id="questionHint" class="hint"></p>
         <div id="answerArea" class="answer-area"></div>
         <div class="actions">

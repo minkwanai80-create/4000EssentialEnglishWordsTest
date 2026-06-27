@@ -7,6 +7,7 @@ const state = {
   correct: 0,
   missed: [],
   selectedChoice: "",
+  activeTab: "page",
 };
 
 const els = {
@@ -30,11 +31,14 @@ const els = {
   answerArea: document.querySelector("#answerArea"),
   checkBtn: document.querySelector("#checkBtn"),
   nextBtn: document.querySelector("#nextBtn"),
+  speakBtn: document.querySelector("#speakBtn"),
   feedback: document.querySelector("#feedback"),
   resultsPanel: document.querySelector("#resultsPanel"),
   resultScore: document.querySelector("#resultScore"),
   missedList: document.querySelector("#missedList"),
   retryBtn: document.querySelector("#retryBtn"),
+  tabs: document.querySelectorAll(".tab"),
+  tabPanels: document.querySelectorAll(".tab-panel"),
 };
 
 function normalizeAnswer(value) {
@@ -82,6 +86,25 @@ function makeBlank(example, answer) {
   return example.replace(pattern, "_____");
 }
 
+function speak(text) {
+  if (!("speechSynthesis" in window)) {
+    alert("이 브라우저는 발음 듣기를 지원하지 않습니다.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "en-US";
+  utterance.rate = 0.88;
+  utterance.pitch = 1;
+  window.speechSynthesis.speak(utterance);
+}
+
+function setActiveTab(tabName) {
+  state.activeTab = tabName;
+  els.tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.tab === tabName));
+  els.tabPanels.forEach((panel) => panel.classList.toggle("active", panel.id === `${tabName}Panel`));
+}
+
 function getQuestionKind(mode, word) {
   const kinds = [];
   if (word.definition) kinds.push("definition");
@@ -112,7 +135,7 @@ function buildQuestion(word, mode) {
       word,
       kind,
       prompt: makeBlank(word.example, word.word),
-      hint: "빈칸에 들어갈 영어 단어를 입력하세요.",
+      hint: `빈칸에 들어갈 영어 단어를 입력하세요. 교재 ${word.bookPage}페이지`,
       answer: word.word,
     };
   }
@@ -121,7 +144,7 @@ function buildQuestion(word, mode) {
     word,
     kind: "definition",
     prompt: word.definition || `Unit ${word.unit}의 단어입니다.`,
-    hint: "정의에 맞는 영어 단어를 입력하세요.",
+    hint: `정의에 맞는 영어 단어를 입력하세요. 교재 ${word.bookPage}페이지`,
     answer: word.word,
   };
 }
@@ -165,9 +188,7 @@ function resolveScope() {
 function filterWords() {
   const scope = resolveScope();
   if (scope.error) return scope;
-  const filtered = state.words.filter(
-    (word) => !word.needsReview && inRange(word.bookPage, scope.pageRange)
-  );
+  const filtered = state.words.filter((word) => !word.needsReview && inRange(word.bookPage, scope.pageRange));
   return { filtered, source: scope.source, pageRange: scope.pageRange };
 }
 
@@ -185,11 +206,13 @@ function renderToc() {
     button.className = "toc-card";
     button.innerHTML = `
       <strong>Unit ${unit.unit}. ${unit.title}</strong>
-      <span>단어 목록: ${rangeText(unit.wordListPages)}페이지 · 전체: ${rangeText(unit.allPages)}페이지</span>
+      <span>단어 목록 ${rangeText(unit.wordListPages)}페이지</span>
+      <small>전체 ${rangeText(unit.allPages)}페이지 · ${unit.wordCount} words</small>
     `;
     button.addEventListener("click", () => {
       els.pageRange.value = rangeText(unit.wordListPages);
-      els.unitRange.value = "";
+      els.unitRange.value = String(unit.unit);
+      setActiveTab("page");
       updateSelectedCount();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
@@ -211,6 +234,7 @@ function renderQuestion() {
   els.unitBadge.textContent = `Unit ${question.word.unit} · p.${question.word.bookPage}`;
   els.questionText.textContent = question.prompt;
   els.questionHint.textContent = question.hint;
+  els.speakBtn.hidden = false;
   els.answerArea.innerHTML = "";
 
   if (question.kind === "choice") {
@@ -263,8 +287,7 @@ function startQuiz() {
 
 function checkAnswer() {
   const question = state.questions[state.current];
-  const answer =
-    question.kind === "choice" ? state.selectedChoice : els.answerArea.querySelector("input")?.value || "";
+  const answer = question.kind === "choice" ? state.selectedChoice : els.answerArea.querySelector("input")?.value || "";
   if (!answer) {
     els.feedback.textContent = "정답을 입력하거나 선택하세요.";
     els.feedback.className = "feedback bad";
@@ -282,6 +305,7 @@ function checkAnswer() {
     els.feedback.className = "feedback bad";
   }
 
+  speak(question.word.word);
   els.checkBtn.hidden = true;
   els.nextBtn.hidden = false;
 }
@@ -303,7 +327,14 @@ function showResults() {
   state.missed.forEach(({ question, answer }) => {
     const item = document.createElement("div");
     item.className = "missed-item";
-    item.innerHTML = `<strong>${question.word.word}</strong><span>내 답: ${answer || "-"} · Unit ${question.word.unit} · p.${question.word.bookPage}</span>`;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "mini-listen";
+    button.textContent = "듣기";
+    button.addEventListener("click", () => speak(question.word.word));
+    const text = document.createElement("div");
+    text.innerHTML = `<strong>${question.word.word}</strong><span>내 답: ${answer || "-"} · Unit ${question.word.unit} · p.${question.word.bookPage}</span>`;
+    item.append(text, button);
     els.missedList.appendChild(item);
   });
 }
@@ -338,11 +369,18 @@ async function init() {
   }
 }
 
+els.tabs.forEach((tab) => tab.addEventListener("click", () => setActiveTab(tab.dataset.tab)));
 els.startBtn.addEventListener("click", startQuiz);
 els.checkBtn.addEventListener("click", checkAnswer);
 els.nextBtn.addEventListener("click", nextQuestion);
 els.retryBtn.addEventListener("click", startQuiz);
-els.unitRange.addEventListener("input", updateSelectedCount);
+els.speakBtn.addEventListener("click", () => {
+  const question = state.questions[state.current];
+  if (question) speak(question.word.word);
+});
+els.unitRange.addEventListener("input", () => {
+  if (!els.pageRange.value.trim()) updateSelectedCount();
+});
 els.pageRange.addEventListener("input", updateSelectedCount);
 
 init();
