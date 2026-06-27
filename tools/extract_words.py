@@ -152,18 +152,66 @@ def extract_entry(text: str, words: list[str], index: int) -> tuple[str, str, bo
     return definition, example, needs_review
 
 
-def build_toc() -> list[dict]:
+def has_exercises_heading(text: str) -> bool:
+    return bool(re.search(r"\bEXERCISES\b", text, flags=re.IGNORECASE))
+
+
+def detect_unit_pages(reader: PdfReader, start_page: int, next_start_page: int | None) -> dict:
+    unit_end_page = (next_start_page - 1) if next_start_page else start_page + 5
+    exercise_start = None
+
+    for page_number in range(start_page, unit_end_page + 1):
+        text = clean_text(reader.pages[page_number - 1].extract_text() or "")
+        if has_exercises_heading(text):
+            exercise_start = page_number
+            break
+
+    if exercise_start is None:
+        exercise_start = min(start_page + 2, unit_end_page + 1)
+
+    word_list_end = max(start_page, exercise_start - 1)
+    word_list_pages = [start_page, word_list_end]
+    exercise_end = min(exercise_start + 1, unit_end_page)
+    reading_start = min(exercise_end + 1, unit_end_page)
+
+    return {
+        "wordListPages": word_list_pages,
+        "exercisePages": [exercise_start, exercise_end] if exercise_start <= unit_end_page else [],
+        "readingPages": [reading_start, unit_end_page] if reading_start <= unit_end_page else [],
+        "allPages": [start_page, unit_end_page],
+    }
+
+
+def pages_in_range(page_range: list[int]) -> list[int]:
+    if not page_range:
+        return []
+    return list(range(page_range[0], page_range[1] + 1))
+
+
+def find_word_page(page_texts: dict[int, str], word: str, fallback_page: int) -> int:
+    best_page = fallback_page
+    best_position = None
+    for page_number, text in page_texts.items():
+        position = find_word_position(text, word)
+        if position < 0:
+            continue
+        if best_position is None or position < best_position:
+            best_page = page_number
+            best_position = position
+    return best_page
+
+
+def build_toc(reader: PdfReader) -> list[dict]:
     toc = []
-    for unit, start_page, title, word_string in UNITS:
+    for index, (unit, start_page, title, word_string) in enumerate(UNITS):
+        next_start_page = UNITS[index + 1][1] if index + 1 < len(UNITS) else None
+        page_ranges = detect_unit_pages(reader, start_page, next_start_page)
         toc.append(
             {
                 "unit": unit,
                 "title": title,
                 "wordCount": len(word_string.split()),
-                "wordListPages": [start_page, start_page + 1],
-                "exercisePages": [start_page + 2, start_page + 3],
-                "readingPages": [start_page + 4, start_page + 5],
-                "allPages": [start_page, start_page + 5],
+                **page_ranges,
             }
         )
     return toc
@@ -173,17 +221,22 @@ def main() -> None:
     reader = PdfReader(str(PDF_PATH))
     entries = []
     review_rows = []
-    toc = build_toc()
+    toc = build_toc(reader)
+    toc_by_unit = {item["unit"]: item for item in toc}
 
     for unit, start_page, title, word_string in UNITS:
         words = word_string.split()
-        page_text = " ".join(
-            clean_text(reader.pages[page_number - 1].extract_text() or "")
-            for page_number in (start_page, start_page + 1)
-        )
+        word_pages = pages_in_range(toc_by_unit[unit]["wordListPages"])
+        page_texts = {
+            page_number: clean_text(reader.pages[page_number - 1].extract_text() or "")
+            for page_number in word_pages
+        }
+        page_text = " ".join(page_texts.values())
         for index, word in enumerate(words):
             definition, example, needs_review = extract_entry(page_text, words, index)
-            book_page = start_page if index < 10 else start_page + 1
+            fallback_index = min(index * max(len(word_pages), 1) // len(words), max(len(word_pages) - 1, 0))
+            fallback_page = word_pages[fallback_index]
+            book_page = find_word_page(page_texts, word, fallback_page)
             pdf_page = book_page
             entry = {
                 "unit": unit,
