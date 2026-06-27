@@ -1,7 +1,7 @@
 # 4000 Essential English Words 2 Test
 
 GitHub Pages로 배포하는 모바일용 영단어 시험 대시보드입니다.
-
+https://minkwanai80-create.github.io/4000EssentialEnglishWordsTest/
 ## Local Preview
 
 ```powershell
