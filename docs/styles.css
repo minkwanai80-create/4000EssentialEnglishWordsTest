@@ -132,7 +132,7 @@ label span {
 
 .tabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   padding: 6px;
   border: 1px solid var(--line);
@@ -212,13 +212,6 @@ button:focus {
   outline-offset: 2px;
 }
 
-.unit-input {
-  display: block;
-  max-width: 320px;
-  margin-bottom: 12px;
-}
-
-.toc-list,
 .word-list-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -232,7 +225,6 @@ button:focus {
   margin-top: 14px;
 }
 
-.toc-card,
 .word-page-card {
   display: grid;
   gap: 7px;
@@ -243,20 +235,17 @@ button:focus {
   background: var(--surface-soft);
 }
 
-.toc-card:hover,
 .word-page-card:hover {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
 
-.toc-card strong,
 .word-page-card strong {
   line-height: 1.25;
 }
 
-.toc-card span,
-.toc-card small,
-.word-page-card span {
+.word-page-card span,
+.word-page-card small {
   color: var(--muted);
   font-size: 12px;
   font-weight: 750;
@@ -269,11 +258,107 @@ button:focus {
   gap: 12px;
 }
 
+.review-grid.compact {
+  margin-top: 14px;
+}
+
 .review-grid > div {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-soft);
   padding: 14px;
+}
+
+.history-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.history-stats > div {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 14px;
+}
+
+.history-stats span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.history-stats strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 28px;
+}
+
+.history-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0;
+}
+
+.history-list {
+  display: grid;
+  gap: 10px;
+}
+
+.weak-words {
+  margin-bottom: 12px;
+}
+
+.weak-words strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.weak-words div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.weak-words span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.history-item {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 12px;
+}
+
+.history-item strong,
+.history-item span,
+.history-item small {
+  display: block;
+}
+
+.history-item span,
+.history-item small,
+.empty-history {
+  color: var(--muted);
+}
+
+.history-item span {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.history-item small {
+  margin-top: 6px;
+  line-height: 1.45;
 }
 
 .scope-summary {
@@ -402,16 +487,14 @@ button:focus {
 
   .hero,
   .controls,
-  .toc-list,
   .word-list-grid,
-  .review-grid {
+  .review-grid,
+  .history-stats {
     grid-template-columns: 1fr;
   }
 
-  .score-card,
-  .unit-input {
+  .score-card {
     width: 100%;
-    max-width: none;
   }
 
   .section-heading {

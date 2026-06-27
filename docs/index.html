@@ -11,7 +11,7 @@
       <section class="hero">
         <div>
           <p class="eyebrow">4000 Essential English Words 2</p>
-          <h1>페이지 기준 영단어 시험</h1>
+          <h1>단어 시험</h1>
           <p class="summary" id="dataSummary">단어 데이터를 불러오는 중입니다.</p>
         </div>
         <div class="score-card" aria-live="polite">
@@ -21,17 +21,17 @@
       </section>
 
       <section class="dashboard">
-        <div class="tabs" role="tablist" aria-label="대시보드 보기">
-          <button class="tab active" id="pageTab" type="button" data-tab="page">WORD LIST</button>
-          <button class="tab" id="unitTab" type="button" data-tab="unit">단원</button>
-          <button class="tab" id="reviewTab" type="button" data-tab="review">복습</button>
+        <div class="tabs" role="tablist" aria-label="보기 선택">
+          <button class="tab active" id="testTab" type="button" data-tab="test">시험</button>
+          <button class="tab" id="historyTab" type="button" data-tab="history">히스토리</button>
         </div>
 
-        <section class="panel tab-panel active" id="pagePanel" aria-labelledby="pageTab">
+        <section class="panel tab-panel active" id="testPanel" aria-labelledby="testTab">
           <div class="section-heading">
-            <h2>WORD LIST 페이지</h2>
-            <span>단어 시험 가능한 페이지만 표시됩니다.</span>
+            <h2>WORD LIST 선택</h2>
+            <span>단어 시험 가능한 페이지 범위만 표시됩니다.</span>
           </div>
+
           <div class="controls">
             <label>
               <span>페이지 범위</span>
@@ -52,29 +52,10 @@
             </label>
             <button id="startBtn" class="primary" type="button">시험 시작</button>
           </div>
-          <div class="word-list-grid" id="wordListPages"></div>
-        </section>
 
-        <section class="panel tab-panel" id="unitPanel" aria-labelledby="unitTab">
-          <div class="section-heading">
-            <h2>단원 목차</h2>
-            <span>단원을 누르면 단어 목록 페이지가 선택됩니다.</span>
-          </div>
-          <label class="unit-input">
-            <span>단원 범위 선택</span>
-            <input id="unitRange" type="text" inputmode="numeric" placeholder="예: 1 또는 1-3" />
-          </label>
-          <div class="toc-list" id="tocList"></div>
-        </section>
-
-        <section class="panel tab-panel" id="reviewPanel" aria-labelledby="reviewTab">
-          <div class="section-heading">
-            <h2>복습 설정</h2>
-            <span>발음 듣기는 온라인 음성과 브라우저 음성 합성을 함께 사용합니다.</span>
-          </div>
-          <div class="review-grid">
+          <div class="review-grid compact">
             <div>
-              <span>출제 가능 단어</span>
+              <span>출제 가능</span>
               <strong id="totalWords">0</strong>
             </div>
             <div>
@@ -86,14 +67,45 @@
               <strong id="progressText">0 / 0</strong>
             </div>
           </div>
-          <p class="scope-summary" id="scopeSummary">전체 단어 목록 페이지 기준</p>
+          <p class="scope-summary" id="scopeSummary">전체 WORD LIST 기준</p>
+          <div class="word-list-grid" id="wordListPages"></div>
+        </section>
+
+        <section class="panel tab-panel" id="historyPanel" aria-labelledby="historyTab">
+          <div class="section-heading">
+            <h2>시험 히스토리</h2>
+            <span>이 기기의 브라우저에만 저장됩니다.</span>
+          </div>
+          <div class="history-stats">
+            <div>
+              <span>응시 횟수</span>
+              <strong id="historyAttempts">0</strong>
+            </div>
+            <div>
+              <span>평균 점수</span>
+              <strong id="historyAverage">-</strong>
+            </div>
+            <div>
+              <span>최고 점수</span>
+              <strong id="historyBest">-</strong>
+            </div>
+            <div>
+              <span>푼 문제</span>
+              <strong id="historyQuestions">0</strong>
+            </div>
+          </div>
+          <div class="history-actions">
+            <button id="clearHistoryBtn" type="button">히스토리 삭제</button>
+          </div>
+          <div class="weak-words" id="historyWeakWords"></div>
+          <div id="historyList" class="history-list"></div>
         </section>
       </section>
 
       <section class="panel quiz-panel" id="quizPanel" hidden>
         <div class="question-meta">
           <span id="questionType">문제</span>
-          <span id="unitBadge">Unit</span>
+          <span id="unitBadge">페이지</span>
         </div>
         <div class="word-toolbar">
           <h2 id="questionText"></h2>
