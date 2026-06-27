@@ -1,5 +1,14 @@
 const HISTORY_KEY = "essentialWordsTestHistory";
+const VOLUME_KEY = "essentialWordsListenVolume";
 const QUIZ_MODE_LABEL = "단어 입력";
+const LISTEN_REPEAT_COUNT = 2;
+const VOLUME_BY_LEVEL = {
+  1: 0.35,
+  2: 0.5,
+  3: 0.7,
+  4: 0.85,
+  5: 1,
+};
 
 const state = {
   words: [],
@@ -19,6 +28,7 @@ const els = {
   lastScore: document.querySelector("#lastScore"),
   pageRange: document.querySelector("#pageRange"),
   questionCount: document.querySelector("#questionCount"),
+  volumeLevel: document.querySelector("#volumeLevel"),
   startBtn: document.querySelector("#startBtn"),
   totalWords: document.querySelector("#totalWords"),
   selectedWords: document.querySelector("#selectedWords"),
@@ -55,6 +65,7 @@ const els = {
 };
 
 const pronunciationAudio = new Audio();
+let listenToken = 0;
 
 function normalizeEnglish(value) {
   return String(value || "").trim().toLowerCase();
@@ -78,6 +89,15 @@ function getAcceptedKoreanAnswers(word) {
 function koreanMeaningText(word) {
   const meanings = getKoreanMeanings(word);
   return meanings.length ? meanings.join(", ") : "-";
+}
+
+function getVolumeLevel() {
+  const level = Number(els.volumeLevel?.value || localStorage.getItem(VOLUME_KEY) || 5);
+  return Math.min(5, Math.max(1, Number.isFinite(level) ? level : 5));
+}
+
+function getListenVolume() {
+  return VOLUME_BY_LEVEL[getVolumeLevel()] || VOLUME_BY_LEVEL[5];
 }
 
 function parseRange(value) {
@@ -158,31 +178,65 @@ function cleanEnglishHint(word) {
   return word.partOfSpeech ? `${word.partOfSpeech} ${masked}` : masked;
 }
 
-function speakWithBrowser(text) {
+function speakWithBrowser(text, token = listenToken) {
   if (!("speechSynthesis" in window)) return false;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "en-US";
-  utterance.rate = 0.88;
-  const voices = window.speechSynthesis.getVoices();
-  const englishVoice = voices.find((voice) => voice.lang.toLowerCase().startsWith("en"));
-  if (englishVoice) utterance.voice = englishVoice;
-  window.speechSynthesis.speak(utterance);
+  let repeated = 0;
+
+  const playNext = () => {
+    if (token !== listenToken || repeated >= LISTEN_REPEAT_COUNT) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    utterance.rate = 0.88;
+    utterance.volume = getListenVolume();
+    const voices = window.speechSynthesis.getVoices();
+    const englishVoice = voices.find((voice) => voice.lang.toLowerCase().startsWith("en"));
+    if (englishVoice) utterance.voice = englishVoice;
+    utterance.onend = () => {
+      repeated += 1;
+      window.setTimeout(playNext, 180);
+    };
+    window.speechSynthesis.speak(utterance);
+  };
+
+  playNext();
   return true;
 }
 
 function speak(text) {
   const word = String(text || "").trim();
   if (!word) return;
+  const token = (listenToken += 1);
+  let repeated = 0;
+  if ("speechSynthesis" in window) window.speechSynthesis.cancel();
   pronunciationAudio.pause();
   pronunciationAudio.currentTime = 0;
-  pronunciationAudio.src = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(word)}`;
-  pronunciationAudio.onerror = () => speakWithBrowser(word);
-  pronunciationAudio.play().catch(() => {
-    if (!speakWithBrowser(word)) {
-      alert("이 브라우저에서 듣기를 재생하지 못했습니다.");
-    }
-  });
+  pronunciationAudio.onerror = null;
+  pronunciationAudio.onended = null;
+
+  const playNext = () => {
+    if (token !== listenToken || repeated >= LISTEN_REPEAT_COUNT) return;
+    pronunciationAudio.pause();
+    pronunciationAudio.currentTime = 0;
+    pronunciationAudio.volume = getListenVolume();
+    pronunciationAudio.src = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(word)}`;
+    pronunciationAudio.onerror = () => {
+      if (!speakWithBrowser(word, token)) {
+        alert("이 브라우저에서 듣기를 재생하지 못했습니다.");
+      }
+    };
+    pronunciationAudio.onended = () => {
+      repeated += 1;
+      window.setTimeout(playNext, 180);
+    };
+    pronunciationAudio.play().catch(() => {
+      if (!speakWithBrowser(word, token)) {
+        alert("이 브라우저에서 듣기를 재생하지 못했습니다.");
+      }
+    });
+  };
+
+  playNext();
 }
 
 function setActiveTab(tabName) {
@@ -602,6 +656,9 @@ async function init() {
     if (!tocResponse.ok) throw new Error(`toc.json HTTP ${tocResponse.status}`);
     state.words = await wordResponse.json();
     state.toc = await tocResponse.json();
+    if (els.volumeLevel) {
+      els.volumeLevel.value = String(getVolumeLevel());
+    }
     const usable = state.words.length;
     els.totalWords.textContent = String(usable);
     els.dataSummary.textContent = `출제 가능한 단어 ${usable}개를 사용할 수 있습니다.`;
@@ -631,6 +688,9 @@ els.hintToggleBtn.addEventListener("click", () => {
   els.hintToggleBtn.textContent = isHidden ? "힌트 숨기기" : "힌트: 영어 설명 보기";
 });
 els.pageRange.addEventListener("input", updateSelectedCount);
+els.volumeLevel?.addEventListener("change", () => {
+  localStorage.setItem(VOLUME_KEY, String(getVolumeLevel()));
+});
 els.clearHistoryBtn.addEventListener("click", () => {
   localStorage.removeItem(HISTORY_KEY);
   renderHistory();

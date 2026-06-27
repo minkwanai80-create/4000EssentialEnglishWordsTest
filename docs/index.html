@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>4000 Essential English Words 2 Test</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260628-2" />
   </head>
   <body>
     <main class="app-shell">
@@ -41,6 +41,16 @@
             <label>
               <span>문제 수</span>
               <input id="questionCount" type="number" min="1" step="1" placeholder="범위 내 전체" />
+            </label>
+            <label>
+              <span>듣기 볼륨</span>
+              <select id="volumeLevel">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+              </select>
             </label>
             <button id="startBtn" class="primary" type="button">시험 시작</button>
           </div>
@@ -132,6 +142,6 @@
       </section>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./app.js?v=20260628-2"></script>
   </body>
 </html>
