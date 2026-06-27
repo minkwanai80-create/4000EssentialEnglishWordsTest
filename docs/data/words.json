@@ -7,6 +7,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "because",
+    "partOfSpeech": "",
     "definition": "Because introduces a reason for something.",
     "example": "We need to st니dy because we have a test tomorrow.",
     "needsReview": false
@@ -19,6 +20,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "east",
+    "partOfSpeech": "n.",
     "definition": "East is the direction the sun rises from.",
     "example": "My window looks to the eastf so I can watch the sunrise every morning.",
     "needsReview": false
@@ -31,6 +33,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "expensive",
+    "partOfSpeech": "",
     "definition": "expensive sports car.",
     "example": "flOWGr [flauar] n A",
     "needsReview": true
@@ -43,6 +46,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "flower",
+    "partOfSpeech": "",
     "definition": "flower is the colored part of a plant.",
     "example": "She gave pink flowers to her grandmother",
     "needsReview": false
@@ -55,6 +59,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "garden",
+    "partOfSpeech": "n.",
     "definition": "garden is an area where people grow plants.",
     "example": "The garden is very bright and colorful in the spring.",
     "needsReview": false
@@ -67,6 +72,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "holiday",
+    "partOfSpeech": "",
     "definition": "holiday is a special day of celebration.",
     "example": "Monday was a holiday, so there was no school or work.",
     "needsReview": false
@@ -79,6 +85,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "many",
+    "partOfSpeech": "adj.",
     "definition": "Many shows that there is a large number of something.",
     "example": "There are many people on the street.",
     "needsReview": false
@@ -91,6 +98,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "million",
+    "partOfSpeech": "n.",
     "definition": "million is another way to write the number 1,000,000.",
     "example": "시most 19 million people live in Delhi, India.",
     "needsReview": false
@@ -103,6 +111,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "mountain",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -115,6 +124,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "place",
+    "partOfSpeech": "n.",
     "definition": "place is a space or area.",
     "example": "A library is a place where people can read books.",
     "needsReview": false
@@ -127,6 +137,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "popular",
+    "partOfSpeech": "adj.",
     "definition": "popular thing is liked by many people.",
     "example": "These people are listening to a popular man speak.",
     "needsReview": false
@@ -139,6 +150,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "ski",
+    "partOfSpeech": "",
     "definition": "ski and goes every weekend.",
     "example": "",
     "needsReview": true
@@ -151,6 +163,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "such",
+    "partOfSpeech": "adj.",
     "definition": "Such means \"like this\".",
     "example": "I have never seen such a beautiful sunset before.",
     "needsReview": false
@@ -163,6 +176,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "total",
+    "partOfSpeech": "n.",
     "definition": "Total shows that everyone or everything has been counted.",
     "example": "The total cost of the items she bought was $52.",
     "needsReview": false
@@ -175,6 +189,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "tower",
+    "partOfSpeech": "n.",
     "definition": "tower is a tall, narrow building.",
     "example": "This is a very famous tower in Italy.",
     "needsReview": false
@@ -187,6 +202,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "town",
+    "partOfSpeech": "n.",
     "definition": "town is a place where people live and work, and is smaller than a city.",
     "example": "I come from a small town, and everyone there knows each other.",
     "needsReview": false
@@ -199,6 +215,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "train",
+    "partOfSpeech": "n.",
     "definition": "train is a group of railway cars connected together.",
     "example": "The train is very fast, so we can get home in one hour.",
     "needsReview": false
@@ -211,6 +228,7 @@
     "pdfPage": 9,
     "section": "word-list",
     "word": "walk",
+    "partOfSpeech": "v.",
     "definition": "walk is to move forward using legs, but it is slower than running.",
     "example": "The children walk to school in the morning.",
     "needsReview": false
@@ -223,6 +241,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "watch",
+    "partOfSpeech": "",
     "definition": "watch a movie with me.",
     "example": "",
     "needsReview": true
@@ -235,6 +254,7 @@
     "pdfPage": 8,
     "section": "word-list",
     "word": "world",
+    "partOfSpeech": "",
     "definition": "place [pleis] n A place is a space or area.",
     "example": "A library is a place where people can read books.",
     "needsReview": true
@@ -247,6 +267,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "anxious",
+    "partOfSpeech": "adj.",
     "definition": "Anxious means feeling worried or nervous.",
     "example": "She was anxious about not making her appointment on time.",
     "needsReview": false
@@ -259,6 +280,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "awful",
+    "partOfSpeech": "adj.",
     "definition": "awful thing is very bad.",
     "example": "Her performance last night was awful.",
     "needsReview": false
@@ -271,6 +293,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "consist",
+    "partOfSpeech": "v.",
     "definition": "consist of certain is to be made of parts or things them.",
     "example": "Today's choices for lunch consisted of pizza, hamburgers, and hot dogs.",
     "needsReview": false
@@ -283,6 +306,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "desire",
+    "partOfSpeech": "",
     "definition": "desire is to want something.",
     "example": "My sister desires a big house and lots of money.",
     "needsReview": false
@@ -295,6 +319,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "eager",
+    "partOfSpeech": "adj.",
     "definition": "Eager shows excitement about something.",
     "example": "The man was eager to talk about the good news.",
     "needsReview": false
@@ -307,6 +332,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "household",
+    "partOfSpeech": "n.",
     "definition": "household is all the people who live in one house.",
     "example": "Our household is made up of my father, my mother, and me.",
     "needsReview": false
@@ -319,6 +345,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "intent",
+    "partOfSpeech": "n.",
     "definition": "intent is a plan to do something.",
     "example": "Her intent is to visit Italy next summer.",
     "needsReview": false
@@ -331,6 +358,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "landscape",
+    "partOfSpeech": "n.",
     "definition": "landscape is how an area of land looks.",
     "example": "The landscape of the country is very green.",
     "needsReview": false
@@ -343,6 +371,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "lift",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -355,6 +384,7 @@
     "pdfPage": 14,
     "section": "word-list",
     "word": "load",
+    "partOfSpeech": "",
     "definition": "load is to put objects into something.",
     "example": "The man loaded the boxes into a truck.",
     "needsReview": false
@@ -367,6 +397,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "lung",
+    "partOfSpeech": "n.",
     "definition": "lung is a part of the body that fills with air when breathing.",
     "example": "Having strong lungs is necessary for a healthy life.",
     "needsReview": false
@@ -379,6 +410,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "motion",
+    "partOfSpeech": "",
     "definition": "motion with his hand.",
     "example": "",
     "needsReview": true
@@ -391,6 +423,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "pace",
+    "partOfSpeech": "n.",
     "definition": "pace of something is the speed at which it happens.",
     "example": "I ran the race at a 이ower pace than my friend.",
     "needsReview": false
@@ -403,6 +436,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "polite",
+    "partOfSpeech": "adj.",
     "definition": "Polite shows a thoughtful and kind behavior.",
     "example": "The boy was very polite; he behaved very thoughtfully.",
     "needsReview": false
@@ -415,6 +449,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "possess",
+    "partOfSpeech": "",
     "definition": "possess something is to have it or own it.",
     "example": "My uncle possesses three sheep, a chicken, a cow, and a dog.",
     "needsReview": false
@@ -427,6 +462,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "rapidly",
+    "partOfSpeech": "",
     "definition": "rapidly on the tracks.",
     "example": "",
     "needsReview": true
@@ -439,6 +475,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "remark",
+    "partOfSpeech": "v.",
     "definition": "remark is to say something.",
     "example": "The teacher remarked on how quickly the students were learning,",
     "needsReview": false
@@ -451,6 +488,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "seek",
+    "partOfSpeech": "v.",
     "definition": "seek is to look for something.",
     "example": "If I have a problem, I seek my sister's advice.",
     "needsReview": false
@@ -463,6 +501,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "shine",
+    "partOfSpeech": "",
     "definition": "shine is to make a bright light.",
     "example": "The candles are shining in the dark room.",
     "needsReview": false
@@ -475,6 +514,7 @@
     "pdfPage": 15,
     "section": "word-list",
     "word": "spill",
+    "partOfSpeech": "v.",
     "definition": "spill is to accidentally make something fall out of its container.",
     "example": "I spilled the coffee on the table.",
     "needsReview": false
@@ -487,6 +527,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "arrow",
+    "partOfSpeech": "n.",
     "definition": "arrow is a thin, straight stick shot from a bow.",
     "example": "The arrow flew through the air and hit the target.",
     "needsReview": false
@@ -499,6 +540,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "battle",
+    "partOfSpeech": "",
     "definition": "battle is a fight between two armies during a war.",
     "example": "The battle lasted for many days.",
     "needsReview": false
@@ -511,6 +553,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "bow",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -523,6 +566,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "brave",
+    "partOfSpeech": "",
     "definition": "brave person is not afraid to face pain or danger.",
     "example": "The brave firefighter saved the girl from the burning building.",
     "needsReview": false
@@ -535,6 +579,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "chief",
+    "partOfSpeech": "",
     "definition": "chief is the leader of a group of people.",
     "example": "The chief led the people through the mountains.",
     "needsReview": false
@@ -547,6 +592,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "disadvantage",
+    "partOfSpeech": "",
     "definition": "disadvantage is a sit니ation that makes it hard to do something.",
     "example": "Mike had a disadvantage in the race since he hurt his knee.",
     "needsReview": false
@@ -559,6 +605,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "enemy",
+    "partOfSpeech": "",
     "definition": "enemy is a country that is fighting another country during a war.",
     "example": "The enemy prepared to attack the kingdom.",
     "needsReview": false
@@ -571,6 +618,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "entrance",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -583,6 +631,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "hardly",
+    "partOfSpeech": "",
     "definition": "Hardly shows that something happens in a very small way.",
     "example": "I hardly saw the concert since I had to leave early.",
     "needsReview": false
@@ -595,6 +644,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "intend",
+    "partOfSpeech": "v.",
     "definition": "intend to do something means to 이an to do it.",
     "example": "I intend to finish college in three years.",
     "needsReview": false
@@ -607,6 +657,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "laughter",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -619,6 +670,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "log",
+    "partOfSpeech": "n.",
     "definition": "log is a thick piece of wood that is cut from a tree.",
     "example": "The fire was too small, so we added another log to it.",
     "needsReview": false
@@ -631,6 +683,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "military",
+    "partOfSpeech": "n.",
     "definition": "military is the armed forces of a country.",
     "example": "I joined the military after I finished high school.",
     "needsReview": false
@@ -643,6 +696,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "obey",
+    "partOfSpeech": "v.",
     "definition": "obey means to follow what a law or a person says to do.",
     "example": "My little sister did not obey my mother Now.",
     "needsReview": false
@@ -655,6 +709,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "secure",
+    "partOfSpeech": "",
     "definition": "secure something means to get it after a lot of effort.",
     "example": "I was able to secure a good grade on my test after weeks of studying.",
     "needsReview": false
@@ -667,6 +722,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "steady",
+    "partOfSpeech": "adj.",
     "definition": "Steady shows that someone or something does not change much.",
     "example": "The problem was hard, but she remained steady and solved it.",
     "needsReview": false
@@ -679,6 +735,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "trust",
+    "partOfSpeech": "v.",
     "definition": "trust is to believe that someone is honest and will do what is right.",
     "example": "I trust my friends; they don't tell my secrets to other people.",
     "needsReview": false
@@ -691,6 +748,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "twist",
+    "partOfSpeech": "v.",
     "definition": "When we twist something we turn it around and around.",
     "example": "She twisted the spaghetti around her fork.",
     "needsReview": true
@@ -703,6 +761,7 @@
     "pdfPage": 21,
     "section": "word-list",
     "word": "unless",
+    "partOfSpeech": "",
     "definition": "Unless means if not or except when.",
     "example": "Unless you clean your room, you cannot play with your friends.",
     "needsReview": false
@@ -715,6 +774,7 @@
     "pdfPage": 20,
     "section": "word-list",
     "word": "weapon",
+    "partOfSpeech": "",
     "definition": "weapon is an object used to hurt people.",
     "example": "Swords have been used as weapons for thousands of years.",
     "needsReview": false
@@ -727,6 +787,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "chest",
+    "partOfSpeech": "n.",
     "definition": "chest is the front part of a body between the neck and stomach.",
     "example": "The water in the lake was as high as my chest.",
     "needsReview": false
@@ -739,6 +800,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "confidence",
+    "partOfSpeech": "",
     "definition": "confidence that I did well on the test.",
     "example": "COnS6C|UGnC6 [kdnsikwdns] n A",
     "needsReview": true
@@ -751,6 +813,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "consequence",
+    "partOfSpeech": "",
     "definition": "consequence is a result of a choice or action.",
     "example": "As a consequence of missing my bus, I had to find another way to work.",
     "needsReview": false
@@ -763,6 +826,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "disaster",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -775,6 +839,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "disturb",
+    "partOfSpeech": "v.",
     "definition": "disturb someone means to upset that person.",
     "example": "The Io니d noise disturbed me while I was working.",
     "needsReview": false
@@ -787,6 +852,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "estimate",
+    "partOfSpeech": "",
     "definition": "estimate something means to make a guess about it.",
     "example": "The boy estimated that he was one meter tall.",
     "needsReview": false
@@ -799,6 +865,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "honor",
+    "partOfSpeech": "v.",
     "definition": "honor is to show respect for someone or something.",
     "example": "Each year we honor those who died fighting for their country.",
     "needsReview": false
@@ -811,6 +878,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "impress",
+    "partOfSpeech": "v.",
     "definition": "impress someone means to make that person proud or amazed.",
     "example": "He was able to impress the girls with his new dance.",
     "needsReview": false
@@ -823,6 +891,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "narrow",
+    "partOfSpeech": "adj.",
     "definition": "narrow object or space is thin, not wide.",
     "example": "The bridge is too narrow for a car to drive across it.",
     "needsReview": false
@@ -835,6 +904,7 @@
     "pdfPage": 26,
     "section": "word-list",
     "word": "pale",
+    "partOfSpeech": "adj.",
     "definition": "Pale means that a color or thing is not bright.",
     "example": "The girl's skin was very pale.",
     "needsReview": false
@@ -847,6 +917,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "rough",
+    "partOfSpeech": "",
     "definition": "rough ground hurt my feet.",
     "example": "",
     "needsReview": true
@@ -859,6 +930,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "satisfy",
+    "partOfSpeech": "v.",
     "definition": "satisfy someone means to make that person happy.",
     "example": "It will satisfy my teacher if I finish all my homework.",
     "needsReview": false
@@ -871,6 +943,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "scream",
+    "partOfSpeech": "v.",
     "definition": "scream means to make a loud noise with your mouth.",
     "example": "The girl saw a spider and screamed.",
     "needsReview": false
@@ -883,6 +956,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "sensitive",
+    "partOfSpeech": "",
     "definition": "sensitive person or thing is easily hurt.",
     "example": "My teeth are sensitive to cold things.",
     "needsReview": false
@@ -895,6 +969,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "shade",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -907,6 +982,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "strength",
+    "partOfSpeech": "n.",
     "definition": "Strength is the ability to do hard work or exercise.",
     "example": "Eating good food builds up your strength.",
     "needsReview": false
@@ -919,6 +995,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "supplement",
+    "partOfSpeech": "v.",
     "definition": "supplement something is to add something else to it in a good way.",
     "example": "He supplements his diet with fresh fruits.",
     "needsReview": false
@@ -931,6 +1008,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "terror",
+    "partOfSpeech": "",
     "definition": "terror when the tiger chased me.",
     "example": "",
     "needsReview": true
@@ -943,6 +1021,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "threat",
+    "partOfSpeech": "n.",
     "definition": "threat is something bad that might happen.",
     "example": "Due to the dark clouds, there was a threat of a bad storm.",
     "needsReview": false
@@ -955,6 +1034,7 @@
     "pdfPage": 27,
     "section": "word-list",
     "word": "victim",
+    "partOfSpeech": "n.",
     "definition": "victim is a person who is hurt by a bad action.",
     "example": "I was a victim of a robbery.",
     "needsReview": false
@@ -967,6 +1047,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "ancestor",
+    "partOfSpeech": "n.",
     "definition": "ancestor is a family member from the past.",
     "example": "My ancestors came from Germany.",
     "needsReview": false
@@ -979,6 +1060,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "angle",
+    "partOfSpeech": "n.",
     "definition": "angle is the direction from which something is looked at.",
     "example": "The giraffe turned its head to see from another angle.",
     "needsReview": false
@@ -991,6 +1073,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "boot",
+    "partOfSpeech": "n.",
     "definition": "boot is a heavy shoe that goes up above a person's ankle.",
     "example": "He wore boots so that his feet wo니dn't get wet.",
     "needsReview": false
@@ -1003,6 +1086,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "border",
+    "partOfSpeech": "n.",
     "definition": "border is the edge of an area.",
     "example": "The postcard had a pretty green border of pine needles.",
     "needsReview": false
@@ -1015,6 +1099,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "congratulate",
+    "partOfSpeech": "",
     "definition": "congratulate someone is to tell them that you are happy for them.",
     "example": "Bill and Angela congratulated each other on a job well done.",
     "needsReview": false
@@ -1027,6 +1112,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "frame",
+    "partOfSpeech": "n.",
     "definition": "frame is a border for a picture or mirror.",
     "example": "I have to get a frame for my friend's picture.",
     "needsReview": false
@@ -1039,6 +1125,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "heaven",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -1051,6 +1138,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "incredible",
+    "partOfSpeech": "",
     "definition": "incredible thing is so amazing that it is hard to b이ieve.",
     "example": "I have an incredible story to tell you about my vacation.",
     "needsReview": false
@@ -1063,6 +1151,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "legend",
+    "partOfSpeech": "n.",
     "definition": "legend is a story from the past.",
     "example": "There is a well-known legend about a king and his queen.",
     "needsReview": false
@@ -1075,6 +1164,7 @@
     "pdfPage": 32,
     "section": "word-list",
     "word": "praise",
+    "partOfSpeech": "",
     "definition": "praise is to show that yo니 like someone or something.",
     "example": "The coach praised the athletes after a good practice.",
     "needsReview": false
@@ -1087,6 +1177,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "proceed",
+    "partOfSpeech": "",
     "definition": "proceed is to go somewhere or to continue doing something.",
     "example": "My son and I proceeded to the beach so we co니d go fishing.",
     "needsReview": false
@@ -1099,6 +1190,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "pure",
+    "partOfSpeech": "",
     "definition": "Study the word 'pure' from this unit.",
     "example": "",
     "needsReview": true
@@ -1111,6 +1203,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "relative",
+    "partOfSpeech": "n.",
     "definition": "relative is a family member My relatives came by to see the new baby.",
     "example": "relative [r*tiv] n.",
     "needsReview": false
@@ -1123,6 +1216,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "senior",
+    "partOfSpeech": "",
     "definition": "senior person is older or more experienced.",
     "example": "Because he got his job first, Bob is the senior chef.",
     "needsReview": false
@@ -1135,6 +1229,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "silent",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -1147,6 +1242,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "sink",
+    "partOfSpeech": "v.",
     "definition": "sink into something is to 이owly fall into it.",
     "example": "To sink into something is to 이owly fall into it.",
     "needsReview": false
@@ -1159,6 +1255,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "superior",
+    "partOfSpeech": "",
     "definition": "superior to cooking indoors.",
     "example": "",
     "needsReview": true
@@ -1171,6 +1268,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "surround",
+    "partOfSpeech": "",
     "definition": "surround something is to close in on it from all sides.",
     "example": "We surrounded the suspect on all four sides.",
     "needsReview": false
@@ -1183,6 +1281,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "thick",
+    "partOfSpeech": "",
     "definition": "thick thing is wide and solid.",
     "example": "The fog was so thick that I co니dn't see through it.",
     "needsReview": false
@@ -1195,6 +1294,7 @@
     "pdfPage": 33,
     "section": "word-list",
     "word": "wrap",
+    "partOfSpeech": "",
     "definition": "wrap is to cover something on all sides.",
     "example": "I wrapped his gift and put a bow on it.",
     "needsReview": false
@@ -1207,6 +1307,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "also",
+    "partOfSpeech": "adv.",
     "definition": "Also means in addition to or too.",
     "example": "I like blue, and I also like yellow.",
     "needsReview": false
@@ -1219,6 +1320,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "automatically",
+    "partOfSpeech": "",
     "definition": "automatically smiled when he thought about his friend.",
     "example": "busy ｛비기 adj A busy person has a lot of things to do.",
     "needsReview": true
@@ -1231,6 +1333,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "busy",
+    "partOfSpeech": "",
     "definition": "busy at the office today.",
     "example": "Can shows that a person or thing has the ability to do an action.",
     "needsReview": true
@@ -1243,6 +1346,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "can",
+    "partOfSpeech": "",
     "definition": "can make her cry.",
     "example": "",
     "needsReview": true
@@ -1255,6 +1359,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "clear",
+    "partOfSpeech": "",
     "definition": "clear is to remove everything from a place.",
     "example": "I need to clear my desk because it is too messy.",
     "needsReview": false
@@ -1267,6 +1372,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "close",
+    "partOfSpeech": "",
     "definition": "close the door tightly.",
     "example": "dlSCUSS [diskAs] v To",
     "needsReview": true
@@ -1279,6 +1385,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "discuss",
+    "partOfSpeech": "",
     "definition": "discuss is to talk about something with another person.",
     "example": "James began to discuss his report with his teacher.",
     "needsReview": false
@@ -1291,6 +1398,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "feel",
+    "partOfSpeech": "v.",
     "definition": "feel is to experience an emotion or feeling.",
     "example": "The girl must feel happy because it is her birthday today.",
     "needsReview": false
@@ -1303,6 +1411,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "listen",
+    "partOfSpeech": "",
     "definition": "listen carefully to her friend.",
     "example": "",
     "needsReview": true
@@ -1315,6 +1424,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "meet",
+    "partOfSpeech": "",
     "definition": "meet is to come together so that you can talk or do something together.",
     "example": "Ken's mother wanted to meet his teacher today.",
     "needsReview": false
@@ -1327,6 +1437,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "music",
+    "partOfSpeech": "n.",
     "definition": "Music is the sound made by singing or playing musical instruments.",
     "example": "The boy makes music by playing a guitar.",
     "needsReview": false
@@ -1339,6 +1450,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "normal",
+    "partOfSpeech": "adj.",
     "definition": "normal thing is usual and not strange.",
     "example": "It is normal to wear school uniforms in private schools.",
     "needsReview": false
@@ -1351,6 +1463,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "quiet",
+    "partOfSpeech": "",
     "definition": "□ relax [rilafeks] v.",
     "example": "1b relax is to rest or do something enjoyable.",
     "needsReview": true
@@ -1363,6 +1476,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "relax",
+    "partOfSpeech": "",
     "definition": "relax by reading books.",
     "example": "",
     "needsReview": true
@@ -1375,6 +1489,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "sleep",
+    "partOfSpeech": "",
     "definition": "sleep is to rest your mind and body, usually at night in bed.",
     "example": "The child goes to sleep in her bedroom at night.",
     "needsReview": false
@@ -1387,6 +1502,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "stress",
+    "partOfSpeech": "n.",
     "definition": "Stress is a strong feeling of worry caused by problems in life, work, etc.",
     "example": "Dan has a lot of stress at",
     "needsReview": false
@@ -1399,6 +1515,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "study",
+    "partOfSpeech": "",
     "definition": "study for a big test.",
     "example": "To talk is to say words to express your thoughts, opinions, etc.",
     "needsReview": true
@@ -1411,6 +1528,7 @@
     "pdfPage": 38,
     "section": "word-list",
     "word": "talk",
+    "partOfSpeech": "",
     "definition": "talk to each other.",
     "example": "",
     "needsReview": true
@@ -1423,6 +1541,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "work",
+    "partOfSpeech": "adj.",
     "definition": "work is to do a job that you get paid for.",
     "example": "They need to work together to finish an important project.",
     "needsReview": false
@@ -1435,6 +1554,7 @@
     "pdfPage": 39,
     "section": "word-list",
     "word": "write",
+    "partOfSpeech": "v.",
     "definition": "write is to use a pen or keyboard to make letters and numbers on paper or a screen.",
     "example": "I need to write a story for my homework.",
     "needsReview": false
@@ -1447,6 +1567,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "basis",
+    "partOfSpeech": "n.",
     "definition": "basis of something is the main part of amount of it My grandfather gets his hearing checked on a yearly basis",
     "example": "The basis of something is the main part of amount of it My grandfather gets his hearing checked on a yearly basis",
     "needsReview": false
@@ -1459,6 +1580,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "biology",
+    "partOfSpeech": "n.",
     "definition": "Biology is the study of living things.",
     "example": "We learned about the human heart in biology class.",
     "needsReview": false
@@ -1471,6 +1593,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "cage",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -1483,6 +1606,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "colleague",
+    "partOfSpeech": "n.",
     "definition": "colleague is somebody you work with.",
     "example": "My colleague helped me finish the job.",
     "needsReview": false
@@ -1495,6 +1619,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "colony",
+    "partOfSpeech": "",
     "definition": "colony of Great Britain.",
     "example": "",
     "needsReview": true
@@ -1507,6 +1632,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "debate",
+    "partOfSpeech": "",
     "definition": "debate is to seriously discuss something w(th someone.",
     "example": "The husband and wife debated which TV to buy.",
     "needsReview": false
@@ -1519,6 +1645,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "depart",
+    "partOfSpeech": "",
     "definition": "depart is to leave some place so you can go to another place.",
     "example": "The plane departed for Italy at 3:00 this afternoon.",
     "needsReview": false
@@ -1531,6 +1658,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "depress",
+    "partOfSpeech": "",
     "definition": "depress someone is to make that person sad.",
     "example": "The bad news from work depressed the man.",
     "needsReview": false
@@ -1543,6 +1671,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "factual",
+    "partOfSpeech": "v.",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -1555,6 +1684,7 @@
     "pdfPage": 44,
     "section": "word-list",
     "word": "fascinate",
+    "partOfSpeech": "",
     "definition": "fascinate someone is to make that person very interested- The kitten was fascinated by the ball of yarn.",
     "example": "",
     "needsReview": false
@@ -1567,6 +1697,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "mission",
+    "partOfSpeech": "",
     "definition": "mission is an important job that is sometim은s far away.",
     "example": "The woman's mission was to help sick people.",
     "needsReview": false
@@ -1579,6 +1710,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "nevertheless",
+    "partOfSpeech": "adv.",
     "definition": "Nevertheless shows a difference to what is expected or known.",
     "example": "Nevertheless, he wasn't friendly this afternoon.",
     "needsReview": false
@@ -1591,6 +1723,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "occupation",
+    "partOfSpeech": "",
     "definition": "occupation is a dentist 0V6rS6aS [duvarsi :z] ac/v.",
     "example": "Overseas shows an action happens in another country, across an ocean John often goes",
     "needsReview": true
@@ -1603,6 +1736,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "overseas",
+    "partOfSpeech": "",
     "definition": "overseas for vacations.",
     "example": "p6rSU2ld6 [pa:rsw히d] v.",
     "needsReview": true
@@ -1615,6 +1749,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "persuade",
+    "partOfSpeech": "",
     "definition": "persuade someone is to make that person agree to do something The children persuaded their parents to buy them gifts.",
     "example": "rOI』t6 [ru:t] n A",
     "needsReview": false
@@ -1627,6 +1762,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "route",
+    "partOfSpeech": "",
     "definition": "route is the way you go fmm one place to another I saw many new houses along the route to the city.",
     "example": "ruins 四 inz] n Ruins are old buildings that are not 니sed anymore.",
     "needsReview": false
@@ -1639,6 +1775,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "ruins",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -1651,6 +1788,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "scholar",
+    "partOfSpeech": "n.",
     "definition": "scholar is a person who studies something and knows a lot about it The scholar knew much about art history.",
     "example": "scholar [skdle r] n.",
     "needsReview": false
@@ -1663,6 +1801,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "significant",
+    "partOfSpeech": "",
     "definition": "significant person or thing is important.",
     "example": "I read many significant novels as a literature major in university.",
     "needsReview": false
@@ -1675,6 +1814,7 @@
     "pdfPage": 45,
     "section": "word-list",
     "word": "volcano",
+    "partOfSpeech": "",
     "definition": "volcano is a mountain with a h이e on top where hot liquid comes out When the volcano erupted, srm)ke and heat filled the air.",
     "example": "",
     "needsReview": false
@@ -1687,6 +1827,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "broad",
+    "partOfSpeech": "adj.",
     "definition": "Broad means that something is wide, not narrow.",
     "example": "The river is very long and broad.",
     "needsReview": false
@@ -1699,6 +1840,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "bush",
+    "partOfSpeech": "n.",
     "definition": "bush is a woody plant that is smaller than a tree.",
     "example": "My dad and I planted some small bushes around the house.",
     "needsReview": false
@@ -1711,6 +1853,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "capable",
+    "partOfSpeech": "",
     "definition": "The Olympic athlete is capable of lifting a lot of weight.",
     "example": "capable [keipabl] ad) A capable person or thing can do an action.",
     "needsReview": false
@@ -1723,6 +1866,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "cheat",
+    "partOfSpeech": "v.",
     "definition": "cheat is to be dishonest in order to win or do well.",
     "example": "They cheated on the test by sharing answers.",
     "needsReview": false
@@ -1735,6 +1879,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "concentrate",
+    "partOfSpeech": "",
     "definition": "concentrate is to give one's full attention to something.",
     "example": "I could not concentrate on my homework because the room was so Io니d.",
     "needsReview": false
@@ -1747,6 +1892,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "conclude",
+    "partOfSpeech": "v.",
     "definition": "conclude is to arrive at a logical end by looking at evidence.",
     "example": "I saw crumbs on my dog's face, so I concluded that he ate my cookie.",
     "needsReview": false
@@ -1759,6 +1905,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "confident",
+    "partOfSpeech": "",
     "definition": "confident she could climb the mountain due to her training.",
     "example": "",
     "needsReview": true
@@ -1771,6 +1918,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "considerable",
+    "partOfSpeech": "adj.",
     "definition": "Considerable means large in size, amount, or extent.",
     "example": "They paid a considerable amount of money for that car.",
     "needsReview": false
@@ -1783,6 +1931,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "convey",
+    "partOfSpeech": "",
     "definition": "convey is to communicate or make ideas known.",
     "example": "That picture of a crying child conveys a feeling of sadness.",
     "needsReview": false
@@ -1795,6 +1944,7 @@
     "pdfPage": 50,
     "section": "word-list",
     "word": "definite",
+    "partOfSpeech": "",
     "definition": "definite thing is certain or sure to be true.",
     "example": "There is a definite connection between hard work and success.",
     "needsReview": false
@@ -1807,6 +1957,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "delight",
+    "partOfSpeech": "n.",
     "definition": "Delight is a feeling of being very happy with something.",
     "example": "He felt such delight after getting a promotion at work.",
     "needsReview": false
@@ -1819,6 +1970,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "destination",
+    "partOfSpeech": "",
     "definition": "destination is the place where someone or something is going.",
     "example": "The destination of this plane is Munich, Germany.",
     "needsReview": false
@@ -1831,6 +1983,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "edge",
+    "partOfSpeech": "n.",
     "definition": "edge is the furthest part or side of something.",
     "example": "He ran to the edge of the cliff.",
     "needsReview": false
@@ -1843,6 +1996,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "instructions",
+    "partOfSpeech": "",
     "definition": "instructions and you will be OK.",
     "example": "",
     "needsReview": true
@@ -1855,6 +2009,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "path",
+    "partOfSpeech": "n.",
     "definition": "path is a way from one place to another that people can walk along.",
     "example": "We followed a path through the woods.",
     "needsReview": false
@@ -1867,6 +2022,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "resort",
+    "partOfSpeech": "",
     "definition": "resort to something is to depend on it in order to solve a problem.",
     "example": "I hope they don't resort to violence to end the argument.",
     "needsReview": false
@@ -1879,6 +2035,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "shadow",
+    "partOfSpeech": "n.",
     "definition": "shadow is the dark area that is made when something blocks light.",
     "example": "The man's shadow was taller than he was.",
     "needsReview": false
@@ -1891,6 +2048,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "succeed",
+    "partOfSpeech": "",
     "definition": "succeed is to complete something as planned.",
     "example": "He will continue to work on the robot until he succeeds.",
     "needsReview": false
@@ -1903,6 +2061,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "suspect",
+    "partOfSpeech": "",
     "definition": "suspect something is to believe that it might be true.",
     "example": "I suspect that those kids stole the money.",
     "needsReview": false
@@ -1915,6 +2074,7 @@
     "pdfPage": 51,
     "section": "word-list",
     "word": "valley",
+    "partOfSpeech": "v.",
     "definition": "valley is a low area of land between two mountains or hills.",
     "example": "We looked at the valley below from the top of the mountain.",
     "needsReview": false
@@ -1927,6 +2087,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "against",
+    "partOfSpeech": "",
     "definition": "against something is to be touching it or opposed to it.",
     "example": "They both leaned against the wall.",
     "needsReview": false
@@ -1939,6 +2100,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "beach",
+    "partOfSpeech": "n.",
     "definition": "beach is a sandy or rocky place by the ocean.",
     "example": "The little girl built a sandcastle on the beach.",
     "needsReview": false
@@ -1951,6 +2113,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "damage",
+    "partOfSpeech": "",
     "definition": "damage something is to break it.",
     "example": "The car was damaged in the accident.",
     "needsReview": false
@@ -1963,6 +2126,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "discover",
+    "partOfSpeech": "",
     "definition": "discover something is to find it for the first time.",
     "example": "I discovered some new information in this book.",
     "needsReview": false
@@ -1975,6 +2139,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "emotion",
+    "partOfSpeech": "",
     "definition": "emotion that we all feel.",
     "example": "fiX [fiks] k To fix something is to make it work.",
     "needsReview": true
@@ -1987,6 +2152,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "fix",
+    "partOfSpeech": "",
     "definition": "fix broken things.",
     "example": "identify [aid^msfaij u lb identify something is to find out what it is.",
     "needsReview": true
@@ -1999,6 +2165,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "identify",
+    "partOfSpeech": "",
     "definition": "identify his name.",
     "example": "",
     "needsReview": true
@@ -2011,6 +2178,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "island",
+    "partOfSpeech": "n.",
     "definition": "island is land in the middle of water.",
     "example": "Japan is a group of islands.",
     "needsReview": false
@@ -2023,6 +2191,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "ocean",
+    "partOfSpeech": "n.",
     "definition": "ocean is all of the salt water that surrounds land.",
     "example": "The ocean can make powerful waves.",
     "needsReview": false
@@ -2035,6 +2204,7 @@
     "pdfPage": 56,
     "section": "word-list",
     "word": "perhaps",
+    "partOfSpeech": "adv.",
     "definition": "Perhaps is used when you say that something could happen.",
     "example": "Perhaps I will eat an apple for lunch.",
     "needsReview": false
@@ -2047,6 +2217,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "pleasant",
+    "partOfSpeech": "",
     "definition": "pleasant [pieznt] adj.",
     "example": "If something is pleasant, you enjoy it.",
     "needsReview": true
@@ -2059,6 +2230,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "prevent",
+    "partOfSpeech": "v.",
     "definition": "prevent something is to stop it from happening.",
     "example": "The handcuffs prevented me from moving my hands.",
     "needsReview": false
@@ -2071,6 +2243,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "rock",
+    "partOfSpeech": "n.",
     "definition": "rock is a hard thing in the dirt.",
     "example": "I stacked rocks on top of one another.",
     "needsReview": false
@@ -2083,6 +2256,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "save",
+    "partOfSpeech": "",
     "definition": "save something is to keep it from being hurt.",
     "example": "I want to help save the world.",
     "needsReview": false
@@ -2095,6 +2269,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "smile",
+    "partOfSpeech": "",
     "definition": "smile is to show happiness with your mouth.",
     "example": "The baby smiled at me.",
     "needsReview": false
@@ -2107,6 +2282,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "step",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -2119,6 +2295,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "still",
+    "partOfSpeech": "adv.",
     "definition": "Still is used when you say that a situation keeps going on.",
     "example": "They are still waiting in line to get tickets.",
     "needsReview": false
@@ -2131,6 +2308,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "taste",
+    "partOfSpeech": "",
     "definition": "taste of the fruit was sweet.",
     "example": "",
     "needsReview": true
@@ -2143,6 +2321,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "throw",
+    "partOfSpeech": "v.",
     "definition": "throw something is to use your hand to make it go through the air.",
     "example": "The pitcher can throw the baseball very fast.",
     "needsReview": false
@@ -2155,6 +2334,7 @@
     "pdfPage": 57,
     "section": "word-list",
     "word": "wave",
+    "partOfSpeech": "n.",
     "definition": "wave is a line of water that moves higher than the rest of the water.",
     "example": "The water was filled with large blue waves.",
     "needsReview": false
@@ -2167,6 +2347,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "citizen",
+    "partOfSpeech": "",
     "definition": "COUnCll [kaunsal] n A",
     "example": "",
     "needsReview": true
@@ -2179,6 +2360,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "council",
+    "partOfSpeech": "",
     "definition": "council is a group of people who run a city or town.",
     "example": "The council met to discuss the new laws for the city.",
     "needsReview": false
@@ -2191,6 +2373,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "declare",
+    "partOfSpeech": "",
     "definition": "declare is to say something officially, I declared my love for him.",
     "example": "declare [dikiesr] To declare is to say something officially, I declared my love for him.",
     "needsReview": false
@@ -2203,6 +2386,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "enormous",
+    "partOfSpeech": "",
     "definition": "Enormous people or things are very large.",
     "example": "My dog looks enormous next to yours.",
     "needsReview": false
@@ -2215,6 +2399,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "extraordinary",
+    "partOfSpeech": "",
     "definition": "fOg [fo:g] Fog is a thick cloud that is near the ground or water.",
     "example": "I did not want to drive in the thick",
     "needsReview": true
@@ -2227,6 +2412,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "fog",
+    "partOfSpeech": "",
     "definition": "flirWral [^u:neral] A",
     "example": "",
     "needsReview": true
@@ -2239,6 +2425,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "funeral",
+    "partOfSpeech": "",
     "definition": "funeral is a ceremony that takes place after a person dies.",
     "example": "They had a funeral for the soldier who died during the war.",
     "needsReview": false
@@ -2251,6 +2438,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "giant",
+    "partOfSpeech": "",
     "definition": "giant truck got in my way.",
     "example": "",
     "needsReview": true
@@ -2263,6 +2451,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "impression",
+    "partOfSpeech": "",
     "definition": "Impression is the way of thinking about someone or something.",
     "example": "Most people's first impression of Dr.",
     "needsReview": false
@@ -2275,6 +2464,7 @@
     "pdfPage": 62,
     "section": "word-list",
     "word": "intention",
+    "partOfSpeech": "",
     "definition": "intention is what a person plans to do.",
     "example": "Do you have good intentions?",
     "needsReview": false
@@ -2287,6 +2477,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "mad",
+    "partOfSpeech": "adj.",
     "definition": "mad person or animal is angry.",
     "example": "Mother got mad when I didn't listen to her.",
     "needsReview": false
@@ -2299,6 +2490,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "ought",
+    "partOfSpeech": "",
     "definition": "ought to do an action, it is the right thing to do.",
     "example": "I ought to take my library books back.",
     "needsReview": false
@@ -2311,6 +2503,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "resist",
+    "partOfSpeech": "",
     "definition": "resist something is to fight against it.",
     "example": "He resisted the treatment at the hospital.",
     "needsReview": false
@@ -2323,6 +2516,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "reveal",
+    "partOfSpeech": "v.",
     "definition": "reveal is to show something.",
     "example": "I will reveal where I hid the candy bar.",
     "needsReview": false
@@ -2335,6 +2529,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "rid",
+    "partOfSpeech": "v.",
     "definition": "rid is to make a place free from something or someone.",
     "example": "We rid o니r home of mice by using traps.",
     "needsReview": false
@@ -2347,6 +2542,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "sword",
+    "partOfSpeech": "n.",
     "definition": "sword is a long sharp weapon.",
     "example": "They used to use swords in battles in ancient times.",
     "needsReview": false
@@ -2359,6 +2555,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "tale",
+    "partOfSpeech": "n.",
     "definition": "tale is a story.",
     "example": "She told her two friends about the wild tale of her day.",
     "needsReview": true
@@ -2371,6 +2568,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "trap",
+    "partOfSpeech": "",
     "definition": "trap people or animals is to capture them so they cannot get away.",
     "example": "We trapped butterflies in a net.",
     "needsReview": false
@@ -2383,6 +2581,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "trial",
+    "partOfSpeech": "n.",
     "definition": "trial is the way a court discovers if a person is guilty or innocent.",
     "example": "He went on trial for robbing the bank.",
     "needsReview": false
@@ -2395,6 +2594,7 @@
     "pdfPage": 63,
     "section": "word-list",
     "word": "violent",
+    "partOfSpeech": "",
     "definition": "Violent [vaielent] ad/ A violent person or animal uses force to hurt others.",
     "example": "The man was put into jail because he was violent",
     "needsReview": true
@@ -2407,6 +2607,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "admission",
+    "partOfSpeech": "n.",
     "definition": "Admission is the act of allowing to enter a place.",
     "example": "The admission ticket to the movie was $5.",
     "needsReview": false
@@ -2419,6 +2620,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "astronomy",
+    "partOfSpeech": "n.",
     "definition": "Astronomy is the study of the stars and planets.",
     "example": "Harold loved looking at the stars, so he decided to study astronomy.",
     "needsReview": false
@@ -2431,6 +2633,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "blame",
+    "partOfSpeech": "v.",
     "definition": "blame someone for something bad is to say they did it.",
     "example": "My mom blamed me for something I didn't do.",
     "needsReview": false
@@ -2443,6 +2646,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "chemistry",
+    "partOfSpeech": "n.",
     "definition": "Chemistry is the study of substances and reactions between them.",
     "example": "In chemistry class, the professor taught us about chemical reactions.",
     "needsReview": false
@@ -2455,6 +2659,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "despite",
+    "partOfSpeech": "",
     "definition": "Despite shows a difference from what is expected.",
     "example": "We still played the game despite the cold weather.",
     "needsReview": false
@@ -2467,6 +2672,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "dinosaur",
+    "partOfSpeech": "n.",
     "definition": "dinosaur is a very big animal that lived millions of years ago.",
     "example": "I like to see the dinosaur bones at the museum.",
     "needsReview": false
@@ -2479,6 +2685,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "exhibit",
+    "partOfSpeech": "",
     "definition": "exhibit is to show something so that people can go look at it.",
     "example": "My painting will be exhibited at the fair.",
     "needsReview": false
@@ -2491,6 +2698,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "fame",
+    "partOfSpeech": "",
     "definition": "fame and fortune, but he was not happy.",
     "example": "fOfGCaSt [f5:rka>st] A",
     "needsReview": true
@@ -2503,6 +2711,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "forecast",
+    "partOfSpeech": "",
     "definition": "forecast is an idea about what the weather will be like in the future.",
     "example": "The forecast says that it will rain all week.",
     "needsReview": false
@@ -2515,6 +2724,7 @@
     "pdfPage": 68,
     "section": "word-list",
     "word": "genius",
+    "partOfSpeech": "",
     "definition": "genius is a very smart person.",
     "example": "Since she was a genius, she easily passed all of her school exams.",
     "needsReview": false
@@ -2527,6 +2737,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "gentle",
+    "partOfSpeech": "",
     "definition": "gentle with the baby.",
     "example": "",
     "needsReview": true
@@ -2539,6 +2750,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "geography",
+    "partOfSpeech": "n.",
     "definition": "Geography is the study of the Earth, its land, weather, etc.",
     "example": "I had to draw a map for geography class.",
     "needsReview": false
@@ -2551,6 +2763,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "interfere",
+    "partOfSpeech": "",
     "definition": "interfere is to cause problems and keep something from happening.",
     "example": "My little sister always interferes when I'm trying to study.",
     "needsReview": false
@@ -2563,6 +2776,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "lightly",
+    "partOfSpeech": "adv.",
     "definition": "lightly is to not push very hard.",
     "example": "Draw lightly so you do not tear your paper.",
     "needsReview": false
@@ -2575,6 +2789,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "principal",
+    "partOfSpeech": "",
     "definition": "principal is a person in charge of a school.",
     "example": "My school's principal can be very strict with the rules.",
     "needsReview": false
@@ -2587,6 +2802,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "row",
+    "partOfSpeech": "n.",
     "definition": "row is a line of things.",
     "example": "James put all of his toy soldiers into neat rows.",
     "needsReview": false
@@ -2599,6 +2815,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "shelf",
+    "partOfSpeech": "n.",
     "definition": "shelf is a place on a wall where you put things.",
     "example": "I keep my clothes on a shelf in my closet.",
     "needsReview": false
@@ -2611,6 +2828,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "spite",
+    "partOfSpeech": "",
     "definition": "SUP6r [sii:par] adj Super means really good.",
     "example": "My dad said I did a",
     "needsReview": true
@@ -2623,6 +2841,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "super",
+    "partOfSpeech": "",
     "definition": "super job cleaning the house.",
     "example": "",
     "needsReview": true
@@ -2635,6 +2854,7 @@
     "pdfPage": 69,
     "section": "word-list",
     "word": "wet",
+    "partOfSpeech": "",
     "definition": "wet] adj A wet thing has water on it.",
     "example": "Since my dog was wet, he tried to shake all the water off his body.",
     "needsReview": true
@@ -2647,6 +2867,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "abuse",
+    "partOfSpeech": "v.",
     "definition": "abuse means to hurt someone or something on purpose.",
     "example": "The mean man abused his dog when it barked too loudly.",
     "needsReview": false
@@ -2659,6 +2880,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "afford",
+    "partOfSpeech": "",
     "definition": "afford something means to have enough money to pay for it.",
     "example": "I've been saving my money so I can afford to buy a new bike.",
     "needsReview": false
@@ -2671,6 +2893,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "bake",
+    "partOfSpeech": "v.",
     "definition": "bake means to cook food in an oven.",
     "example": "She bakes delicious cakes.",
     "needsReview": false
@@ -2683,6 +2906,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "bean",
+    "partOfSpeech": "n.",
     "definition": "bean is a plant seed that is good to eat There are many different kinds of beans to eat.",
     "example": "A bean is a plant seed that is good to eat There are many different kinds of beans to eat.",
     "needsReview": false
@@ -2695,6 +2919,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "candle",
+    "partOfSpeech": "n.",
     "definition": "candle is a stick of wax that is lit on fire for light or heat.",
     "example": "When the lights went out, we lit some candles.",
     "needsReview": false
@@ -2707,6 +2932,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "convert",
+    "partOfSpeech": "v.",
     "definition": "convert something means to change it into something else.",
     "example": "The man converted his messy field into a garden of flowers.",
     "needsReview": false
@@ -2719,6 +2945,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "debt",
+    "partOfSpeech": "n.",
     "definition": "debt is an amount of money that a person owes.",
     "example": "I owe a debt to the gas company.",
     "needsReview": false
@@ -2731,6 +2958,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "decrease",
+    "partOfSpeech": "",
     "definition": "decrease something is to make it less than it was before.",
     "example": "Hiring more police officers has decreased crime in the city.",
     "needsReview": false
@@ -2743,6 +2971,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "fault",
+    "partOfSpeech": "n.",
     "definition": "fault is responsibility for a mistake.",
     "example": "It is my fault that the cat ran away.",
     "needsReview": false
@@ -2755,6 +2984,7 @@
     "pdfPage": 74,
     "section": "word-list",
     "word": "fund",
+    "partOfSpeech": "n.",
     "definition": "fund is an amount of money that people have.",
     "example": "We all put money into our club's fund.",
     "needsReview": false
@@ -2767,6 +2997,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "generous",
+    "partOfSpeech": "",
     "definition": "generous [dseneras] adj.",
     "example": "A generous person likes to give things to people.",
     "needsReview": true
@@ -2779,6 +3010,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "ingredient",
+    "partOfSpeech": "",
     "definition": "ingredient is something that is part of a food dish.",
     "example": "The main ingredients in cake are eggs, sugar, and flour.",
     "needsReview": false
@@ -2791,6 +3023,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "insist",
+    "partOfSpeech": "v.",
     "definition": "insist means to be firm in telling people what to do.",
     "example": "I insist that you try some of these cookies.",
     "needsReview": false
@@ -2803,6 +3036,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "mess",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -2815,6 +3049,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "metal",
+    "partOfSpeech": "n.",
     "definition": "Metal is a strong material people use to build things.",
     "example": "Steel is a common metal that is used to build buildings.",
     "needsReview": false
@@ -2827,6 +3062,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "monitor",
+    "partOfSpeech": "v.",
     "definition": "monitor people or things is to watch them closely.",
     "example": "The teacher monitors the students when they take tests.",
     "needsReview": false
@@ -2839,6 +3075,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "oppose",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -2851,6 +3088,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "passive",
+    "partOfSpeech": "",
     "definition": "Marcie is so passive that she never solves her own problems.",
     "example": "passive [paesiv] aoy.",
     "needsReview": false
@@ -2863,6 +3101,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "quantity",
+    "partOfSpeech": "n.",
     "definition": "quantity is a certain amount of something.",
     "example": "I have a small quantity of milk in my glass.",
     "needsReview": false
@@ -2875,6 +3114,7 @@
     "pdfPage": 75,
     "section": "word-list",
     "word": "sue",
+    "partOfSpeech": "v.",
     "definition": "sue is to take someone to court for some harmful action.",
     "example": "I sued the company after I slipped on a banana peel in their hallway.",
     "needsReview": false
@@ -2887,6 +3127,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "adequate",
+    "partOfSpeech": "",
     "definition": "adequate for my needs.",
     "example": "anxisty [aen=eti] n.",
     "needsReview": true
@@ -2899,6 +3140,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "anxiety",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -2911,6 +3153,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "army",
+    "partOfSpeech": "n.",
     "definition": "army is a large group of people who fight in wars.",
     "example": "The army protects all the people in the country,",
     "needsReview": false
@@ -2923,6 +3166,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "billion",
+    "partOfSpeech": "n.",
     "definition": "billion is a very large number: 1,000,000,000.",
     "example": "There are billions of stars in outer space.",
     "needsReview": false
@@ -2935,6 +3179,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "carve",
+    "partOfSpeech": "v.",
     "definition": "carve means to cut into something.",
     "example": "My father usually carves the turkey for Thanksgiving.",
     "needsReview": false
@@ -2947,6 +3192,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "consult",
+    "partOfSpeech": "",
     "definition": "consult means to ask someone for help.",
     "example": "I will consult my accountant to find a way to pay my bills.",
     "needsReview": false
@@ -2959,6 +3205,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "emergency",
+    "partOfSpeech": "",
     "definition": "emergency is a time when someone needs help right away.",
     "example": "This is an emergency!",
     "needsReview": false
@@ -2971,6 +3218,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "fortune",
+    "partOfSpeech": "",
     "definition": "fortune when I play cards.",
     "example": "",
     "needsReview": true
@@ -2983,6 +3231,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "guarantee",
+    "partOfSpeech": "",
     "definition": "guarantee [g 苗 rentn v.",
     "example": "I will guarantee that the loan will be repaid.",
     "needsReview": true
@@ -2995,6 +3244,7 @@
     "pdfPage": 80,
     "section": "word-list",
     "word": "initial",
+    "partOfSpeech": "adj.",
     "definition": "Initial shows that something is first.",
     "example": "The initial step when writing a paper is to find a good topic.",
     "needsReview": false
@@ -3007,6 +3257,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "intense",
+    "partOfSpeech": "adj.",
     "definition": "intense thing is very strong.",
     "example": "The skunk made an intense odor that filled the air.",
     "needsReview": false
@@ -3019,6 +3270,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "lend",
+    "partOfSpeech": "v.",
     "definition": "lend something is to give it to someone for a short time.",
     "example": "My sister lost her pen, so I will lend her mine.",
     "needsReview": false
@@ -3031,6 +3283,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "peak",
+    "partOfSpeech": "n.",
     "definition": "peak is the very top of a mountain.",
     "example": "There is snow on the peaks of those mountains.",
     "needsReview": false
@@ -3043,6 +3296,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "potential",
+    "partOfSpeech": "adj.",
     "definition": "Potential means capable of being but not yet actual or real.",
     "example": "I've thought of some potential problems with yo니r idea.",
     "needsReview": false
@@ -3055,6 +3309,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "pride",
+    "partOfSpeech": "",
     "definition": "pride in getting good grades.",
     "example": "",
     "needsReview": true
@@ -3067,6 +3322,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "proof",
+    "partOfSpeech": "n.",
     "definition": "Proof is a fact that shows something is reaL They used his fingerprint for proof that he committed the crime.",
     "example": "",
     "needsReview": false
@@ -3079,6 +3335,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "quit",
+    "partOfSpeech": "",
     "definition": "quit something means to stop doing it I quit running because I got tired.",
     "example": "quit [kwit] k To quit something means to stop doing it I quit running because I got tired.",
     "needsReview": false
@@ -3091,6 +3348,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "spin",
+    "partOfSpeech": "",
     "definition": "spin is to turn around in circles.",
     "example": "The boy kept spinning until he fell down.",
     "needsReview": false
@@ -3103,6 +3361,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "tiny",
+    "partOfSpeech": "",
     "definition": "tiny thing is very small.",
     "example": "A baby's hand is tiny.",
     "needsReview": false
@@ -3115,6 +3374,7 @@
     "pdfPage": 81,
     "section": "word-list",
     "word": "tutor",
+    "partOfSpeech": "",
     "definition": "tutor is someone who gives lessons to one student.",
     "example": "So my mother hired a tutor to help her.",
     "needsReview": false
@@ -3127,6 +3387,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "apparent",
+    "partOfSpeech": "adj.",
     "definition": "Apparent means clear or easy to see.",
     "example": "Her happiness was apparent from the smile on her face.",
     "needsReview": false
@@ -3139,6 +3400,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "blind",
+    "partOfSpeech": "",
     "definition": "blind [blaind] adj.",
     "example": "A blind person or animal cannot see.",
     "needsReview": true
@@ -3151,6 +3413,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "calculate",
+    "partOfSpeech": "v.",
     "definition": "calculate is to find an answer using math.",
     "example": "I calculated how much money I would need to buy the car.",
     "needsReview": false
@@ -3163,6 +3426,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "chat",
+    "partOfSpeech": "v.",
     "definition": "chat is to talk with someone.",
     "example": "Even though they were far apart, the couple chatted every day.",
     "needsReview": false
@@ -3175,6 +3439,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "commit",
+    "partOfSpeech": "",
     "definition": "commit to something is to promise to do it.",
     "example": "Seth wanted to go home, but he had committed to finishing the job.",
     "needsReview": false
@@ -3187,6 +3452,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "compose",
+    "partOfSpeech": "",
     "definition": "compose something is to make it from smaller parts.",
     "example": "Tony composed his report using many sources of information.",
     "needsReview": false
@@ -3199,6 +3465,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "dormitory",
+    "partOfSpeech": "n.",
     "definition": "dormitory is a school building where students live.",
     "example": "I will move into the dormitory at the beginning of the school year.",
     "needsReview": false
@@ -3211,6 +3478,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "exhaust",
+    "partOfSpeech": "",
     "definition": "exhaust someone is to make that person tired.",
     "example": "John exhausted himself by swimming all day.",
     "needsReview": false
@@ -3223,6 +3491,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "greenhouse",
+    "partOfSpeech": "",
     "definition": "greenhouse is a small glass building that is used to grow plants.",
     "example": "We have a small greenhouse in our backyard where we grow plants.",
     "needsReview": false
@@ -3235,6 +3504,7 @@
     "pdfPage": 86,
     "section": "word-list",
     "word": "ignore",
+    "partOfSpeech": "",
     "definition": "ignore something is to act like you do not see or hear it.",
     "example": "I ignored the message he was making and kept studying.",
     "needsReview": false
@@ -3247,6 +3517,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "obvious",
+    "partOfSpeech": "adj.",
     "definition": "Obvious means clear or easy to see.",
     "example": "It was obvious that he was tired.",
     "needsReview": false
@@ -3259,6 +3530,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "physics",
+    "partOfSpeech": "",
     "definition": "Physics is a science that deals with energy and how it affects things.",
     "example": "In physics class, we used Newton's Cradle to learn about energy.",
     "needsReview": false
@@ -3271,6 +3543,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "portion",
+    "partOfSpeech": "n.",
     "definition": "portion of something is a part of it.",
     "example": "I only ate a small portion of the pizza.",
     "needsReview": false
@@ -3283,6 +3556,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "remind",
+    "partOfSpeech": "v.",
     "definition": "remind is to tell someone to remember to do something.",
     "example": "Nick's dad reminded him to do his homework*",
     "needsReview": false
@@ -3295,6 +3569,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "secretary",
+    "partOfSpeech": "n.",
     "definition": "secretary is a person who works in an office.",
     "example": "Rebecca asked her secretary to type a report.",
     "needsReview": false
@@ -3307,6 +3582,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "severe",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3319,6 +3595,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "talent",
+    "partOfSpeech": "n.",
     "definition": "talent is a natural ability to do something well.",
     "example": "Maria has a talent for playing the piano.",
     "needsReview": false
@@ -3331,6 +3608,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "thesis",
+    "partOfSpeech": "n.",
     "definition": "thesis is an idea that needs to be proved.",
     "example": "She did not support her thesis very well.",
     "needsReview": false
@@ -3343,6 +3621,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "uniform",
+    "partOfSpeech": "n.",
     "definition": "uniform is a piece of clothing worn by people of the same group.",
     "example": "Ail the members of our marching band wear matching uniforms.",
     "needsReview": false
@@ -3355,6 +3634,7 @@
     "pdfPage": 87,
     "section": "word-list",
     "word": "vision",
+    "partOfSpeech": "n.",
     "definition": "Vision is the ability to see.",
     "example": "The eye doctor tested my vision.",
     "needsReview": false
@@ -3367,6 +3647,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "absorb",
+    "partOfSpeech": "",
     "definition": "absorb the water on the floor.",
     "example": "",
     "needsReview": true
@@ -3379,6 +3660,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "boss",
+    "partOfSpeech": "",
     "definition": "boss is a person in charge of other people at work.",
     "example": "My boss is a nice person.",
     "needsReview": false
@@ -3391,6 +3673,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "charitable",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3403,6 +3686,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "committee",
+    "partOfSpeech": "n.",
     "definition": "committee is a group of people who meet together to make decisions.",
     "example": "The school's committee agreed on a new dress code for students.",
     "needsReview": false
@@ -3415,6 +3699,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "contract",
+    "partOfSpeech": "",
     "definition": "contract when she bought the house.",
     "example": "",
     "needsReview": true
@@ -3427,6 +3712,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "crew",
+    "partOfSpeech": "n.",
     "definition": "crew is a gro니p of workers.",
     "example": "My father has a crew that helps him build houses.",
     "needsReview": false
@@ -3439,6 +3725,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "devote",
+    "partOfSpeech": "",
     "definition": "devote time to something means to spend a lot of time doing it.",
     "example": "She devotes two hours a day to playing the piano.",
     "needsReview": false
@@ -3451,6 +3738,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "dig",
+    "partOfSpeech": "",
     "definition": "dig is to make a h이e in the ground.",
     "example": "My dog digs in the yard so he can hide his bones.",
     "needsReview": false
@@ -3463,6 +3751,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "dine",
+    "partOfSpeech": "",
     "definition": "dine means to eat dinner.",
     "example": "The young couple dined at their home.",
     "needsReview": false
@@ -3475,6 +3764,7 @@
     "pdfPage": 92,
     "section": "word-list",
     "word": "donate",
+    "partOfSpeech": "",
     "definition": "donate is to give something to a charity or organization.",
     "example": "We donate money to charities every year.",
     "needsReview": false
@@ -3487,6 +3777,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "double",
+    "partOfSpeech": "adj.",
     "definition": "Double means twice as much or twice as many.",
     "example": "I paid almost double the amount for that shirt.",
     "needsReview": false
@@ -3499,6 +3790,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "flavor",
+    "partOfSpeech": "n.",
     "definition": "flavor is the taste of food or drinks.",
     "example": "The flavor of the ice cream was very good.",
     "needsReview": false
@@ -3511,6 +3803,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "foundation",
+    "partOfSpeech": "n.",
     "definition": "foundation is a group that provides money for research.",
     "example": "The foundation raised money to give scholarships to students.",
     "needsReview": false
@@ -3523,6 +3816,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "generation",
+    "partOfSpeech": "",
     "definition": "generation than me.",
     "example": "handl6 [haendl] n.",
     "needsReview": true
@@ -3535,6 +3829,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "handle",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3547,6 +3842,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "layer",
+    "partOfSpeech": "n.",
     "definition": "layer covers over something or is one of several pieces lying on top of each other.",
     "example": "There was a layer of snow on the tops of the houses this morning.",
     "needsReview": false
@@ -3559,6 +3855,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "mud",
+    "partOfSpeech": "n.",
     "definition": "Mud is soft, wet dirt.",
     "example": "My brother played njgby in the mud.",
     "needsReview": false
@@ -3571,6 +3868,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "smooth",
+    "partOfSpeech": "",
     "definition": "smooth [smu: 이 adj A smooth thing has no bumps or rough parts.",
     "example": "The baby's skin felt very smooth.",
     "needsReview": true
@@ -3583,6 +3881,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "soil",
+    "partOfSpeech": "n.",
     "definition": "Soil is the top layer of land on the Earth.",
     "example": "The boy planted flowers in the soil and watered them every day.",
     "needsReview": false
@@ -3595,6 +3894,7 @@
     "pdfPage": 93,
     "section": "word-list",
     "word": "unique",
+    "partOfSpeech": "",
     "definition": "unique person or thing is not like others.",
     "example": "Her dog is unique.",
     "needsReview": false
@@ -3607,6 +3907,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "academy",
+    "partOfSpeech": "n.",
     "definition": "academy is a special type ot school.",
     "example": "There are many courses taught at the academy that I go to.",
     "needsReview": false
@@ -3619,6 +3920,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "ancient",
+    "partOfSpeech": "",
     "definition": "ancient buildings in Rome.",
     "example": "",
     "needsReview": true
@@ -3631,6 +3933,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "board",
+    "partOfSpeech": "n.",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3643,6 +3946,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "century",
+    "partOfSpeech": "",
     "definition": "century is one hundred years.",
     "example": "Our company is celebrating a century of business in London.",
     "needsReview": false
@@ -3655,6 +3959,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "clue",
+    "partOfSpeech": "n.",
     "definition": "clue is a fact or object that helps solve a mystery or crime.",
     "example": "The detective found some clues on the sidewalk.",
     "needsReview": false
@@ -3667,6 +3972,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "concert",
+    "partOfSpeech": "n.",
     "definition": "concert is an event where you listen to people play music.",
     "example": "I enjoyed the concert last night.",
     "needsReview": false
@@ -3679,6 +3985,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "county",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3691,6 +3998,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "dictionary",
+    "partOfSpeech": "n.",
     "definition": "dictionary is a book that tells you what words mean, I use the dictionary to learn new words.",
     "example": "dictionary [티奸아引 ] n.",
     "needsReview": false
@@ -3703,6 +4011,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "exist",
+    "partOfSpeech": "",
     "definition": "exist is to be real.",
     "example": "Do you really think that unicorns ever existe ?",
     "needsReview": false
@@ -3715,6 +4024,7 @@
     "pdfPage": 98,
     "section": "word-list",
     "word": "flat",
+    "partOfSpeech": "",
     "definition": "Flat describes something that is level and smooth with no curved parts.",
     "example": "My parents bought a new flat-screen TV on the weekend.",
     "needsReview": false
@@ -3727,6 +4037,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "gentleman",
+    "partOfSpeech": "",
     "definition": "gentleman is a nice man.",
     "example": "My grandfather is a kind and helpful gentleman.",
     "needsReview": false
@@ -3739,6 +4050,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "hidden",
+    "partOfSpeech": "",
     "definition": "Hidden means not easily noticed or too hard to find.",
     "example": "hidden [hidn] Hidden means not easily noticed or too hard to find.",
     "needsReview": false
@@ -3751,6 +4063,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "maybe",
+    "partOfSpeech": "",
     "definition": "Maybe is used to show that something is possible or may be true.",
     "example": "If I focus hard enough, maybe I can come up with the right answer.",
     "needsReview": false
@@ -3763,6 +4076,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "officer",
+    "partOfSpeech": "",
     "definition": "Original [arid3anal] If something is original, it is the first one of that thing.",
     "example": "",
     "needsReview": true
@@ -3775,6 +4089,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "original",
+    "partOfSpeech": "",
     "definition": "original painting of the Mona Lisa.",
     "example": "",
     "needsReview": true
@@ -3787,6 +4102,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "pound",
+    "partOfSpeech": "",
     "definition": "pound something is to hit it many times with a lot of force.",
     "example": "pound [paund] 1/ To pound something is to hit it many times with a lot of force.",
     "needsReview": false
@@ -3799,6 +4115,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "process",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -3811,6 +4128,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "publish",
+    "partOfSpeech": "v.",
     "definition": "publish a book is to get it printed and ready to sell.",
     "example": "That company publishes daily newspapers.",
     "needsReview": false
@@ -3823,6 +4141,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "theater",
+    "partOfSpeech": "",
     "definition": "theater to see a play.",
     "example": "",
     "needsReview": true
@@ -3835,6 +4154,7 @@
     "pdfPage": 99,
     "section": "word-list",
     "word": "wealth",
+    "partOfSpeech": "n.",
     "definition": "Wealth is the total of one's possessions (money, land, etc.).",
     "example": "One of the most important things for some people is wealth.",
     "needsReview": false
@@ -3847,6 +4167,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "aim",
+    "partOfSpeech": "n.",
     "definition": "aim is a goal someone wants to make happen.",
     "example": "My aim is to become a helicopter pilot.",
     "needsReview": false
@@ -3859,6 +4180,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "attach",
+    "partOfSpeech": "",
     "definition": "attach is to put two things together.",
     "example": "I attached the socks to the clothesline to dry.",
     "needsReview": false
@@ -3871,6 +4193,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "bet",
+    "partOfSpeech": "",
     "definition": "bet is to risk money on the result of a game or a business.",
     "example": "How much will you bet that your horse will win?",
     "needsReview": false
@@ -3883,6 +4206,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "carriage",
+    "partOfSpeech": "",
     "definition": "carriage is a vehicle pulled by a horse.",
     "example": "We took a carriage ride in the park.",
     "needsReview": false
@@ -3895,6 +4219,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "classic",
+    "partOfSpeech": "",
     "definition": "classic thing is something that is common from the past.",
     "example": "The athlete made a classic mistake-he started running too soon.",
     "needsReview": false
@@ -3907,6 +4232,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "commute",
+    "partOfSpeech": "v.",
     "definition": "commute is to travel a long distance to get to work.",
     "example": "I usually commute to work on the train.",
     "needsReview": false
@@ -3919,6 +4245,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "confirm",
+    "partOfSpeech": "v.",
     "definition": "confirm is to make sure something is correct.",
     "example": "Winning the game confirmed that James was a good player.",
     "needsReview": false
@@ -3931,6 +4258,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "criticize",
+    "partOfSpeech": "",
     "definition": "criticize is to say bad things about someone or something.",
     "example": "He criticized his wife for spending too much money.",
     "needsReview": false
@@ -3943,6 +4271,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "differ",
+    "partOfSpeech": "",
     "definition": "differ is to not be the same 3S another person or thing.",
     "example": "I differ from my brother: he is short, while I am tall.",
     "needsReview": false
@@ -3955,6 +4284,7 @@
     "pdfPage": 104,
     "section": "word-list",
     "word": "expense",
+    "partOfSpeech": "",
     "definition": "expense is the money that people spend on something.",
     "example": "She wrote down all the expenses for her trip.",
     "needsReview": false
@@ -3967,6 +4297,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "formal",
+    "partOfSpeech": "adj.",
     "definition": "formal thing is official or serious.",
     "example": "It was a formal dinner, so we wore our best clothes.",
     "needsReview": false
@@ -3979,6 +4310,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "height",
+    "partOfSpeech": "n.",
     "definition": "Height is how tall someone or something is.",
     "example": "My height is 168 centimeters.",
     "needsReview": false
@@ -3991,6 +4323,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "invent",
+    "partOfSpeech": "v.",
     "definition": "invent is to create something that never existed before.",
     "example": "My grandfather has invented some interesting things.",
     "needsReview": false
@@ -4003,6 +4336,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "junior",
+    "partOfSpeech": "adj.",
     "definition": "junior person is younger or less experienced.",
     "example": "When she started at the company, she was only a junior manager.",
     "needsReview": false
@@ -4015,6 +4349,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "labor",
+    "partOfSpeech": "n.",
     "definition": "Labor is the act of doing or making something.",
     "example": "Building the house took a lot of labor.",
     "needsReview": false
@@ -4027,6 +4362,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "mechanic",
+    "partOfSpeech": "n.",
     "definition": "mechanic is someone who fixes vehicles or machines.",
     "example": "We took the car to the mechanic to be fixed.",
     "needsReview": false
@@ -4039,6 +4375,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "prime",
+    "partOfSpeech": "adj.",
     "definition": "Prime shows that something is the most important one.",
     "example": "Dirty air is a prime cause of illness.",
     "needsReview": false
@@ -4051,6 +4388,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "shift",
+    "partOfSpeech": "v.",
     "definition": "shift is to move into a different place or direction.",
     "example": "He shifted to the other side of the table to eat his breakfast.",
     "needsReview": false
@@ -4063,6 +4401,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "signal",
+    "partOfSpeech": "n.",
     "definition": "signal is a sound or action that tells someone to do something.",
     "example": "The coach blew his whistle as a signal to begin the game.",
     "needsReview": false
@@ -4075,6 +4414,7 @@
     "pdfPage": 105,
     "section": "word-list",
     "word": "sincere",
+    "partOfSpeech": "",
     "definition": "sincere person is honest, especially abo니t emotions or opinions.",
     "example": "He sounded sincere when he apologized to me.",
     "needsReview": false
@@ -4087,6 +4427,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "ability",
+    "partOfSpeech": "n.",
     "definition": "Ability is the quality of a person being able to do something well.",
     "example": "ability [sbiiati] n Ability is the quality of a person being able to do something well.",
     "needsReview": false
@@ -4099,6 +4440,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "agriculture",
+    "partOfSpeech": "n.",
     "definition": "Agriculture is the growing of plants and raising of animals for food.",
     "example": "The farmer studied agriculture in college.",
     "needsReview": false
@@ -4111,6 +4453,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "cartoon",
+    "partOfSpeech": "n.",
     "definition": "cartoon is a funny drawing.",
     "example": "Sometimes, people draw cartoons for the newspaper.",
     "needsReview": false
@@ -4123,6 +4466,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "ceiling",
+    "partOfSpeech": "",
     "definition": "ceiling with a special roller.",
     "example": "",
     "needsReview": true
@@ -4135,6 +4479,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "convince",
+    "partOfSpeech": "",
     "definition": "convince someone means to make that person s니re of something.",
     "example": "She convinced me to b니y the house.",
     "needsReview": false
@@ -4147,6 +4492,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "curious",
+    "partOfSpeech": "",
     "definition": "CUriOUS [kjusriss] adj A curious person or animals wants to know about something, I opened up the clock because I was curious about how it worked.",
     "example": "",
     "needsReview": true
@@ -4159,6 +4505,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "delay",
+    "partOfSpeech": "v.",
     "definition": "delay means to wait to do something.",
     "example": "I was delayed at the airport for over two hours.",
     "needsReview": false
@@ -4171,6 +4518,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "diary",
+    "partOfSpeech": "n.",
     "definition": "diary is a book in which people write their personal experiences.",
     "example": "I do not let anybody read my diary.",
     "needsReview": false
@@ -4183,6 +4531,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "element",
+    "partOfSpeech": "",
     "definition": "element of American football.",
     "example": "",
     "needsReview": true
@@ -4195,6 +4544,7 @@
     "pdfPage": 110,
     "section": "word-list",
     "word": "faith",
+    "partOfSpeech": "n.",
     "definition": "Faith is trust or belief without proof.",
     "example": "The sick girl had faith in doctors.",
     "needsReview": false
@@ -4207,6 +4557,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "grain",
+    "partOfSpeech": "n.",
     "definition": "grain is a food crop such as wheat, corn, rice, or oats.",
     "example": "The farmer planted two fields of grain this year.",
     "needsReview": false
@@ -4219,6 +4570,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "greet",
+    "partOfSpeech": "",
     "definition": "greet someone means to meet and welcome that person.",
     "example": "When my friend came over, I greeted him at the door.",
     "needsReview": false
@@ -4231,6 +4583,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "investigate",
+    "partOfSpeech": "",
     "definition": "investigate the crime.",
     "example": "",
     "needsReview": true
@@ -4243,6 +4596,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "joy",
+    "partOfSpeech": "n.",
     "definition": "Joy is a feeling of great happiness.",
     "example": "I feel joy when I play.",
     "needsReview": false
@@ -4255,6 +4609,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "label",
+    "partOfSpeech": "n.",
     "definition": "label is a tag that tells abo니t something.",
     "example": "The label on the back of your shirt will tell you what size it is.",
     "needsReview": false
@@ -4267,6 +4622,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "monk",
+    "partOfSpeech": "n.",
     "definition": "monk is a religious person who lives a simple life.",
     "example": "The monks knew a lot about religion.",
     "needsReview": false
@@ -4279,6 +4635,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "odd",
+    "partOfSpeech": "adj.",
     "definition": "odd is unusual.",
     "example": "Something odd is unusual.",
     "needsReview": true
@@ -4291,6 +4648,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "pause",
+    "partOfSpeech": "",
     "definition": "pause means to stop doing something for a while.",
     "example": "Since she was so hungry, she paused to make a snack.",
     "needsReview": false
@@ -4303,6 +4661,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "priest",
+    "partOfSpeech": "n.",
     "definition": "priest is a person trained to perform religious d니ties.",
     "example": "The priest taught us about God.",
     "needsReview": false
@@ -4315,6 +4674,7 @@
     "pdfPage": 111,
     "section": "word-list",
     "word": "profession",
+    "partOfSpeech": "n.",
     "definition": "profession is a person's job.",
     "example": "He loved sailing, so he chose to work on ships as a profession.",
     "needsReview": false
@@ -4327,6 +4687,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "ball",
+    "partOfSpeech": "",
     "definition": "ball s a round object that is thrown, kicked, or hit in a game or sport Seth bought a new soccer ball.",
     "example": "ball [bo：ij A ball s a round object that is thrown, kicked, or hit in a game or sport Seth bought a new soccer ball.",
     "needsReview": false
@@ -4339,6 +4700,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "bottom",
+    "partOfSpeech": "",
     "definition": "bottom is the lowest part, point, or lev이 of something.",
     "example": "The bottom is the lowest part, point, or lev이 of something.",
     "needsReview": false
@@ -4351,6 +4713,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "company",
+    "partOfSpeech": "",
     "definition": "company is a business or organization that makes or sells goods or services I want to work for a small software company.",
     "example": "company [1<시따이기] A company is a business or organization that makes or sells goods or services I want to work for a small software company.",
     "needsReview": false
@@ -4363,6 +4726,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "drink",
+    "partOfSpeech": "",
     "definition": "drink is to take liquid into the body through the mouth The woman likes to drink water after she exercises.",
     "example": "few 따 ] m // A few things is a small number of them I have only a",
     "needsReview": false
@@ -4375,6 +4739,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "few",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -4387,6 +4752,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "line",
+    "partOfSpeech": "",
     "definition": "line is a row of people or things.",
     "example": "This is the longest line I have ever seen.",
     "needsReview": false
@@ -4399,6 +4765,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "pet",
+    "partOfSpeech": "",
     "definition": "pet is an animal such as a cat or dog that people keep and care for.",
     "example": "pet ipet] A pet is an animal such as a cat or dog that people keep and care for.",
     "needsReview": false
@@ -4411,6 +4778,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "product",
+    "partOfSpeech": "",
     "definition": "product is something grown or made in a factory in order to be s이d There's no room for even one more product in M이issa's bag.",
     "example": "product [pradAkt] A product is something grown or made in a factory in order to be s이d There's no room for even one more product in M이issa's bag.",
     "needsReview": false
@@ -4423,6 +4791,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "responsible",
+    "partOfSpeech": "",
     "definition": "responsible for leading his department.",
     "example": "",
     "needsReview": true
@@ -4435,6 +4804,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "sell",
+    "partOfSpeech": "",
     "definition": "sell is to give something to someone in exchange for money.",
     "example": "This man's job is to sell houses.",
     "needsReview": false
@@ -4447,6 +4817,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "snake",
+    "partOfSpeech": "",
     "definition": "Study the word 'snake' from this unit.",
     "example": "",
     "needsReview": true
@@ -4459,6 +4830,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "stand",
+    "partOfSpeech": "",
     "definition": "Study the word 'stand' from this unit.",
     "example": "",
     "needsReview": true
@@ -4471,6 +4843,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "strange",
+    "partOfSpeech": "",
     "definition": "Study the word 'strange' from this unit.",
     "example": "",
     "needsReview": true
@@ -4483,6 +4856,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "tea",
+    "partOfSpeech": "",
     "definition": "Study the word 'tea' from this unit.",
     "example": "",
     "needsReview": true
@@ -4495,6 +4869,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "test",
+    "partOfSpeech": "",
     "definition": "Study the word 'test' from this unit.",
     "example": "",
     "needsReview": true
@@ -4507,6 +4882,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "tongue",
+    "partOfSpeech": "",
     "definition": "Study the word 'tongue' from this unit.",
     "example": "",
     "needsReview": true
@@ -4519,6 +4895,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "they",
+    "partOfSpeech": "",
     "definition": "Study the word 'they' from this unit.",
     "example": "",
     "needsReview": true
@@ -4531,6 +4908,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "type",
+    "partOfSpeech": "",
     "definition": "Study the word 'type' from this unit.",
     "example": "",
     "needsReview": true
@@ -4543,6 +4921,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "very",
+    "partOfSpeech": "",
     "definition": "Study the word 'very' from this unit.",
     "example": "",
     "needsReview": true
@@ -4555,6 +4934,7 @@
     "pdfPage": 116,
     "section": "word-list",
     "word": "wait",
+    "partOfSpeech": "",
     "definition": "Study the word 'wait' from this unit.",
     "example": "",
     "needsReview": true
@@ -4567,6 +4947,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "accomplish",
+    "partOfSpeech": "",
     "definition": "accomplish something means to finish it.",
     "example": "He accomplished his goal of running ten miles.",
     "needsReview": false
@@ -4579,6 +4960,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "approve",
+    "partOfSpeech": "v.",
     "definition": "approve of something means you like or agree with that thing.",
     "example": "Her co-workers approved her new plan.",
     "needsReview": false
@@ -4591,6 +4973,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "approximate",
+    "partOfSpeech": "",
     "definition": "approximate height is two meters.",
     "example": "",
     "needsReview": false
@@ -4603,6 +4986,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "barrier",
+    "partOfSpeech": "n.",
     "definition": "barrier is something that blocks a path or way.",
     "example": "The Great Wall was a barrier between China and its enemies.",
     "needsReview": false
@@ -4615,6 +4999,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "detect",
+    "partOfSpeech": "",
     "definition": "detect means to notice or find something.",
     "example": "The boy ran to the kitchen when he detected the smell of cookies.",
     "needsReview": false
@@ -4627,6 +5012,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "duty",
+    "partOfSpeech": "n.",
     "definition": "duty is something that a person has to do.",
     "example": "It is parents' duty to take care of their children.",
     "needsReview": false
@@ -4639,6 +5025,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "elementary",
+    "partOfSpeech": "adj.",
     "definition": "elementary thing is the first or most simple thing.",
     "example": "Children go to elementary school before high school.",
     "needsReview": false
@@ -4651,6 +5038,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "failure",
+    "partOfSpeech": "n.",
     "definition": "failure happens when something is not done right.",
     "example": "My cooking ended in failure because I burned the food.",
     "needsReview": false
@@ -4663,6 +5051,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "gradual",
+    "partOfSpeech": "",
     "definition": "gradual [graed3U9l] adj Something gradual happens slowly.",
     "example": "Children learn to read at a gradual pace.",
     "needsReview": true
@@ -4675,6 +5064,7 @@
     "pdfPage": 122,
     "section": "word-list",
     "word": "immigrant",
+    "partOfSpeech": "",
     "definition": "immigrant is a person who moves to a different country.",
     "example": "My parents were immigrants.",
     "needsReview": false
@@ -4687,6 +5077,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "insert",
+    "partOfSpeech": "",
     "definition": "insert something means to put it in something else.",
     "example": "He inserted an extra sentence into the story.",
     "needsReview": false
@@ -4699,6 +5090,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "instant",
+    "partOfSpeech": "n.",
     "definition": "instant is a very short amount of time.",
     "example": "A microwave oven cooks food in an instant.",
     "needsReview": false
@@ -4711,6 +5103,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "poverty",
+    "partOfSpeech": "n.",
     "definition": "Poverty is the state of being poor.",
     "example": "Poverty is a problem in many co니ntries around the world.",
     "needsReview": false
@@ -4723,6 +5116,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "pretend",
+    "partOfSpeech": "",
     "definition": "pretend he was a king.",
     "example": "",
     "needsReview": true
@@ -4735,6 +5129,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "rank",
+    "partOfSpeech": "n.",
     "definition": "rank is a person's place in an order of people.",
     "example": "The man got to the rank of captain in the navy.",
     "needsReview": false
@@ -4747,6 +5142,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "recognition",
+    "partOfSpeech": "",
     "definition": "recognition for his brave deed.",
     "example": "",
     "needsReview": true
@@ -4759,6 +5155,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "refrigerate",
+    "partOfSpeech": "",
     "definition": "refrigerate something means to make it cold.",
     "example": "S니permarkets refrigerate fruit to make it last long.",
     "needsReview": false
@@ -4771,6 +5168,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "rent",
+    "partOfSpeech": "n.",
     "definition": "Rent is the money people pay to live in a certain place.",
     "example": "To live in this house, I have to pay rent at the start of each month.",
     "needsReview": false
@@ -4783,6 +5181,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "retire",
+    "partOfSpeech": "",
     "definition": "retire from work.",
     "example": "",
     "needsReview": true
@@ -4795,6 +5194,7 @@
     "pdfPage": 123,
     "section": "word-list",
     "word": "statistic",
+    "partOfSpeech": "n.",
     "definition": "statistic is a number that tells a fact about something.",
     "example": "The statistics showed that we did just as well this year as last year.",
     "needsReview": false
@@ -4807,6 +5207,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "accident",
+    "partOfSpeech": "",
     "definition": "accident is unexpected, and may cause some trouble He damaged the car in an .",
     "example": "accident [abksklant] An accident is unexpected, and may cause some trouble He damaged the car in an .",
     "needsReview": false
@@ -4819,6 +5220,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "astronaut",
+    "partOfSpeech": "",
     "definition": "astronaut is a person who goes into outer space The Gtron.",
     "example": "astronaut [主 str9n5 q An astronaut is a person who goes into outer space The Gtron.",
     "needsReview": false
@@ -4831,6 +5233,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "awake",
+    "partOfSpeech": "",
     "definition": "awake is not asleep.",
     "example": "awake jsweiki A person who is awake is not asleep.",
     "needsReview": false
@@ -4843,6 +5246,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "courage",
+    "partOfSpeech": "n.",
     "definition": "Courage is the feeling of not being afraid.",
     "example": "courage（=^3） Courage is the feeling of not being afraid.",
     "needsReview": false
@@ -4855,6 +5259,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "float",
+    "partOfSpeech": "",
     "definition": "float is to move on top of water without sinking.",
     "example": "float [flout] To float is to move on top of water without sinking.",
     "needsReview": false
@@ -4867,6 +5272,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "grant",
+    "partOfSpeech": "",
     "definition": "grant something is to allow someone to have it The teacher ；!",
     "example": "grant [graent] To grant something is to allow someone to have it The teacher ；!",
     "needsReview": false
@@ -4879,6 +5285,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "gravity",
+    "partOfSpeech": "",
     "definition": "Gravity is the force that makes things fall to Earth.",
     "example": "There is no gravity in space.",
     "needsReview": false
@@ -4891,6 +5298,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "jewel",
+    "partOfSpeech": "",
     "definition": "jewel is a beautiful stone that is worth a lot of money.",
     "example": "A diamond is one of the most expensive > ' - in the world.",
     "needsReview": false
@@ -4903,6 +5311,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "miner",
+    "partOfSpeech": "",
     "definition": "miner is a person who works in a mine.",
     "example": "miner [mainar] A miner is a person who works in a mine.",
     "needsReview": false
@@ -4915,6 +5324,7 @@
     "pdfPage": 128,
     "section": "word-list",
     "word": "mineral",
+    "partOfSpeech": "",
     "definition": "mineral is a type of substance found in the Earth.",
     "example": "mineral [mineral] A mineral is a type of substance found in the Earth.",
     "needsReview": false
@@ -4927,6 +5337,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "participate",
+    "partOfSpeech": "",
     "definition": "participate is to be active and do something.",
     "example": "The students participated in the school play.",
     "needsReview": false
@@ -4939,6 +5350,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "permission",
+    "partOfSpeech": "",
     "definition": "permission to drive my mom's car.",
     "example": "",
     "needsReview": true
@@ -4951,6 +5363,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "pour",
+    "partOfSpeech": "",
     "definition": "pour a liquid means to make it come out of a container.",
     "example": "I poured some milk into my sister's cup.",
     "needsReview": false
@@ -4963,6 +5376,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "raw",
+    "partOfSpeech": "adj.",
     "definition": "raw material is natural and has not been processed.",
     "example": "The company dumped raw sewage into the river.",
     "needsReview": false
@@ -4975,6 +5389,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "satellite",
+    "partOfSpeech": "",
     "definition": "satellite is a machine sent into space to get information.",
     "example": "The satellite was traveling around the Earth.",
     "needsReview": false
@@ -4987,6 +5402,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "scale",
+    "partOfSpeech": "n.",
     "definition": "scale of something is its size, especially when it is very large.",
     "example": "I was surprised by the scale of the buildings in the downtown area.",
     "needsReview": false
@@ -4999,6 +5415,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "skip",
+    "partOfSpeech": "v.",
     "definition": "skip something is to not do it.",
     "example": "He skipped work to get more sleep.",
     "needsReview": false
@@ -5011,6 +5428,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "stretch",
+    "partOfSpeech": "v.",
     "definition": "stretch is to make your arms or legs reach out.",
     "example": "She stretched her body before exercising.",
     "needsReview": false
@@ -5023,6 +5441,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "telescope",
+    "partOfSpeech": "n.",
     "definition": "telescope is a tool people use to look at the stars.",
     "example": "With a telescope, you can see the moon and stars easily.",
     "needsReview": false
@@ -5035,6 +5454,7 @@
     "pdfPage": 129,
     "section": "word-list",
     "word": "underground",
+    "partOfSpeech": "",
     "definition": "underground action happens b이ow the surface of the Earth.",
     "example": "Subway trains travel underground.",
     "needsReview": true
@@ -5047,6 +5467,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "alarm",
+    "partOfSpeech": "n.",
     "definition": "alarm is something that warns people of danger.",
     "example": "When the students heard the fire alarm, they left the building.",
     "needsReview": false
@@ -5059,6 +5480,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "arrest",
+    "partOfSpeech": "",
     "definition": "arrest someone means to catch that person for doing something bad.",
     "example": "The man was arrested for breaking the law.",
     "needsReview": false
@@ -5071,6 +5493,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "award",
+    "partOfSpeech": "n.",
     "definition": "award is a prize for doing something well.",
     "example": "He got an award for having the best grades in class.",
     "needsReview": false
@@ -5083,6 +5506,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "breed",
+    "partOfSpeech": "n.",
     "definition": "breed is a group of animals within a species.",
     "example": "I like small dog breeds, such as terriers.",
     "needsReview": false
@@ -5095,6 +5519,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "bucket",
+    "partOfSpeech": "n.",
     "definition": "bucket is a round container to put things in.",
     "example": "I filled the bucket with water.",
     "needsReview": false
@@ -5107,6 +5532,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "contest",
+    "partOfSpeech": "n.",
     "definition": "contest is a game or a race.",
     "example": "The girls had a contest to see who could jump higher.",
     "needsReview": false
@@ -5119,6 +5545,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "convict",
+    "partOfSpeech": "",
     "definition": "convict means to prove that someone did a bad thing.",
     "example": "He was convicted of the crime and sent to jail.",
     "needsReview": false
@@ -5131,6 +5558,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "festival",
+    "partOfSpeech": "n.",
     "definition": "festival is an event that is held to celebrate a particular thing.",
     "example": "I heard the song at the music festival in London.",
     "needsReview": false
@@ -5143,6 +5571,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "garage",
+    "partOfSpeech": "",
     "definition": "garage is the part of a house where people put their cars.",
     "example": "My car does not get dirty because I keep it in the garage.",
     "needsReview": false
@@ -5155,6 +5584,7 @@
     "pdfPage": 134,
     "section": "word-list",
     "word": "journalist",
+    "partOfSpeech": "n.",
     "definition": "journalist is a person who writes news stories.",
     "example": "The journalist took notes for a story he was writing.",
     "needsReview": false
@@ -5167,6 +5597,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "pup",
+    "partOfSpeech": "n.",
     "definition": "pup is a young dog.",
     "example": "All the girl wanted for her birthday was a pup.",
     "needsReview": false
@@ -5179,6 +5610,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "qualify",
+    "partOfSpeech": "",
     "definition": "qualify is to have or do things that are needed for something.",
     "example": "qualify [kw히9均] 우.",
     "needsReview": false
@@ -5191,6 +5623,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "repair",
+    "partOfSpeech": "v.",
     "definition": "repair something is to fix it.",
     "example": "I repaired the flat tire on my car.",
     "needsReview": false
@@ -5203,6 +5636,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "resume",
+    "partOfSpeech": "",
     "definition": "resume something means to start it again after taking a break.",
     "example": "Then, I resumeci reading.",
     "needsReview": false
@@ -5215,6 +5649,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "rob",
+    "partOfSpeech": "",
     "definition": "rob is to take property by using force.",
     "example": "A thief has robbed me of my passport.",
     "needsReview": false
@@ -5227,6 +5662,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "slip",
+    "partOfSpeech": "v.",
     "definition": "slip means to slide and fall down.",
     "example": "The man slipped on the wet floor",
     "needsReview": false
@@ -5239,6 +5675,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "somewhat",
+    "partOfSpeech": "adv.",
     "definition": "Somewhat means to some degree, but not to a large degree.",
     "example": "James was somewhat upset when he had to move heavy boxes.",
     "needsReview": false
@@ -5251,6 +5688,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "stable",
+    "partOfSpeech": "",
     "definition": "Its legs are strong,",
     "example": "",
     "needsReview": false
@@ -5263,6 +5701,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "tissue",
+    "partOfSpeech": "n.",
     "definition": "tissue is a soft piece of paper people use to wipe their noses.",
     "example": "There was a box of tissue on the table.",
     "needsReview": false
@@ -5275,6 +5714,7 @@
     "pdfPage": 135,
     "section": "word-list",
     "word": "yard",
+    "partOfSpeech": "",
     "definition": "yard is the gro니nd just outside of a house.",
     "example": "The girls jumped rope in the yard.",
     "needsReview": false
@@ -5287,6 +5727,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "best",
+    "partOfSpeech": "adj.",
     "definition": "best person or thing is better than all the others.",
     "example": "I got the best score on the math test.",
     "needsReview": false
@@ -5299,6 +5740,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "card",
+    "partOfSpeech": "n.",
     "definition": "card is a small piece of plastic or paper used to buy or use things.",
     "example": "Adam used his library card to borrow a book.",
     "needsReview": false
@@ -5311,6 +5753,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "crowd",
+    "partOfSpeech": "n.",
     "definition": "crowd is a large group of people who are together in one place.",
     "example": "The crowd waved to the camera.",
     "needsReview": false
@@ -5323,6 +5766,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "day",
+    "partOfSpeech": "n.",
     "definition": "day is a period of twenty-four hours, beginning at midnight.",
     "example": "There are two more days until the weekend.",
     "needsReview": false
@@ -5335,6 +5779,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "dish",
+    "partOfSpeech": "n.",
     "definition": "dish is a type of food that is cooked in a particular way.",
     "example": "My favorite dish at the restaurant is chicken curry.",
     "needsReview": false
@@ -5347,6 +5792,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "easy",
+    "partOfSpeech": "",
     "definition": "6Xp6ri6nC6 [Ikspierisns] z To",
     "example": "",
     "needsReview": true
@@ -5359,6 +5805,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "experience",
+    "partOfSpeech": "",
     "definition": "experience is to do or see something or have something happen to you.",
     "example": "Going to the concert was the best thing I've ever experienced.",
     "needsReview": false
@@ -5371,6 +5818,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "hotel",
+    "partOfSpeech": "n.",
     "definition": "hotel is a place where people stay overnight when they are traveling.",
     "example": "This family is staying at their favorite hotel.",
     "needsReview": false
@@ -5383,6 +5831,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "hour",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -5395,6 +5844,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "light",
+    "partOfSpeech": "n.",
     "definition": "Light is a form of energy or brightness that makes it possible to see something.",
     "example": "I will t니rn on the light so that you can see.",
     "needsReview": false
@@ -5407,6 +5857,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "market",
+    "partOfSpeech": "",
     "definition": "market is a place where people buy and sell products or food.",
     "example": "I go to the market every weekend to buy vegetables.",
     "needsReview": false
@@ -5419,6 +5870,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "plan",
+    "partOfSpeech": "",
     "definition": "plan the company party.",
     "example": "The price is the amount of money needed to pay for something.",
     "needsReview": true
@@ -5431,6 +5883,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "price",
+    "partOfSpeech": "",
     "definition": "price of a sweater.",
     "example": "",
     "needsReview": true
@@ -5443,6 +5896,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "short",
+    "partOfSpeech": "adj.",
     "definition": "short thing is not long or not tall.",
     "example": "The days are short in the winter.",
     "needsReview": false
@@ -5455,6 +5909,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "shop",
+    "partOfSpeech": "",
     "definition": "shop is to visit places where goods are sold in order to look at and buy things.",
     "example": "Tom decided to shop for groceries on his way home.",
     "needsReview": false
@@ -5467,6 +5922,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "station",
+    "partOfSpeech": "n.",
     "definition": "station is a place where buses and trains stop for passengers.",
     "example": "This man is waiting at the train station.",
     "needsReview": false
@@ -5479,6 +5935,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "surprise",
+    "partOfSpeech": "",
     "definition": "surprise him with a puppy.",
     "example": "",
     "needsReview": true
@@ -5491,6 +5948,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "system",
+    "partOfSpeech": "n.",
     "definition": "system is a group of related parts that move or work together This device controls the building's heating system.",
     "example": "system [sistem] n, A system is a group of related parts that move or work together This device controls the building's heating system.",
     "needsReview": false
@@ -5503,6 +5961,7 @@
     "pdfPage": 141,
     "section": "word-list",
     "word": "taxi",
+    "partOfSpeech": "n.",
     "definition": "taxi is a car and driver that you pay to take you somewhere.",
     "example": "Gary drives a taxi, so he knows the roads very well.",
     "needsReview": false
@@ -5515,6 +5974,7 @@
     "pdfPage": 140,
     "section": "word-list",
     "word": "two",
+    "partOfSpeech": "adj.",
     "definition": "Two is the word for the number 2.",
     "example": "Two friends study together at the coffee shop.",
     "needsReview": false
@@ -5527,6 +5987,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "bath",
+    "partOfSpeech": "",
     "definition": "bath is the act of sitting in a tub of water in order to get clean.",
     "example": "After playing in the dirt, the boy took a bath.",
     "needsReview": false
@@ -5539,6 +6000,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "bend",
+    "partOfSpeech": "",
     "definition": "bend is to move something so it is not straight.",
     "example": "Lee ben over and picked up the paper on the ground.",
     "needsReview": false
@@ -5551,6 +6013,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "chew",
+    "partOfSpeech": "",
     "definition": "chew is to break up food by using the mouth and teeth.",
     "example": "I always ch아 my food carefully before swallowing it.",
     "needsReview": false
@@ -5563,6 +6026,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "disabled",
+    "partOfSpeech": "",
     "definition": "disabled [disdibsi 이 A disabled person has a physical problem that makes some activities difficult.",
     "example": "The sabl* : man used a wheelchair to move around.",
     "needsReview": true
@@ -5575,6 +6039,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "fantastic",
+    "partOfSpeech": "",
     "definition": "fantastic thing is really good.",
     "example": "The st니dent did a fantastic job on his project and got an award.",
     "needsReview": false
@@ -5587,6 +6052,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "fiction",
+    "partOfSpeech": "n.",
     "definition": "Fiction is a story that is not true.",
     "example": "fiction [flkjan] n Fiction is a story that is not true.",
     "needsReview": false
@@ -5599,6 +6065,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "flag",
+    "partOfSpeech": "",
     "definition": "flag is a piece of colored cloth that represents something.",
     "example": "Our country has a bea니tif니 flag.",
     "needsReview": false
@@ -5611,6 +6078,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "inspect",
+    "partOfSpeech": "v.",
     "definition": "inspect is to look at something carefully.",
     "example": "The mechanic inspected our car to see if it had any problems.",
     "needsReview": false
@@ -5623,6 +6091,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "journal",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -5635,6 +6104,7 @@
     "pdfPage": 146,
     "section": "word-list",
     "word": "liquid",
+    "partOfSpeech": "",
     "definition": "liquid is a substance that is neither solid nor gas.",
     "example": "Water is the most important liquid for life.",
     "needsReview": false
@@ -5647,6 +6117,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "marvel",
+    "partOfSpeech": "",
     "definition": "marvel at something is to feel surprise and interest in it.",
     "example": "We marveled at her excellent piano playing.",
     "needsReview": false
@@ -5659,6 +6130,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "overcome",
+    "partOfSpeech": "",
     "definition": "overcome a problem is to successfully fix it.",
     "example": "She overcame her shyness and spoke in front of the class.",
     "needsReview": false
@@ -5671,6 +6143,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "recall",
+    "partOfSpeech": "",
     "definition": "recall something is to remember it.",
     "example": "She was trying to recall what she had told her friend.",
     "needsReview": false
@@ -5683,6 +6156,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "regret",
+    "partOfSpeech": "",
     "definition": "regret something is to wish that it hadn't happened I regret that I was mean to my sister.",
     "example": "To regret something is to wish that it hadn't happened I regret that I was mean to my sister.",
     "needsReview": false
@@ -5695,6 +6169,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "soul",
+    "partOfSpeech": "n.",
     "definition": "soul is a person's spirit.",
     "example": "Some people believe that the soul lives after the body dies.",
     "needsReview": false
@@ -5707,6 +6182,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "sufficient",
+    "partOfSpeech": "adj.",
     "definition": "Sufficient shows that something is enough, in quality or quantity.",
     "example": "After eating a sufficient amount of food, I left the table.",
     "needsReview": false
@@ -5719,6 +6195,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "surgery",
+    "partOfSpeech": "n.",
     "definition": "Surgery is medical treatment inv시ving a doctor cutting into a body.",
     "example": "I needed surgery to repair my leg after the accident.",
     "needsReview": false
@@ -5731,6 +6208,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "tough",
+    "partOfSpeech": "adj.",
     "definition": "tough thing is difficult.",
     "example": "A tough thing is difficult.",
     "needsReview": false
@@ -5743,6 +6221,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "tube",
+    "partOfSpeech": "",
     "definition": "tube is a pipe through which water or air passes.",
     "example": "The pile of tubes was going to be put in the ground.",
     "needsReview": false
@@ -5755,6 +6234,7 @@
     "pdfPage": 147,
     "section": "word-list",
     "word": "value",
+    "partOfSpeech": "",
     "definition": "value of something is what it is worth.",
     "example": "Your love for me has greater value than gold.",
     "needsReview": false
@@ -5767,6 +6247,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "atom",
+    "partOfSpeech": "",
     "definition": "atom is the smallest unit of a substance.",
     "example": "atom [afetam] An atom is the smallest unit of a substance.",
     "needsReview": false
@@ -5779,6 +6260,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "beautiful",
+    "partOfSpeech": "",
     "definition": "beautiful s니nset.",
     "example": "",
     "needsReview": true
@@ -5791,6 +6273,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "breadth",
+    "partOfSpeech": "",
     "definition": "Breadth is the distance from one side to the other side of something.",
     "example": "The breadth of the northern wall of the ho니se is twenty meters.",
     "needsReview": false
@@ -5803,6 +6286,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "comet",
+    "partOfSpeech": "",
     "definition": "Study the word 'comet' from this unit.",
     "example": "",
     "needsReview": true
@@ -5815,6 +6299,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "cover",
+    "partOfSpeech": "",
     "definition": "cover something is to put things over it.",
     "example": "The Earth was covered with clouds.",
     "needsReview": false
@@ -5827,6 +6312,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "despair",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -5839,6 +6325,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "form",
+    "partOfSpeech": "",
     "definition": "form is to make or to shape something.",
     "example": "They formed a new government.",
     "needsReview": false
@@ -5851,6 +6338,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "fragment",
+    "partOfSpeech": "",
     "definition": "fragment is a small part of something.",
     "example": "After the light broke, there were fragments of glass to clean up.",
     "needsReview": false
@@ -5863,6 +6351,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "galaxy",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -5875,6 +6364,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "gloom",
+    "partOfSpeech": "",
     "definition": "Gloom is a state of almost complete darkness or sadness.",
     "example": "In the gloom of the morning, it was diffic니t to see the boat on the lake.",
     "needsReview": false
@@ -5887,6 +6377,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "large",
+    "partOfSpeech": "adj.",
     "definition": "large is very big.",
     "example": "I was frightened by a large bird.",
     "needsReview": false
@@ -5899,6 +6390,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "moon",
+    "partOfSpeech": "",
     "definition": "moon looks beautiful tonight.",
     "example": "radiat6 [rdididit] To",
     "needsReview": true
@@ -5911,6 +6403,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "radiate",
+    "partOfSpeech": "",
     "definition": "radiate means to send out energy or heat.",
     "example": "The heat from the fireplace radiated throughout the room.",
     "needsReview": false
@@ -5923,6 +6416,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "roam",
+    "partOfSpeech": "",
     "definition": "roam means to move around witho니t a plan or purpose.",
     "example": "All day, the cows roamed around the field eating grass.",
     "needsReview": false
@@ -5935,6 +6429,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "solitary",
+    "partOfSpeech": "",
     "definition": "solitary thing is lordly or the only one.",
     "example": "The only thing in the room was a solitary chair.",
     "needsReview": false
@@ -5947,6 +6442,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "spectrum",
+    "partOfSpeech": "n.",
     "definition": "spectrum is the full range of color ranging from red to violet.",
     "example": "Yo니 can see the entire spectrum in a rainbow.",
     "needsReview": false
@@ -5959,6 +6455,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "sphere",
+    "partOfSpeech": "n.",
     "definition": "sphere is a three-dimensional ro니nd shape, like a ball.",
     "example": "The balloons were inflated into a variety of colorful spheres.",
     "needsReview": false
@@ -5971,6 +6468,7 @@
     "pdfPage": 152,
     "section": "word-list",
     "word": "star",
+    "partOfSpeech": "n.",
     "definition": "981axy [gs미aksi] A galaxy is an extremely large collection of star systems.",
     "example": "Star [sta:r] A star is a bright shining thing in the night sky.",
     "needsReview": true
@@ -5983,6 +6481,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "status",
+    "partOfSpeech": "",
     "definition": "Status is the position of something or someone in relation to others.",
     "example": "She had achieved the status of being the smartest girl in the class.",
     "needsReview": false
@@ -5995,6 +6494,7 @@
     "pdfPage": 153,
     "section": "word-list",
     "word": "ugly",
+    "partOfSpeech": "",
     "definition": "ugly is not good to look at.",
     "example": "It was an ugly sight.",
     "needsReview": false
@@ -6007,6 +6507,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "accuse",
+    "partOfSpeech": "",
     "definition": "accuse someone of something is to blame them for doing it.",
     "example": "She accused her brother of breaking her computer.",
     "needsReview": false
@@ -6019,6 +6520,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "adjust",
+    "partOfSpeech": "",
     "definition": "adjust something means to change it so it is better.",
     "example": "adjust [adjASt] To adjust something means to change it so it is better.",
     "needsReview": false
@@ -6031,6 +6533,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "amuse",
+    "partOfSpeech": "",
     "definition": "amuse someone means to do something that is funny or entertaining.",
     "example": "She amused the crowd.",
     "needsReview": false
@@ -6043,6 +6546,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "coral",
+    "partOfSpeech": "",
     "definition": "Coral is the hard, colorful material formed by the shells of animals.",
     "example": "The diver admired the beautiful coral 니nder the water.",
     "needsReview": false
@@ -6055,6 +6559,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "cotton",
+    "partOfSpeech": "",
     "definition": "cotton in the summer.",
     "example": "",
     "needsReview": true
@@ -6067,6 +6572,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "crash",
+    "partOfSpeech": "",
     "definition": "crash means to hit and break something.",
     "example": "There was a loud noise when the car crashed into the tree.",
     "needsReview": false
@@ -6079,6 +6585,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "deck",
+    "partOfSpeech": "",
     "definition": "deck is a wooden floor built outside of a house or the floor of a ship.",
     "example": "deck [dek] A deck is a wooden floor built outside of a house or the floor of a ship.",
     "needsReview": false
@@ -6091,6 +6598,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "engage",
+    "partOfSpeech": "",
     "definition": "engage in something means to do it.",
     "example": "Dad was engaged in sawing a piece of wood in half.",
     "needsReview": false
@@ -6103,6 +6611,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "firm",
+    "partOfSpeech": "",
     "definition": "firm thing is solid but not too hard.",
     "example": "He sleeps better on a firm bed.",
     "needsReview": false
@@ -6115,6 +6624,7 @@
     "pdfPage": 158,
     "section": "word-list",
     "word": "fuel",
+    "partOfSpeech": "",
     "definition": "Fuel is something that creates heat or energy.",
     "example": "fuel [빠：이 Fuel is something that creates heat or energy.",
     "needsReview": false
@@ -6127,6 +6637,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "grand",
+    "partOfSpeech": "adj.",
     "definition": "grand is big and liked by people.",
     "example": "The grand mountain rose high into the sky.",
     "needsReview": false
@@ -6139,6 +6650,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "hurricane",
+    "partOfSpeech": "n.",
     "definition": "hurricane is a bad storm that happens over the ocean.",
     "example": "hurricane [hs：r9kein] n A hurricane is a bad storm that happens over the ocean.",
     "needsReview": false
@@ -6151,6 +6663,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "loss",
+    "partOfSpeech": "",
     "definition": "loss is the act or instance of losing something.",
     "example": "loss [b:s] A loss is the act or instance of losing something.",
     "needsReview": false
@@ -6163,6 +6676,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "plain",
+    "partOfSpeech": "",
     "definition": "A 이ain thing is simple and not decorated.",
     "example": "He bought a pair of plan white shoes over the weekend.",
     "needsReview": false
@@ -6175,6 +6689,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "reef",
+    "partOfSpeech": "",
     "definition": "reef is a group of rocks or coral in the ocean.",
     "example": "He walked along the reef and looked at the water below.",
     "needsReview": false
@@ -6187,6 +6702,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "shut",
+    "partOfSpeech": "",
     "definition": "shut something means to close it tightly.",
     "example": "Please shut the door; the air outside is c이d.",
     "needsReview": false
@@ -6199,6 +6715,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "strict",
+    "partOfSpeech": "",
     "definition": "The teacher is strict She does not let sUidents talk in class.",
     "example": "Strict [strikt] ■3이.",
     "needsReview": false
@@ -6211,6 +6728,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "surf",
+    "partOfSpeech": "",
     "definition": "surf during their vacation.",
     "example": "",
     "needsReview": true
@@ -6223,6 +6741,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "task",
+    "partOfSpeech": "n.",
     "definition": "task is a piece of work to be done that is usually difficult.",
     "example": "task [teesk] n A task is a piece of work to be done that is usually difficult.",
     "needsReview": false
@@ -6235,6 +6754,7 @@
     "pdfPage": 159,
     "section": "word-list",
     "word": "zone",
+    "partOfSpeech": "",
     "definition": "zone is an area that has different qualities from the ones around it.",
     "example": "Firefighters often work in danger zones.",
     "needsReview": false
@@ -6247,6 +6767,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "apology",
+    "partOfSpeech": "n.",
     "definition": "apology is what people say to show that they are sorry.",
     "example": "After arguing with her teacher, the girl wrote the teacher an apology.",
     "needsReview": false
@@ -6259,6 +6780,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "bold",
+    "partOfSpeech": "adj.",
     "definition": "bold person is not afraid of doing something.",
     "example": "bold fbould] adj.",
     "needsReview": false
@@ -6271,6 +6793,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "bug",
+    "partOfSpeech": "n.",
     "definition": "bug is a small insect.",
     "example": "Birds like eating bugs.",
     "needsReview": false
@@ -6283,6 +6806,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "capture",
+    "partOfSpeech": "",
     "definition": "capture the bubbles in his hands.",
     "example": "",
     "needsReview": true
@@ -6295,6 +6819,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "duke",
+    "partOfSpeech": "n.",
     "definition": "duke is a man of high social rank but below a king or queen.",
     "example": "The duke ruled over the land.",
     "needsReview": false
@@ -6307,6 +6832,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "expose",
+    "partOfSpeech": "",
     "definition": "expose his costume.",
     "example": "",
     "needsReview": true
@@ -6319,6 +6845,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "guilty",
+    "partOfSpeech": "",
     "definition": "guilty [giiti] ad] Guilty people feel bad for something they did.",
     "example": "I felt guilty for taking my sister's cookies.",
     "needsReview": true
@@ -6331,6 +6858,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "hire",
+    "partOfSpeech": "",
     "definition": "hire someone is to pay that person money to work for you.",
     "example": "We hired a man to paint our house.",
     "needsReview": false
@@ -6343,6 +6871,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "innocent",
+    "partOfSpeech": "",
     "definition": "innocent of the crime.",
     "example": "",
     "needsReview": true
@@ -6355,6 +6884,7 @@
     "pdfPage": 164,
     "section": "word-list",
     "word": "language",
+    "partOfSpeech": "n.",
     "definition": "language is a system of communication.",
     "example": "The reporter spoke a language Sally had never heard before.",
     "needsReview": false
@@ -6367,6 +6897,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "minister",
+    "partOfSpeech": "n.",
     "definition": "minister is an important person in government with many duties.",
     "example": "The minister of education controls the country's schools.",
     "needsReview": false
@@ -6379,6 +6910,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "ordinary",
+    "partOfSpeech": "adj.",
     "definition": "Ordinary means normal, or not special in any way.",
     "example": "Today was just an ordinary day.",
     "needsReview": false
@@ -6391,6 +6923,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "permanent",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -6403,6 +6936,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "preserve",
+    "partOfSpeech": "v.",
     "definition": "preserve is to protect something from harm.",
     "example": "Dad sprayed a chemical on the house to help preserve the walls.",
     "needsReview": false
@@ -6415,6 +6949,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "pronounce",
+    "partOfSpeech": "v.",
     "definition": "pronounce is to say the sounds of letters or words.",
     "example": "pronounce [prsnauns] v'.",
     "needsReview": false
@@ -6427,6 +6962,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "resemble",
+    "partOfSpeech": "",
     "definition": "resemble someone is to look like that person.",
     "example": "The baby really resembles his father.",
     "needsReview": false
@@ -6439,6 +6975,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "symptom",
+    "partOfSpeech": "n.",
     "definition": "symptom of a bad condition or illness is a sign that it is happening.",
     "example": "Sneezing and a high fever are symptoms of the common cold.",
     "needsReview": false
@@ -6451,6 +6988,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "tobacco",
+    "partOfSpeech": "",
     "definition": "tobacco in cigarettes is bad for you.",
     "example": "",
     "needsReview": false
@@ -6463,6 +7001,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "twin",
+    "partOfSpeech": "",
     "definition": "twin] n Twins are two children Dorn at the same time.",
     "example": "My sister and I are twins.",
     "needsReview": false
@@ -6475,6 +7014,7 @@
     "pdfPage": 165,
     "section": "word-list",
     "word": "witch",
+    "partOfSpeech": "",
     "definition": "witch is a woman with magical powers.",
     "example": "People think that witches fly around on broomsticks.",
     "needsReview": false
@@ -6487,6 +7027,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "accompany",
+    "partOfSpeech": "",
     "definition": "accompany other people means to join them or go with them.",
     "example": "My brothers accompanied me to the movie.",
     "needsReview": false
@@ -6499,6 +7040,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "bare",
+    "partOfSpeech": "adj.",
     "definition": "bare thing is plain and not covered.",
     "example": "He likes to walk around in his bare feet.",
     "needsReview": false
@@ -6511,6 +7053,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "branch",
+    "partOfSpeech": "",
     "definition": "branch is the part of a tree with leaves.",
     "example": "The monkey was hanging from a branch on the tree.",
     "needsReview": false
@@ -6523,6 +7066,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "breath",
+    "partOfSpeech": "",
     "definition": "breath is the air that goes into and out of one's lungs.",
     "example": "You can't take a breath under water.",
     "needsReview": false
@@ -6535,6 +7079,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "bridge",
+    "partOfSpeech": "",
     "definition": "bridge is something that is built over a river so people can cross it.",
     "example": "The old bridge fell into the river.",
     "needsReview": false
@@ -6547,6 +7092,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "cast",
+    "partOfSpeech": "",
     "definition": "cast something means to throw it.",
     "example": "The fisherman cast his line into the water.",
     "needsReview": false
@@ -6559,6 +7105,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "dare",
+    "partOfSpeech": "",
     "definition": "dare means to be brave enough to try something.",
     "example": "He dared to jump out of the airplane and skydive.",
     "needsReview": false
@@ -6571,6 +7118,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "electronic",
+    "partOfSpeech": "",
     "definition": "electronic thing uses electricity to work.",
     "example": "I like having electronic devices such as an MP3 player.",
     "needsReview": true
@@ -6583,6 +7131,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "inn",
+    "partOfSpeech": "",
     "definition": "inn is a place where trav이ers can rest and eat.",
     "example": "The visitor got a room at the inn.",
     "needsReview": false
@@ -6595,6 +7144,7 @@
     "pdfPage": 170,
     "section": "word-list",
     "word": "net",
+    "partOfSpeech": "",
     "definition": "net is a bag made of strong thread.",
     "example": "The boy caught butterflies in his net.",
     "needsReview": false
@@ -6607,6 +7157,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "philosophy",
+    "partOfSpeech": "",
     "definition": "philosophy is \"live and let live.\"",
     "example": "",
     "needsReview": false
@@ -6619,6 +7170,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "pot",
+    "partOfSpeech": "",
     "definition": "pot is a deep, round metal container used for cooking.",
     "example": "Don't to니ch the pot on the stove.",
     "needsReview": false
@@ -6631,6 +7183,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "seed",
+    "partOfSpeech": "n.",
     "definition": "seed is th은 hard part of a plant or fruit that trees grow from.",
     "example": "I planted the seed in the dirt, hoping that it wo니d grow into a tree.",
     "needsReview": false
@@ -6643,6 +7196,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "sharp",
+    "partOfSpeech": "",
     "definition": "sharp [fc】：「P] ad).",
     "example": "A sharp object has a thin edge that cuts things easily.",
     "needsReview": true
@@ -6655,6 +7209,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "sort",
+    "partOfSpeech": "",
     "definition": "sort of something is a type of it What sort of instrument do you want to learn to play?",
     "example": "sort [so:rt] A sort of something is a type of it What sort of instrument do you want to learn to play?",
     "needsReview": false
@@ -6667,6 +7222,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "subtract",
+    "partOfSpeech": "",
     "definition": "subtract numbers in class.",
     "example": "",
     "needsReview": true
@@ -6679,6 +7235,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "tight",
+    "partOfSpeech": "adj.",
     "definition": "tight thing is hard to move beca니se it is firmly in place.",
     "example": "The knots were too tight to 니ntie.",
     "needsReview": false
@@ -6691,6 +7248,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "virtual",
+    "partOfSpeech": "",
     "definition": "virtual leader of the group.",
     "example": "",
     "needsReview": true
@@ -6703,6 +7261,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "weigh",
+    "partOfSpeech": "",
     "definition": "weigh something means to measure how heavy it is.",
     "example": "The little dog weighed exactly 3 kilograms.",
     "needsReview": false
@@ -6715,6 +7274,7 @@
     "pdfPage": 171,
     "section": "word-list",
     "word": "whisper",
+    "partOfSpeech": "",
     "definition": "whisper means to say very quietly.",
     "example": "We have to whisper in the library so people can focus on reading.",
     "needsReview": false
@@ -6727,6 +7287,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "abstract",
+    "partOfSpeech": "adj.",
     "definition": "abstract thing is an idea or thought, not a physical thing.",
     "example": "The idea of beauty is abstract and changes over time.",
     "needsReview": false
@@ -6739,6 +7300,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "annual",
+    "partOfSpeech": "adj.",
     "definition": "The only time I see my aunts and uncles is at our annual family picnic.",
     "example": "annual [aenjual] adj.",
     "needsReview": false
@@ -6751,6 +7313,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "clay",
+    "partOfSpeech": "",
     "definition": "Clay is a type of heavy, wet soil used to make pots.",
     "example": "She made a bowl out of the clay.",
     "needsReview": false
@@ -6763,6 +7326,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "cloth",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -6775,6 +7339,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "curtain",
+    "partOfSpeech": "n.",
     "definition": "curtain is a cloth hung over a window or used to divide a room.",
     "example": "She opened the curtains to let light into the room.",
     "needsReview": false
@@ -6787,6 +7352,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "deserve",
+    "partOfSpeech": "v.",
     "definition": "deserve is to be worthy of something as a result of one's actions.",
     "example": "The dog deserved a bone for behaving very well.",
     "needsReview": false
@@ -6799,6 +7365,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "feather",
+    "partOfSpeech": "n.",
     "definition": "Feathers are the things covering a bird's bodies.",
     "example": "That bird has orange feathers on its chest.",
     "needsReview": false
@@ -6811,6 +7378,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "fertile",
+    "partOfSpeech": "adj.",
     "definition": "Fertile land is able to produce good crops and plants.",
     "example": "The farmer grew many vegetables in the fertile soil.",
     "needsReview": false
@@ -6823,6 +7391,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "flood",
+    "partOfSpeech": "",
     "definition": "flood is an event in which water covers an area that is us니ally dry.",
     "example": "After three days of rain, there was a flood in the city.",
     "needsReview": false
@@ -6835,6 +7404,7 @@
     "pdfPage": 176,
     "section": "word-list",
     "word": "furniture",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -6847,6 +7417,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "grave",
+    "partOfSpeech": "n.",
     "definition": "grave is the place where a dead person is buried.",
     "example": "We visit our grandfather's grave each year.",
     "needsReview": false
@@ -6859,6 +7430,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "ideal",
+    "partOfSpeech": "",
     "definition": "ideal thing is the best that it can possibly be.",
     "example": "This house is an ideal place for my family.",
     "needsReview": false
@@ -6871,6 +7443,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "intelligence",
+    "partOfSpeech": "n.",
     "definition": "Intelligence is the ability to learn and understand things.",
     "example": "Because of his high intelligence, he finished school early.",
     "needsReview": false
@@ -6883,6 +7456,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "obtain",
+    "partOfSpeech": "",
     "definition": "obtain is to get something you want or need.",
     "example": "After I passed the test, I obtained my driver's license.",
     "needsReview": false
@@ -6895,6 +7469,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "religious",
+    "partOfSpeech": "adj.",
     "definition": "Religious means related to or about religion.",
     "example": "The holy man spoke about religious topics.",
     "needsReview": false
@@ -6907,6 +7482,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "romantic",
+    "partOfSpeech": "",
     "definition": "",
     "example": "",
     "needsReview": true
@@ -6919,6 +7495,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "shell",
+    "partOfSpeech": "",
     "definition": "shell is a hard covering that protects the body of some sea creatures.",
     "example": "There were many pretty shells on the beach.",
     "needsReview": false
@@ -6931,6 +7508,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "shore",
+    "partOfSpeech": "",
     "definition": "shore is the 은dge of a large body of water.",
     "example": "All of the boats were floating near the shore.",
     "needsReview": false
@@ -6943,6 +7521,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "wheel",
+    "partOfSpeech": "",
     "definition": "wheel is a round thing on a vehicle that turns when it moves.",
     "example": "A car has four wheels.",
     "needsReview": false
@@ -6955,6 +7534,7 @@
     "pdfPage": 177,
     "section": "word-list",
     "word": "wooden",
+    "partOfSpeech": "",
     "definition": "Wooden objects are made of wood.",
     "example": "My mother gave me a wooden spoon.",
     "needsReview": false
@@ -6967,6 +7547,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "appliance",
+    "partOfSpeech": "n.",
     "definition": "appliance is a piece of equipment used for jobs in the home.",
     "example": "Many homes have appliances like ovens, toasters, and refrigerators.",
     "needsReview": false
@@ -6979,6 +7560,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "basin",
+    "partOfSpeech": "n.",
     "definition": "basin is large bowl for washing things.",
     "example": "A sink is sometimes called a basin.",
     "needsReview": false
@@ -6991,6 +7573,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "broom",
+    "partOfSpeech": "n.",
     "definition": "broom is a brush with a long handle used for cleaning floors.",
     "example": "My father usually uses a broom to sweep away d니st in the basement.",
     "needsReview": false
@@ -7003,6 +7586,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "caterpillar",
+    "partOfSpeech": "n.",
     "definition": "caterpillar is a small insect that looks like a worm and eats plants.",
     "example": "After eating a lot of leaves, caterpillars change into b니tterflies.",
     "needsReview": false
@@ -7015,6 +7599,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "cupboard",
+    "partOfSpeech": "n.",
     "definition": "cupboard is a piece of furniture that is used to store food or household items We put all of o니r dishes and food in the cupboards.",
     "example": "A cupboard is a piece of furniture that is used to store food or household items We put all of o니r dishes and food in the cupboards.",
     "needsReview": false
@@ -7027,6 +7612,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "delicate",
+    "partOfSpeech": "adj.",
     "definition": "Delicate things are easy to break or harm.",
     "example": "You should hold the baby carefully because she's very delicate.",
     "needsReview": false
@@ -7039,6 +7625,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "emerge",
+    "partOfSpeech": "v.",
     "definition": "emerge from something means to come out of it.",
     "example": "A groundhog emerged from a snow covered",
     "needsReview": false
@@ -7051,6 +7638,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "handicap",
+    "partOfSpeech": "n.",
     "definition": "handicap is a condition that limits someone's mental or physical abilities.",
     "example": "Joe has a slight handicap, so he uses a walker to get around.",
     "needsReview": false
@@ -7063,6 +7651,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "hole",
+    "partOfSpeech": "",
     "definition": "handicap [hsbndika卽] n.",
     "example": "They made a big hole in the wall.",
     "needsReview": true
@@ -7075,6 +7664,7 @@
     "pdfPage": 182,
     "section": "word-list",
     "word": "hook",
+    "partOfSpeech": "n.",
     "definition": "hook is a sharp curved piece of metal used for catching or holding things.",
     "example": "The fish went after the sharp hook.",
     "needsReview": false
@@ -7087,6 +7677,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "hop",
+    "partOfSpeech": "v.",
     "definition": "hop means to jump a short distance.",
     "example": "The kangaroo quickly hopped away from danger.",
     "needsReview": false
@@ -7099,6 +7690,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "laundry",
+    "partOfSpeech": "",
     "definition": "Laundry is clothes that have been or need to be washed.",
     "example": "He folded the clean laundry and put the dirty in a basket.",
     "needsReview": false
@@ -7111,6 +7703,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "pursue",
+    "partOfSpeech": "v.",
     "definition": "pursue is to chase or follow someone or something.",
     "example": "The mother pursued her young child down the hill.",
     "needsReview": false
@@ -7123,6 +7716,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "reluctant",
+    "partOfSpeech": "adj.",
     "definition": "Reluctant means not wanting to do something.",
     "example": "She was reluctant to say that she saw the robbery.",
     "needsReview": false
@@ -7135,6 +7729,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "sleeve",
+    "partOfSpeech": "",
     "definition": "sleeve [swi n Sleeves are the part of a shirt in which arms go.",
     "example": "Ryan bought a new shirt with long sle은vg‘ to keep his arms warm.",
     "needsReview": true
@@ -7147,6 +7742,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "spine",
+    "partOfSpeech": "",
     "definition": "spine is the group of bones that run up and down the middle of the back.",
     "example": "Our spine helps us to stand up nice and straight.",
     "needsReview": false
@@ -7159,6 +7755,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "stain",
+    "partOfSpeech": "n.",
     "definition": "stain is a dirty mark that is diffic니t to clean.",
     "example": "He had a red stain on the collar of his shirt.",
     "needsReview": false
@@ -7171,6 +7768,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "strip",
+    "partOfSpeech": "n.",
     "definition": "strip is a long, narrow piece of material or land.",
     "example": "He had long strips of film that h이d images of his trip abroad.",
     "needsReview": false
@@ -7183,6 +7781,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "swear",
+    "partOfSpeech": "v.",
     "definition": "swear means to promise to do something.",
     "example": "I will put my hand on the Bible and swear to do my best for the country.",
     "needsReview": false
@@ -7195,6 +7794,7 @@
     "pdfPage": 183,
     "section": "word-list",
     "word": "swing",
+    "partOfSpeech": "",
     "definition": "swing something means to move it back and forth or from side to side.",
     "example": "He can swing a golf club very powerf니ly.",
     "needsReview": false

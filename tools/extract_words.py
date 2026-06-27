@@ -96,11 +96,31 @@ def find_word_position(text: str, word: str) -> int:
     return max(matches, key=score).start()
 
 
-def extract_entry(text: str, words: list[str], index: int) -> tuple[str, str, bool]:
+PART_PATTERNS = [
+    (re.compile(r"\badj\.?\b|adi\b|ad//\b|ac//\b", flags=re.IGNORECASE), "adj."),
+    (re.compile(r"\badv\.?\b", flags=re.IGNORECASE), "adv."),
+    (re.compile(r"\bconj\.?\b|con/\b|conj\b", flags=re.IGNORECASE), "conj."),
+    (re.compile(r"\bv\.?\b| u | z | 丁 ", flags=re.IGNORECASE), "v."),
+    (re.compile(r"\bn\.?\b| fl |『|）", flags=re.IGNORECASE), "n."),
+]
+
+
+def extract_part_of_speech(chunk: str, definition: str) -> str:
+    search_area = chunk
+    if definition and definition in chunk:
+        search_area = chunk[: chunk.index(definition)]
+    search_area = search_area[:140]
+    for pattern, value in PART_PATTERNS:
+        if pattern.search(search_area):
+            return value
+    return ""
+
+
+def extract_entry(text: str, words: list[str], index: int) -> tuple[str, str, str, bool]:
     word = words[index]
     start = find_word_position(text, word)
     if start < 0:
-        return f"Study the word '{word}' from this unit.", "", True
+        return "", f"Study the word '{word}' from this unit.", "", True
 
     next_positions = [find_word_position(text[start + len(word) :], next_word) for next_word in words[index + 1 :]]
     next_positions = [pos + start + len(word) for pos in next_positions if pos >= 0]
@@ -143,13 +163,14 @@ def extract_entry(text: str, words: list[str], index: int) -> tuple[str, str, bo
 
     definition = clean_text(definition)[:260]
     example = clean_text(example)[:220]
+    part_of_speech = extract_part_of_speech(chunk, definition)
     needs_review = (
         definition.startswith("Study the word")
         or len(definition) < 18
         or "[" in definition
         or not definition_pattern.search(definition)
     )
-    return definition, example, needs_review
+    return part_of_speech, definition, example, needs_review
 
 
 def has_exercises_heading(text: str) -> bool:
@@ -233,7 +254,7 @@ def main() -> None:
         }
         page_text = " ".join(page_texts.values())
         for index, word in enumerate(words):
-            definition, example, needs_review = extract_entry(page_text, words, index)
+            part_of_speech, definition, example, needs_review = extract_entry(page_text, words, index)
             fallback_index = min(index * max(len(word_pages), 1) // len(words), max(len(word_pages) - 1, 0))
             fallback_page = word_pages[fallback_index]
             book_page = find_word_page(page_texts, word, fallback_page)
@@ -246,6 +267,7 @@ def main() -> None:
                 "pdfPage": pdf_page,
                 "section": "word-list",
                 "word": word,
+                "partOfSpeech": part_of_speech,
                 "definition": definition,
                 "example": example,
                 "needsReview": needs_review,
@@ -269,6 +291,7 @@ def main() -> None:
                 "pdfPage",
                 "section",
                 "word",
+                "partOfSpeech",
                 "definition",
                 "example",
                 "needsReview",

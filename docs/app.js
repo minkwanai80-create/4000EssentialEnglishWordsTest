@@ -101,7 +101,12 @@ function makeBlank(example, answer) {
 function maskAnswer(text, answer) {
   if (!text) return "";
   const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return text.replace(new RegExp(`\\b${escaped}\\b`, "ig"), "(답)");
+  return text.replace(new RegExp(`\\b${escaped}\\b`, "ig"), "____");
+}
+
+function definitionHint(word) {
+  const masked = maskAnswer(word.definition || `교재 ${word.bookPage}페이지의 단어입니다.`, word.word);
+  return word.partOfSpeech ? `${word.partOfSpeech} ${masked}` : masked;
 }
 
 function speakWithBrowser(text) {
@@ -152,14 +157,14 @@ function buildQuestion(word, mode) {
   if (kind === "choice") {
     const wrong = shuffle(state.words.filter((item) => item.word !== word.word && item.definition && !item.needsReview))
       .slice(0, 3)
-      .map((item) => item.definition);
+      .map((item) => definitionHint(item));
     return {
       word,
       kind,
       prompt: `"${word.word}"의 뜻으로 가장 가까운 것은?`,
       hint: `교재 ${word.bookPage}페이지`,
-      choices: shuffle([word.definition, ...wrong]),
-      answer: word.definition,
+      choices: shuffle([definitionHint(word), ...wrong]),
+      answer: definitionHint(word),
     };
   }
 
@@ -177,7 +182,7 @@ function buildQuestion(word, mode) {
     word,
     kind: "definition",
     prompt: "듣고 단어를 입력하세요.",
-    hint: maskAnswer(word.definition || `교재 ${word.bookPage}페이지의 단어입니다.`, word.word),
+    hint: definitionHint(word),
     answer: word.word,
   };
 }
