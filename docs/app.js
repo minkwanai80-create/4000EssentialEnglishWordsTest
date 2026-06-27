@@ -192,10 +192,17 @@ function filterWords() {
   return { filtered, source: scope.source, pageRange: scope.pageRange };
 }
 
+function syncQuestionCount(availableCount) {
+  els.questionCount.max = String(Math.max(availableCount, 1));
+  els.questionCount.placeholder = availableCount ? `최대 ${availableCount}개` : "출제 가능 단어 없음";
+  els.questionCount.value = availableCount ? String(availableCount) : "";
+}
+
 function updateSelectedCount() {
   const result = filterWords();
   els.selectedWords.textContent = result.error ? "-" : String(result.filtered.length);
   els.scopeSummary.textContent = result.error || result.source;
+  syncQuestionCount(result.error ? 0 : result.filtered.length);
 }
 
 function renderToc() {
@@ -274,7 +281,8 @@ function startQuiz() {
     return;
   }
 
-  const count = Math.min(Number(els.questionCount.value) || 10, result.filtered.length);
+  const requestedCount = Number(els.questionCount.value) || result.filtered.length;
+  const count = Math.max(1, Math.min(requestedCount, result.filtered.length));
   state.filtered = result.filtered;
   state.questions = shuffle(result.filtered).slice(0, count).map((word) => buildQuestion(word, els.quizMode.value));
   state.current = 0;
