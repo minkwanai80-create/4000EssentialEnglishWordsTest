@@ -9,6 +9,7 @@ from pypdf import PdfReader
 ROOT = Path(__file__).resolve().parents[1]
 PDF_PATH = ROOT / "문서" / "4000 Essential English Words 2 PDF.pdf"
 JSON_PATH = ROOT / "docs" / "data" / "words.json"
+TOC_PATH = ROOT / "docs" / "data" / "toc.json"
 CSV_PATH = ROOT / "data" / "words-review.csv"
 
 UNITS = [
@@ -151,10 +152,28 @@ def extract_entry(text: str, words: list[str], index: int) -> tuple[str, str, bo
     return definition, example, needs_review
 
 
+def build_toc() -> list[dict]:
+    toc = []
+    for unit, start_page, title, word_string in UNITS:
+        toc.append(
+            {
+                "unit": unit,
+                "title": title,
+                "wordCount": len(word_string.split()),
+                "wordListPages": [start_page, start_page + 1],
+                "exercisePages": [start_page + 2, start_page + 3],
+                "readingPages": [start_page + 4, start_page + 5],
+                "allPages": [start_page, start_page + 5],
+            }
+        )
+    return toc
+
+
 def main() -> None:
     reader = PdfReader(str(PDF_PATH))
     entries = []
     review_rows = []
+    toc = build_toc()
 
     for unit, start_page, title, word_string in UNITS:
         words = word_string.split()
@@ -164,11 +183,15 @@ def main() -> None:
         )
         for index, word in enumerate(words):
             definition, example, needs_review = extract_entry(page_text, words, index)
-            page = start_page if index < 10 else start_page + 1
+            book_page = start_page if index < 10 else start_page + 1
+            pdf_page = book_page
             entry = {
                 "unit": unit,
-                "page": page,
-                "title": title,
+                "unitTitle": title,
+                "wordOrder": index + 1,
+                "bookPage": book_page,
+                "pdfPage": pdf_page,
+                "section": "word-list",
                 "word": word,
                 "definition": definition,
                 "example": example,
@@ -180,14 +203,30 @@ def main() -> None:
     JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
     CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
     JSON_PATH.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    TOC_PATH.write_text(json.dumps(toc, ensure_ascii=False, indent=2), encoding="utf-8")
 
     with CSV_PATH.open("w", newline="", encoding="utf-8-sig") as file:
-        writer = csv.DictWriter(file, fieldnames=["unit", "page", "title", "word", "definition", "example", "needsReview"])
+        writer = csv.DictWriter(
+            file,
+            fieldnames=[
+                "unit",
+                "unitTitle",
+                "wordOrder",
+                "bookPage",
+                "pdfPage",
+                "section",
+                "word",
+                "definition",
+                "example",
+                "needsReview",
+            ],
+        )
         writer.writeheader()
         writer.writerows(review_rows)
 
     review_count = sum(1 for item in entries if item["needsReview"])
     print(f"Wrote {len(entries)} words to {JSON_PATH}")
+    print(f"Wrote {len(toc)} toc rows to {TOC_PATH}")
     print(f"Wrote review CSV to {CSV_PATH}")
     print(f"Needs review: {review_count}")
 

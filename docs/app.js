@@ -1,12 +1,12 @@
 const state = {
   words: [],
+  toc: [],
   filtered: [],
   questions: [],
   current: 0,
   correct: 0,
   missed: [],
   selectedChoice: "",
-  settings: null,
 };
 
 const els = {
@@ -20,6 +20,8 @@ const els = {
   totalWords: document.querySelector("#totalWords"),
   selectedWords: document.querySelector("#selectedWords"),
   progressText: document.querySelector("#progressText"),
+  scopeSummary: document.querySelector("#scopeSummary"),
+  tocList: document.querySelector("#tocList"),
   quizPanel: document.querySelector("#quizPanel"),
   questionType: document.querySelector("#questionType"),
   unitBadge: document.querySelector("#unitBadge"),
@@ -40,7 +42,12 @@ function normalizeAnswer(value) {
 }
 
 function parseRange(value) {
-  const raw = String(value || "").trim();
+  const raw = String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/페이지|page|pages|p\.?/g, "")
+    .replace(/단원|unit|유닛/g, "")
+    .trim();
   if (!raw) return null;
   const match = raw.match(/^(\d+)(?:\s*[-~]\s*(\d+))?$/);
   if (!match) return null;
@@ -52,6 +59,11 @@ function parseRange(value) {
 
 function inRange(value, range) {
   return !range || (value >= range[0] && value <= range[1]);
+}
+
+function rangeText(range) {
+  if (!range) return "";
+  return range[0] === range[1] ? `${range[0]}` : `${range[0]}-${range[1]}`;
 }
 
 function shuffle(items) {
@@ -82,14 +94,14 @@ function getQuestionKind(mode, word) {
 function buildQuestion(word, mode) {
   const kind = getQuestionKind(mode, word);
   if (kind === "choice") {
-    const wrong = shuffle(state.words.filter((item) => item.word !== word.word && item.definition))
+    const wrong = shuffle(state.words.filter((item) => item.word !== word.word && item.definition && !item.needsReview))
       .slice(0, 3)
       .map((item) => item.definition);
     return {
       word,
       kind,
       prompt: `"${word.word}"의 뜻으로 가장 가까운 것은?`,
-      hint: `Unit ${word.unit} · Page ${word.page}`,
+      hint: `교재 ${word.bookPage}페이지 · Unit ${word.unit}`,
       choices: shuffle([word.definition, ...wrong]),
       answer: word.definition,
     };
@@ -114,21 +126,75 @@ function buildQuestion(word, mode) {
   };
 }
 
-function filterWords() {
-  const unitRange = parseRange(els.unitRange.value);
+function pageRangeFromUnits(unitRange) {
+  if (!unitRange) return null;
+  const selected = state.toc.filter((unit) => inRange(unit.unit, unitRange));
+  if (!selected.length) return null;
+  const starts = selected.map((unit) => unit.wordListPages[0]);
+  const ends = selected.map((unit) => unit.wordListPages[1]);
+  return [Math.min(...starts), Math.max(...ends)];
+}
+
+function resolveScope() {
   const pageRange = parseRange(els.pageRange.value);
-  if ((els.unitRange.value.trim() && !unitRange) || (els.pageRange.value.trim() && !pageRange)) {
-    return { error: "범위는 1 또는 1-3 형식으로 입력하세요." };
+  const unitRange = parseRange(els.unitRange.value);
+  const hasPageInput = Boolean(els.pageRange.value.trim());
+  const hasUnitInput = Boolean(els.unitRange.value.trim());
+
+  if (hasPageInput && !pageRange) {
+    return { error: "페이지 범위는 8 또는 8-15 형식으로 입력하세요." };
   }
+  if (hasUnitInput && !unitRange) {
+    return { error: "단원 범위는 1 또는 1-3 형식으로 입력하세요." };
+  }
+
+  if (pageRange) {
+    return { pageRange, source: `교재 ${rangeText(pageRange)}페이지 기준` };
+  }
+  if (unitRange) {
+    const converted = pageRangeFromUnits(unitRange);
+    if (!converted) return { error: "해당 단원 범위를 찾을 수 없습니다." };
+    return {
+      pageRange: converted,
+      source: `Unit ${rangeText(unitRange)}의 단어 목록 페이지(${rangeText(converted)}) 기준`,
+    };
+  }
+  return { pageRange: null, source: "전체 단어 목록 페이지 기준" };
+}
+
+function filterWords() {
+  const scope = resolveScope();
+  if (scope.error) return scope;
   const filtered = state.words.filter(
-    (word) => !word.needsReview && inRange(word.unit, unitRange) && inRange(word.page, pageRange)
+    (word) => !word.needsReview && inRange(word.bookPage, scope.pageRange)
   );
-  return { filtered };
+  return { filtered, source: scope.source, pageRange: scope.pageRange };
 }
 
 function updateSelectedCount() {
   const result = filterWords();
   els.selectedWords.textContent = result.error ? "-" : String(result.filtered.length);
+  els.scopeSummary.textContent = result.error || result.source;
+}
+
+function renderToc() {
+  els.tocList.innerHTML = "";
+  state.toc.forEach((unit) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "toc-card";
+    button.innerHTML = `
+      <strong>Unit ${unit.unit}. ${unit.title}</strong>
+      <span>단어 목록: ${rangeText(unit.wordListPages)}페이지 · 전체: ${rangeText(unit.allPages)}페이지</span>
+    `;
+    button.addEventListener("click", () => {
+      els.pageRange.value = rangeText(unit.wordListPages);
+      els.unitRange.value = "";
+      updateSelectedCount();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    els.tocList.appendChild(button);
+  });
 }
 
 function renderQuestion() {
@@ -142,7 +208,7 @@ function renderQuestion() {
   els.checkBtn.hidden = false;
   els.progressText.textContent = `${state.current + 1} / ${state.questions.length}`;
   els.questionType.textContent = question.kind === "choice" ? "객관식" : question.kind === "blank" ? "빈칸" : "정의";
-  els.unitBadge.textContent = `Unit ${question.word.unit}`;
+  els.unitBadge.textContent = `Unit ${question.word.unit} · p.${question.word.bookPage}`;
   els.questionText.textContent = question.prompt;
   els.questionHint.textContent = question.hint;
   els.answerArea.innerHTML = "";
@@ -180,7 +246,7 @@ function startQuiz() {
     return;
   }
   if (!result.filtered.length) {
-    alert("선택한 범위에 단어가 없습니다.");
+    alert("선택한 페이지 범위에 출제 가능한 단어가 없습니다.");
     return;
   }
 
@@ -190,13 +256,8 @@ function startQuiz() {
   state.current = 0;
   state.correct = 0;
   state.missed = [];
-  state.settings = {
-    unitRange: els.unitRange.value,
-    pageRange: els.pageRange.value,
-    questionCount: els.questionCount.value,
-    quizMode: els.quizMode.value,
-  };
   els.selectedWords.textContent = String(result.filtered.length);
+  els.scopeSummary.textContent = result.source;
   renderQuestion();
 }
 
@@ -242,7 +303,7 @@ function showResults() {
   state.missed.forEach(({ question, answer }) => {
     const item = document.createElement("div");
     item.className = "missed-item";
-    item.innerHTML = `<strong>${question.word.word}</strong><span>내 답: ${answer || "-"} · Unit ${question.word.unit} · Page ${question.word.page}</span>`;
+    item.innerHTML = `<strong>${question.word.word}</strong><span>내 답: ${answer || "-"} · Unit ${question.word.unit} · p.${question.word.bookPage}</span>`;
     els.missedList.appendChild(item);
   });
 }
@@ -258,11 +319,18 @@ function nextQuestion() {
 
 async function init() {
   try {
-    const response = await fetch("./data/words.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.words = await response.json();
-    els.totalWords.textContent = String(state.words.length);
-    els.dataSummary.textContent = `총 ${state.words.length}개 단어를 사용할 수 있습니다.`;
+    const [wordResponse, tocResponse] = await Promise.all([
+      fetch("./data/words.json", { cache: "no-store" }),
+      fetch("./data/toc.json", { cache: "no-store" }),
+    ]);
+    if (!wordResponse.ok) throw new Error(`words.json HTTP ${wordResponse.status}`);
+    if (!tocResponse.ok) throw new Error(`toc.json HTTP ${tocResponse.status}`);
+    state.words = await wordResponse.json();
+    state.toc = await tocResponse.json();
+    const usable = state.words.filter((word) => !word.needsReview).length;
+    els.totalWords.textContent = String(usable);
+    els.dataSummary.textContent = `출제 가능한 단어 ${usable}개를 페이지 기준으로 사용할 수 있습니다.`;
+    renderToc();
     updateSelectedCount();
   } catch (error) {
     els.dataSummary.textContent = "단어 데이터를 불러오지 못했습니다.";
