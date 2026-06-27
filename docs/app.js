@@ -222,7 +222,7 @@ function resolveScope() {
 function filterWords() {
   const scope = resolveScope();
   if (scope.error) return scope;
-  const filtered = state.words.filter((word) => !word.needsReview && inRange(word.bookPage, scope.pageRange));
+  const filtered = state.words.filter((word) => inRange(word.bookPage, scope.pageRange));
   return { filtered, source: scope.source, pageRange: scope.pageRange };
 }
 
@@ -403,6 +403,7 @@ function renderDictionaryPanel(question, result) {
     createDetailRow("예문", word.example),
     createDetailRow("해석", word.exampleKo),
     createDetailRow("설명", word.dictionaryNotes),
+    createDetailRow("검수", word.needsReview ? "OCR 검수 필요" : "완료"),
   );
 
   panel.append(title, summary, dictionary);
@@ -601,7 +602,7 @@ async function init() {
     if (!tocResponse.ok) throw new Error(`toc.json HTTP ${tocResponse.status}`);
     state.words = await wordResponse.json();
     state.toc = await tocResponse.json();
-    const usable = state.words.filter((word) => !word.needsReview).length;
+    const usable = state.words.length;
     els.totalWords.textContent = String(usable);
     els.dataSummary.textContent = `출제 가능한 단어 ${usable}개를 사용할 수 있습니다.`;
     if ("speechSynthesis" in window) window.speechSynthesis.getVoices();
