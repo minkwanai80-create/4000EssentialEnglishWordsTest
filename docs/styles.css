@@ -218,7 +218,8 @@ button:focus {
   margin-bottom: 12px;
 }
 
-.toc-list {
+.toc-list,
+.word-list-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
@@ -227,7 +228,12 @@ button:focus {
   padding-right: 4px;
 }
 
-.toc-card {
+.word-list-grid {
+  margin-top: 14px;
+}
+
+.toc-card,
+.word-page-card {
   display: grid;
   gap: 7px;
   min-height: 104px;
@@ -237,17 +243,20 @@ button:focus {
   background: var(--surface-soft);
 }
 
-.toc-card:hover {
+.toc-card:hover,
+.word-page-card:hover {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
 
-.toc-card strong {
+.toc-card strong,
+.word-page-card strong {
   line-height: 1.25;
 }
 
 .toc-card span,
-.toc-card small {
+.toc-card small,
+.word-page-card span {
   color: var(--muted);
   font-size: 12px;
   font-weight: 750;
@@ -394,6 +403,7 @@ button:focus {
   .hero,
   .controls,
   .toc-list,
+  .word-list-grid,
   .review-grid {
     grid-template-columns: 1fr;
   }

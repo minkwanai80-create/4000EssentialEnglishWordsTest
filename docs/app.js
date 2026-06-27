@@ -23,6 +23,7 @@ const els = {
   progressText: document.querySelector("#progressText"),
   scopeSummary: document.querySelector("#scopeSummary"),
   tocList: document.querySelector("#tocList"),
+  wordListPages: document.querySelector("#wordListPages"),
   quizPanel: document.querySelector("#quizPanel"),
   questionType: document.querySelector("#questionType"),
   unitBadge: document.querySelector("#unitBadge"),
@@ -40,6 +41,8 @@ const els = {
   tabs: document.querySelectorAll(".tab"),
   tabPanels: document.querySelectorAll(".tab-panel"),
 };
+
+const pronunciationAudio = new Audio();
 
 function normalizeAnswer(value) {
   return String(value || "").trim().toLowerCase().replace(/\s+/g, " ");
@@ -86,17 +89,31 @@ function makeBlank(example, answer) {
   return example.replace(pattern, "_____");
 }
 
-function speak(text) {
-  if (!("speechSynthesis" in window)) {
-    alert("이 브라우저는 발음 듣기를 지원하지 않습니다.");
-    return;
-  }
+function speakWithBrowser(text) {
+  if (!("speechSynthesis" in window)) return false;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "en-US";
   utterance.rate = 0.88;
   utterance.pitch = 1;
+  const voices = window.speechSynthesis.getVoices();
+  const englishVoice = voices.find((voice) => voice.lang.toLowerCase().startsWith("en"));
+  if (englishVoice) utterance.voice = englishVoice;
   window.speechSynthesis.speak(utterance);
+  return true;
+}
+
+function speak(text) {
+  const word = String(text || "").trim();
+  if (!word) return;
+  pronunciationAudio.pause();
+  pronunciationAudio.currentTime = 0;
+  pronunciationAudio.src = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(word)}`;
+  pronunciationAudio.play().catch(() => {
+    if (!speakWithBrowser(word)) {
+      alert("이 브라우저에서 발음 듣기를 재생하지 못했습니다.");
+    }
+  });
 }
 
 function setActiveTab(tabName) {
@@ -214,7 +231,7 @@ function renderToc() {
     button.innerHTML = `
       <strong>Unit ${unit.unit}. ${unit.title}</strong>
       <span>단어 목록 ${rangeText(unit.wordListPages)}페이지</span>
-      <small>전체 ${rangeText(unit.allPages)}페이지 · ${unit.wordCount} words</small>
+      <small>${unit.wordCount} words</small>
     `;
     button.addEventListener("click", () => {
       els.pageRange.value = rangeText(unit.wordListPages);
@@ -224,6 +241,25 @@ function renderToc() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
     els.tocList.appendChild(button);
+  });
+}
+
+function renderWordListPages() {
+  els.wordListPages.innerHTML = "";
+  state.toc.forEach((unit) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "word-page-card";
+    button.innerHTML = `
+      <strong>${rangeText(unit.wordListPages)}페이지</strong>
+      <span>Unit ${unit.unit}. ${unit.title}</span>
+    `;
+    button.addEventListener("click", () => {
+      els.pageRange.value = rangeText(unit.wordListPages);
+      els.unitRange.value = String(unit.unit);
+      updateSelectedCount();
+    });
+    els.wordListPages.appendChild(button);
   });
 }
 
@@ -241,6 +277,7 @@ function renderQuestion() {
   els.unitBadge.textContent = `Unit ${question.word.unit} · p.${question.word.bookPage}`;
   els.questionText.textContent = question.prompt;
   els.questionHint.textContent = question.hint;
+  els.speakBtn.textContent = `듣기: ${question.word.word}`;
   els.speakBtn.hidden = false;
   els.answerArea.innerHTML = "";
 
@@ -369,6 +406,8 @@ async function init() {
     const usable = state.words.filter((word) => !word.needsReview).length;
     els.totalWords.textContent = String(usable);
     els.dataSummary.textContent = `출제 가능한 단어 ${usable}개를 페이지 기준으로 사용할 수 있습니다.`;
+    if ("speechSynthesis" in window) window.speechSynthesis.getVoices();
+    renderWordListPages();
     renderToc();
     updateSelectedCount();
   } catch (error) {
