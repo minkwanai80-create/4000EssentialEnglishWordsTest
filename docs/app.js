@@ -9,8 +9,10 @@ const state = {
   correct: 0,
   missed: [],
   selectedChoice: "",
-  activeTab: "test",
+  activeTab: "setup",
   activeScope: "전체 WORD LIST 기준",
+  activeModeLabel: "",
+  hasActiveQuiz: false,
 };
 
 const els = {
@@ -22,10 +24,13 @@ const els = {
   startBtn: document.querySelector("#startBtn"),
   totalWords: document.querySelector("#totalWords"),
   selectedWords: document.querySelector("#selectedWords"),
-  progressText: document.querySelector("#progressText"),
+  plannedQuestions: document.querySelector("#plannedQuestions"),
   scopeSummary: document.querySelector("#scopeSummary"),
   wordListPages: document.querySelector("#wordListPages"),
-  quizPanel: document.querySelector("#quizPanel"),
+  quizEmptyState: document.querySelector("#quizEmptyState"),
+  quizActiveState: document.querySelector("#quizActiveState"),
+  activeScopeText: document.querySelector("#activeScopeText"),
+  progressText: document.querySelector("#progressText"),
   questionType: document.querySelector("#questionType"),
   unitBadge: document.querySelector("#unitBadge"),
   questionText: document.querySelector("#questionText"),
@@ -143,6 +148,12 @@ function setActiveTab(tabName) {
   if (tabName === "history") renderHistory();
 }
 
+function updateQuizVisibility(showResults = false) {
+  els.quizEmptyState.hidden = state.hasActiveQuiz;
+  els.quizActiveState.hidden = !state.hasActiveQuiz || showResults;
+  els.resultsPanel.hidden = !showResults;
+}
+
 function getQuestionKind(mode, word) {
   const kinds = [];
   if (word.definition) kinds.push("definition");
@@ -211,6 +222,7 @@ function syncQuestionCount(availableCount) {
   els.questionCount.max = String(Math.max(availableCount, 1));
   els.questionCount.placeholder = availableCount ? `최대 ${availableCount}개` : "출제 가능 단어 없음";
   els.questionCount.value = availableCount ? String(availableCount) : "";
+  els.plannedQuestions.textContent = availableCount ? String(availableCount) : "0";
 }
 
 function updateSelectedCount() {
@@ -242,12 +254,12 @@ function renderWordListPages() {
 function renderQuestion() {
   const question = state.questions[state.current];
   state.selectedChoice = "";
-  els.quizPanel.hidden = false;
-  els.resultsPanel.hidden = true;
+  updateQuizVisibility(false);
   els.feedback.textContent = "";
   els.feedback.className = "feedback";
   els.nextBtn.hidden = true;
   els.checkBtn.hidden = false;
+  els.activeScopeText.textContent = `${state.activeScope} · ${state.activeModeLabel}`;
   els.progressText.textContent = `${state.current + 1} / ${state.questions.length}`;
   els.questionType.textContent = question.kind === "choice" ? "객관식" : question.kind === "blank" ? "빈칸" : "정의";
   els.unitBadge.textContent = `p.${question.word.bookPage}`;
@@ -303,9 +315,13 @@ function startQuiz() {
   state.current = 0;
   state.correct = 0;
   state.missed = [];
+  state.selectedChoice = "";
   state.activeScope = result.source;
+  state.activeModeLabel = els.quizMode.options[els.quizMode.selectedIndex].textContent;
+  state.hasActiveQuiz = true;
   els.selectedWords.textContent = String(result.filtered.length);
   els.scopeSummary.textContent = result.source;
+  setActiveTab("quiz");
   renderQuestion();
 }
 
@@ -353,7 +369,7 @@ function makeHistoryRecord(score) {
     id: Date.now(),
     date: new Date().toISOString(),
     scope: state.activeScope,
-    mode: els.quizMode.options[els.quizMode.selectedIndex].textContent,
+    mode: state.activeModeLabel,
     total: state.questions.length,
     correct: state.correct,
     score,
@@ -427,8 +443,7 @@ function renderHistory() {
 }
 
 function showResults() {
-  els.quizPanel.hidden = true;
-  els.resultsPanel.hidden = false;
+  updateQuizVisibility(true);
   els.progressText.textContent = `${state.questions.length} / ${state.questions.length}`;
   const score = Math.round((state.correct / state.questions.length) * 100);
   els.resultScore.textContent = `${state.correct} / ${state.questions.length} (${score}점)`;
@@ -482,6 +497,7 @@ async function init() {
     renderWordListPages();
     renderHistory();
     updateSelectedCount();
+    updateQuizVisibility(false);
   } catch (error) {
     els.dataSummary.textContent = "단어 데이터를 불러오지 못했습니다.";
     console.error(error);

@@ -132,7 +132,7 @@ label span {
 
 .tabs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 6px;
   border: 1px solid var(--line);
@@ -368,9 +368,39 @@ button:focus {
   font-weight: 800;
 }
 
-.quiz-panel,
 .results {
   margin-top: 14px;
+}
+
+.empty-state {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--muted);
+  padding: 22px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.quiz-summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.quiz-summary span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.quiz-summary strong {
+  font-size: 20px;
 }
 
 .question-meta,
@@ -504,6 +534,7 @@ button:focus {
   }
 
   .hero,
+  .tabs,
   .controls,
   .word-list-grid,
   .review-grid,
