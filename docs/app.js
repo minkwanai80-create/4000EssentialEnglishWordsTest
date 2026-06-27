@@ -1,4 +1,5 @@
 const HISTORY_KEY = "essentialWordsTestHistory";
+const QUIZ_MODE_LABEL = "단어 입력";
 
 const state = {
   words: [],
@@ -8,10 +9,8 @@ const state = {
   current: 0,
   correct: 0,
   missed: [],
-  selectedChoice: "",
   activeTab: "setup",
   activeScope: "전체 WORD LIST 기준",
-  activeModeLabel: "",
   hasActiveQuiz: false,
 };
 
@@ -20,7 +19,6 @@ const els = {
   lastScore: document.querySelector("#lastScore"),
   pageRange: document.querySelector("#pageRange"),
   questionCount: document.querySelector("#questionCount"),
-  quizMode: document.querySelector("#quizMode"),
   startBtn: document.querySelector("#startBtn"),
   totalWords: document.querySelector("#totalWords"),
   selectedWords: document.querySelector("#selectedWords"),
@@ -116,21 +114,47 @@ function shuffle(items) {
   return copy;
 }
 
-function makeBlank(example, answer) {
-  if (!example) return "";
-  const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const pattern = new RegExp(`\\b${escaped}\\b`, "ig");
-  return example.replace(pattern, "_____");
-}
-
 function maskAnswer(text, answer) {
   if (!text) return "";
   const escaped = answer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   return text.replace(new RegExp(`\\b${escaped}\\b`, "ig"), "____");
 }
 
-function definitionHint(word) {
-  const masked = maskAnswer(word.definition || `교재 ${word.bookPage}페이지의 단어입니다.`, word.word);
+function isGarbledEnglish(text) {
+  if (!text || text.length < 15) return true;
+  if (/[가-힣]/.test(text)) return true;
+  if (/[\u4e00-\u9fff]/.test(text)) return true;
+  return false;
+}
+
+function cleanDefinitionRaw(word) {
+  let text = String(word.definition || "").trim();
+  if (!text) return "";
+
+  text = text.replace(/\[[^\]]*\]/g, " ");
+  text = text.replace(/[□■]/g, "");
+  text = text.replace(/[가-힣\u4e00-\u9fff]/g, " ");
+  text = text.replace(/\s+/g, " ").trim();
+
+  const escaped = word.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  text = text.replace(
+    new RegExp(`^${escaped}\\s+(?:n\\.|v\\.|adj\\.|adv\\.|conj\\.)\\s+[A-Za-z]\\s+`, "i"),
+    `${word.word} `,
+  );
+  text = text.replace(
+    new RegExp(`^${escaped}\\s+(?:n\\.|v\\.|adj\\.|adv\\.|conj\\.)\\s*`, "i"),
+    `${word.word} `,
+  );
+
+  return text.replace(/\s+/g, " ").trim();
+}
+
+function cleanEnglishHint(word) {
+  let definition = cleanDefinitionRaw(word);
+  if (isGarbledEnglish(definition)) {
+    definition = `Study the word from page ${word.bookPage}.`;
+  }
+  const masked = maskAnswer(definition, word.word);
   return word.partOfSpeech ? `${word.partOfSpeech} ${masked}` : masked;
 }
 
@@ -174,46 +198,10 @@ function updateQuizVisibility(showResults = false) {
   els.resultsPanel.hidden = !showResults;
 }
 
-function getQuestionKind(mode, word) {
-  const kinds = [];
-  if (word.definition) kinds.push("definition");
-  if (word.example && makeBlank(word.example, word.word) !== word.example) kinds.push("blank");
-  if (word.definition) kinds.push("choice");
-  if (mode !== "mixed" && kinds.includes(mode)) return mode;
-  return kinds[Math.floor(Math.random() * kinds.length)] || "definition";
-}
-
-function buildQuestion(word, mode) {
-  const kind = getQuestionKind(mode, word);
-  if (kind === "choice") {
-    const wrong = shuffle(state.words.filter((item) => item.word !== word.word && item.definition && !item.needsReview))
-      .slice(0, 3)
-      .map((item) => definitionHint(item));
-    return {
-      word,
-      kind,
-      prompt: `"${word.word}"와 가장 가까운 정의를 고르세요.`,
-      hint: `교재 ${word.bookPage}페이지`,
-      choices: shuffle([definitionHint(word), ...wrong]),
-      answer: definitionHint(word),
-    };
-  }
-
-  if (kind === "blank") {
-    return {
-      word,
-      kind,
-      prompt: makeBlank(word.example, word.word),
-      hint: `빈칸에 들어갈 영어 단어와 한글 뜻을 입력하세요. 교재 ${word.bookPage}페이지`,
-      answer: word.word,
-    };
-  }
-
+function buildQuestion(word) {
   return {
     word,
-    kind: "definition",
-    prompt: "정의를 보고 영어 단어와 한글 뜻을 입력하세요.",
-    hint: definitionHint(word),
+    hint: cleanEnglishHint(word),
     answer: word.word,
   };
 }
@@ -300,40 +288,23 @@ function renderSubjectiveInputs() {
 
 function renderQuestion() {
   const question = state.questions[state.current];
-  state.selectedChoice = "";
   updateQuizVisibility(false);
   els.feedback.textContent = "";
   els.feedback.className = "feedback";
   els.nextBtn.hidden = true;
   els.checkBtn.hidden = false;
-  els.activeScopeText.textContent = `${state.activeScope} · ${state.activeModeLabel}`;
+  els.activeScopeText.textContent = `${state.activeScope} · ${QUIZ_MODE_LABEL}`;
   els.progressText.textContent = `${state.current + 1} / ${state.questions.length}`;
-  els.questionType.textContent = question.kind === "choice" ? "객관식" : question.kind === "blank" ? "빈칸" : "정의";
+  els.questionType.textContent = QUIZ_MODE_LABEL;
   els.unitBadge.textContent = `p.${question.word.bookPage}`;
-  els.questionText.textContent = question.prompt;
+  els.questionText.textContent = "";
   els.questionHint.textContent = question.hint;
   els.questionHint.hidden = true;
-  els.hintToggleBtn.hidden = question.kind === "choice";
+  els.hintToggleBtn.hidden = false;
   els.hintToggleBtn.textContent = "힌트: 영어 설명 보기";
   els.speakBtn.textContent = "듣기";
   els.answerArea.innerHTML = "";
-
-  if (question.kind === "choice") {
-    question.choices.forEach((choice) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "choice";
-      button.textContent = choice;
-      button.addEventListener("click", () => {
-        state.selectedChoice = choice;
-        els.answerArea.querySelectorAll(".choice").forEach((item) => item.classList.remove("selected"));
-        button.classList.add("selected");
-      });
-      els.answerArea.appendChild(button);
-    });
-  } else {
-    renderSubjectiveInputs();
-  }
+  renderSubjectiveInputs();
 }
 
 function startQuiz() {
@@ -350,13 +321,11 @@ function startQuiz() {
   const requestedCount = Number(els.questionCount.value) || result.filtered.length;
   const count = Math.max(1, Math.min(requestedCount, result.filtered.length));
   state.filtered = result.filtered;
-  state.questions = shuffle(result.filtered).slice(0, count).map((word) => buildQuestion(word, els.quizMode.value));
+  state.questions = shuffle(result.filtered).slice(0, count).map((word) => buildQuestion(word));
   state.current = 0;
   state.correct = 0;
   state.missed = [];
-  state.selectedChoice = "";
   state.activeScope = result.source;
-  state.activeModeLabel = els.quizMode.options[els.quizMode.selectedIndex].textContent;
   state.hasActiveQuiz = true;
   els.selectedWords.textContent = String(result.filtered.length);
   els.scopeSummary.textContent = result.source;
@@ -372,19 +341,6 @@ function getSubjectiveAnswers() {
 }
 
 function gradeQuestion(question) {
-  if (question.kind === "choice") {
-    const choiceCorrect = state.selectedChoice && normalizeEnglish(state.selectedChoice) === normalizeEnglish(question.answer);
-    return {
-      userEnglishAnswer: state.selectedChoice || "",
-      userKoreanAnswer: "",
-      correctWord: question.word.word,
-      koreanMeanings: getKoreanMeanings(question.word),
-      englishCorrect: Boolean(choiceCorrect),
-      koreanCorrect: true,
-      isCorrect: Boolean(choiceCorrect),
-    };
-  }
-
   const answers = getSubjectiveAnswers();
   const englishCorrect = normalizeEnglish(answers.english) === normalizeEnglish(question.word.word);
   const koreanAnswer = normalizeKorean(answers.korean);
@@ -454,25 +410,18 @@ function renderDictionaryPanel(question, result) {
 }
 
 function lockCurrentQuestion() {
-  els.answerArea.querySelectorAll("input, .choice").forEach((item) => {
+  els.answerArea.querySelectorAll("input").forEach((item) => {
     item.disabled = true;
   });
 }
 
 function checkAnswer() {
   const question = state.questions[state.current];
-  if (question.kind === "choice" && !state.selectedChoice) {
-    els.feedback.textContent = "정답을 선택하세요.";
+  const answers = getSubjectiveAnswers();
+  if (!normalizeEnglish(answers.english) || !normalizeKorean(answers.korean)) {
+    els.feedback.textContent = "영어 단어와 한글 뜻을 모두 입력하세요.";
     els.feedback.className = "feedback bad";
     return;
-  }
-  if (question.kind !== "choice") {
-    const answers = getSubjectiveAnswers();
-    if (!normalizeEnglish(answers.english) || !normalizeKorean(answers.korean)) {
-      els.feedback.textContent = "영어 단어와 한글 뜻을 모두 입력하세요.";
-      els.feedback.className = "feedback bad";
-      return;
-    }
   }
 
   const result = gradeQuestion(question);
@@ -512,7 +461,7 @@ function makeHistoryRecord(score) {
     id: Date.now(),
     date: new Date().toISOString(),
     scope: state.activeScope,
-    mode: state.activeModeLabel,
+    mode: QUIZ_MODE_LABEL,
     total: state.questions.length,
     correct: state.correct,
     score,

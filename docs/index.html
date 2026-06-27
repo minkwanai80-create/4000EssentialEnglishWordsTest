@@ -42,15 +42,6 @@
               <span>문제 수</span>
               <input id="questionCount" type="number" min="1" step="1" placeholder="범위 내 전체" />
             </label>
-            <label>
-              <span>문제 유형</span>
-              <select id="quizMode">
-                <option value="mixed">섞어서</option>
-                <option value="definition">정의 보고 단어 입력</option>
-                <option value="blank">예문 빈칸 입력</option>
-                <option value="choice">객관식 정의 고르기</option>
-              </select>
-            </label>
             <button id="startBtn" class="primary" type="button">시험 시작</button>
           </div>
 
@@ -91,7 +82,7 @@
               <button id="speakBtn" class="listen-btn" type="button">듣기</button>
               <h2 id="questionText"></h2>
             </div>
-            <button id="hintToggleBtn" class="hint-toggle" type="button">힌트 보기</button>
+            <button id="hintToggleBtn" class="hint-toggle" type="button">힌트: 영어 설명 보기</button>
             <p id="questionHint" class="hint"></p>
             <div id="answerArea" class="answer-area"></div>
             <div class="actions">

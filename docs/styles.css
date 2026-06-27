@@ -434,6 +434,10 @@ button:focus {
   line-height: 1.25;
 }
 
+.word-toolbar h2:empty {
+  display: none;
+}
+
 .listen-btn,
 .mini-listen,
 .hint-toggle {
